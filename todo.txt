@@ -1,0 +1,8 @@
+- How to use 0template to package your binaries
+- How to combine 0watch, 0template and 0repo
+- pip on Windows:
+  pathman /au "%appdata%\Python\Python37\Scripts"
+  curl https://bootstrap.pypa.io/get-pip.py -O
+  python get-pip.py --home
+  pip install --user ...
+  
