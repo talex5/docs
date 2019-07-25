@@ -11,6 +11,7 @@ Before you start, have a look at [Concepts](concepts.md) to make sure you unders
 ## Publish an XML file for an existing binary release
 
 - Read the [binary packaging guide](guide-gui.md). This tutorial shows how to create an XML file describing the Blender 3D-animation application. The binary archive is published by the upstream authors and requires no modifications.
+- Read the [Windows packaging guide](guide-windows.md). This tutorial shows how to create an XML file for existing Windows applications.
 
 ## Publish XML for a source release
 
