@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/logo.png">
+  
+  <title>pkg2zero - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "pkg2zero";
+    var mkdocs_page_input_path = "tools/pkg2zero.md";
+    var mkdocs_page_url = "/tools/pkg2zero/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../make-headers/">Make-headers</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">pkg2zero</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#creating-the-feed">Creating the feed</a></li>
+    
+
+    <li class="toctree-l3"><a href="#testing">Testing</a></li>
+    
+
+    <li class="toctree-l3"><a href="#publishing">Publishing</a></li>
+    
+
+    <li class="toctree-l3"><a href="#adding-more-versions">Adding more versions</a></li>
+    
+
+    <li class="toctree-l3"><a href="#using-a-debian-packages-file">Using a Debian Packages file</a></li>
+    
+
+    <li class="toctree-l3"><a href="#using-rpm-repository-metadata">Using RPM Repository Metadata</a></li>
+    
+
+    <li class="toctree-l3"><a href="#dependencies">Dependencies</a></li>
+    
+
+    <li class="toctree-l3"><a href="#security-notes">Security notes</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Tools &raquo;</li>
+        
+      
+    
+    <li>pkg2zero</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/tools/pkg2zero.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><strong>Name:</strong> pkg2zero<br />
+<strong>Maintainer:</strong> Thomas Leonard<br />
+<strong>License:</strong> GNU General Public License<br />
+<strong>Source:</strong> <a href="http://repo.or.cz/w/deb2zero.git">Git repository</a><br />
+<strong>Zero Install feed:</strong> <a href="http://0install.net/2009/interfaces/pkg2zero.xml">http://0install.net/2009/interfaces/pkg2zero.xml</a></p>
+<p><strong>pkg2zero</strong> takes a Debian or RPM package and publishes it in a Zero Install feed.</p>
+<p>You can always use <a href="../0publish/">0publish</a> to publish any tarball, RPM, Deb, Zip or Autopackage file, but you have to enter the meta-data (name, summary, description, etc) manually. Since Debian and RPM packages already contain this information, it's easier to extract it and generate the feed automatically. This is what pkg2zero does.</p>
+<p><strong>Contents:</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#creating-the-feed">Creating the feed</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#publishing">Publishing</a></li>
+<li><a href="#adding-more-versions">Adding more versions</a></li>
+<li><a href="#using-a-debian-packages-file">Using a Debian Packages file</a></li>
+<li><a href="#using-rpm-repository-metadata">Using RPM Repository Metadata</a></li>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#security-notes">Security notes</a></li>
+</ul>
+</div>
+<p>You can download <strong>pkg2zero</strong> and create a short-cut to it in the usual way:</p>
+<pre><code class="shell">$ 0install add pkg2zero http://0install.net/2009/interfaces/pkg2zero.xml
+</code></pre>
+
+<h1 id="creating-the-feed">Creating the feed</h1>
+<p>Select the Debian or RPM package you want to publish. You need the full URL. Since packages sometimes move, you should probably make a copy of it on your own server and use that URL, but for this demo we'll link directly to Debian's copy of the program (GQView for this tutorial):</p>
+<pre><code class="shell">$ pkg2zero http://ftp.uk.debian.org/debian/pool/main/g/gqview/gqview_2.0.1-1_i386.deb GQView.xml
+</code></pre>
+
+<p>This downloads the Debian package to the current directory and creates a feed called <code>GQView.xml</code>.</p>
+<p>Alternatively, to create the feed from an RPM:</p>
+<pre><code class="shell">$ pkg2zero http://dag.wieers.com/rpm/packages/gqview/gqview-1.4.5-1.el5.rf.i386.rpm GQView.xml
+</code></pre>
+
+<p>You will be prompted to give a URL for the program's icon, since Debian packages don't have them.</p>
+<p>You will then be prompted to "Enter the URI for this feed". This is the URL from which other people will download your feed file.</p>
+<p>Note: pkg2zero guesses some things (such as which binary to run by default if the package contains several) so you should check the feed file manually and edit if required. In this case, no editing is needed.</p>
+<h1 id="testing">Testing</h1>
+<p>When testing, you should make sure that the program isn't already installed (e.g. by <code>apt-get</code>). Some programs contain hard-coded paths, and will therefore appear to work correctly... but only on a system which already has the program! Also, Zero Install may select the natively-installed version, depending on your policy settings.</p>
+<p>To test the feed:</p>
+<pre><code class="shell">$ 0launch -g ./GQView.xml
+</code></pre>
+
+<p>Note that pkg2zero added the downloaded package's contents to the Zero Install cache, so it will show up as being already cached.</p>
+<h1 id="publishing">Publishing</h1>
+<p>If you want to publish the feed so that others can use it, you'll also need to sign it, which can be done by giving the GPG key to use with the <code>--key</code> option:</p>
+<pre><code class="shell">$ pkg2zero -k Bob http://.../package.deb
+</code></pre>
+
+<p>Note that if this version was already added then it pkg2zero won't do anything, so if you already made an unsigned feed then delete it first, or use <a href="../0publish/">0publish --xmlsign</a> to resign it.</p>
+<p>See the <a href="http://0install.net/injector-packagers.md">packaging tutorial</a> for more details about signing feeds.</p>
+<h1 id="adding-more-versions">Adding more versions</h1>
+<p>To add a new version to your feed later, just run the command again with the new URL:</p>
+<pre><code class="shell">$ pkg2zero http://.../new-version.deb GQView.xml
+</code></pre>
+
+<h1 id="using-a-debian-packages-file">Using a Debian Packages file</h1>
+<p>As an alternative to specifying the URL of the Debian package directly, you can download an index file to the current directory and then just give the package name. e.g. to use the current Debian/stable package for the amd64 (<code>x86_64</code>) architecture:</p>
+<pre><code class="shell">$ wget ftp://ftp.debian.org/debian/dists/stable/main/binary-amd64/Packages.bz2
+$ pkg2zero --packages-file=Packages.bz2 gqview GQView.xml
+</code></pre>
+
+<h1 id="using-rpm-repository-metadata">Using RPM Repository Metadata</h1>
+<p>As an alternative to specifying the URL of the RPM package directly, you can download the repodata to the current directory and then just give the package name. e.g.</p>
+<pre><code class="shell">$ mkdir -p repodata
+$ wget -N -P repodata http://download.fedoraproject.org/pub/epel/5/i386/repodata/repomd.xml
+$ wget -N -P repodata http://download.fedoraproject.org/pub/epel/5/i386/repodata/...-primary.xml.gz
+$ pkg2zero --repomd-file=repodata/repomd.xml -m http://download.fedoraproject.org/pub/epel --path 5/i386 gqview GQView.xml
+</code></pre>
+
+<h1 id="dependencies">Dependencies</h1>
+<p>pkg2zero can process the <code>Depends</code> field in a Debian package and generate a corresponding <code>&lt;requires&gt;</code> element in the feed. For this to work, you need to create a file called <code>~/.config/0install.net/pkg2zero/mappings</code> (see the <a href="http://www.freedesktop.org/wiki/Specifications/basedir-spec">freedesktop.org basedir specification</a> for details about configuration file locations). Each line of the file gives a mapping from a Debian package name to the corresponding Zero Install feed URI. For example, if you specify:</p>
+<pre><code>libfoo: http://0install.net/2008/3rd-party/libfoo.xml
+</code></pre>
+
+<p>then <code>pkg2zero</code> will turn</p>
+<pre><code>Depends: libfoo
+</code></pre>
+
+<p>into</p>
+<pre><code class="xml">  &lt;requires interface=&quot;http://0install.net/2008/3rd-party/libfoo.xml&quot;&gt;
+    &lt;environment insert=&quot;usr/lib&quot; name=&quot;LD_LIBRARY_PATH&quot;/&gt;
+  &lt;/requires&gt;
+</code></pre>
+
+<p>Note that setting <code>LD_LIBRARY_PATH</code> is just a guess. It may be that the package depends on <code>libfoo</code> in some other way (e.g. it needs a binary in <code>$PATH</code>). In that case, you'll need to edit the feed to correct it.</p>
+<p>When you create a new feed, pkg2zero automatically appends the new mapping to the mappings file for you. The last line of the file is also used to suggest a default when naming new feeds.</p>
+<h1 id="security-notes">Security notes</h1>
+<p>pkg2zero does not verify anything about the archive it downloads when you use a URL. However, if a file with the same name already exists in the current directory, it uses that instead. Therefore, if you have a secure way of getting the .deb file (e.g. because you created it), use that.</p>
+<p>pkg2zero calculates the digest of the package and stores it in the feed it creates, so anyone using the feed can at least verify that the package they download is identical to the one you used.</p>
+<p>If you use a Packages index file, then it does check the digest against the one in the Packages file.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../0compile/chroot-build/" class="btn btn-neutral float-right" title="Chroot build">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../make-headers/" class="btn btn-neutral" title="Make-headers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../make-headers/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../0compile/chroot-build/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../menu.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

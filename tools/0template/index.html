@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/logo.png">
+  
+  <title>0template - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "0template";
+    var mkdocs_page_input_path = "tools/0template.md";
+    var mkdocs_page_url = "/tools/0template/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0share/">0share</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">0template</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#installation">Installation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#creating-the-template">Creating the template</a></li>
+    
+
+    <li class="toctree-l3"><a href="#using-the-template">Using the template</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Tools &raquo;</li>
+        
+      
+    
+    <li>0template</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/tools/0template.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><strong>Name:</strong> 0template<br />
+<strong>Maintainer:</strong> Thomas Leonard<br />
+<strong>License:</strong> GNU Lesser General Public License<br />
+<strong>Source:</strong> <a href="https://github.com/0install/0template">Git repository</a><br />
+<strong>Zero Install feed:</strong> <a href="http://0install.net/tools/0template.xml">http://0install.net/tools/0template.xml</a></p>
+<p><strong>0template</strong> creates the XML for one version of a program from a template. The diagram below shows how it fits into the overall publishing process:</p>
+<p><img alt="0template workflow" src="../../img/diagrams/0template.png" /></p>
+<p>That is, each time you want to add a new release of a program to your master XML feed, you first use 0template to generate the XML for the new release. Once you're happy with it, merge it into the master feed with <a href="../0repo/">0repo</a>.</p>
+<p>0template is mostly useful for publishing existing binary or source archives. If you are making releases of your own software from Git, consider using <a href="../0release/">0release</a> instead.</p>
+<p><strong>Contents:</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#creating-the-template">Creating the template</a></li>
+<li><a href="#using-the-template">Using the template</a></li>
+</ul>
+</div>
+<h1 id="installation">Installation</h1>
+<p>To get it:</p>
+<pre><code class="shell">$ 0install add 0template http://0install.net/tools/0template.xml
+</code></pre>
+
+<h1 id="creating-the-template">Creating the template</h1>
+<p>To start, run it with a non-existent file and it will offer to create it:</p>
+<pre><code class="shell">$ 0template myprog.xml.template
+'myprog.xml.template' does not exist; creating new template.
+
+Does your program need to be compiled before it can be used?
+
+1) Generate a source template (e.g. for compiling C source code)
+2) Generate a binary template (e.g. for a pre-compiled binary or script)
+
+&gt; 2
+
+Writing myprog.xml.template
+</code></pre>
+
+<p>Then edit the generated <code>myprog.xml.template</code> to taste. A minimal example would be:</p>
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;interface xmlns=&quot;http://zero-install.sourceforge.net/2004/injector/interface&quot;&gt;
+  &lt;name&gt;myprog&lt;/name&gt;
+  &lt;summary&gt;does useful stuff&lt;/summary&gt;
+
+  &lt;group&gt;
+    &lt;command name=&quot;run&quot; path=&quot;myprog&quot;/&gt;
+
+    &lt;implementation version=&quot;{version}&quot;&gt;
+      &lt;manifest-digest/&gt;
+      &lt;archive href=&quot;http://example.com/downloads/myprog-{version}.zip&quot;/&gt;
+    &lt;/implementation&gt;
+  &lt;/group&gt;
+&lt;/interface&gt;
+</code></pre>
+
+<p>You would typically want to add any dependencies here too. See the <a href="../../specifications/feed/">feed specification</a> for details.</p>
+<p>Note: You can also use 0template to create a <a href="../../packaging/local-feeds/">local feed</a> to run a Git checkout, rather than an archive on the web. In that case, just don't use the <code>.template</code> extension, and it will generate a feed rather than a template.</p>
+<h1 id="using-the-template">Using the template</h1>
+<p>To generate the XML for a particular version, run 0template on it and provide the template parameters (<code>version</code> in this example), e.g.</p>
+<pre><code class="shell">$ 0template myprog.xml.template version=1.0
+Downloading http://example.com/downloads/myprog-1.0.zip to ./myprog-1.0.zip
+Writing myprog-1.0.xml
+</code></pre>
+
+<p>You now have a feed with the appropriate details filled in:</p>
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;interface xmlns=&quot;http://zero-install.sourceforge.net/2004/injector/interface&quot;&gt;
+  &lt;name&gt;myprog&lt;/name&gt;
+  &lt;summary&gt;does useful stuff&lt;/summary&gt;
+
+  &lt;group&gt;
+    &lt;command name=&quot;run&quot; path=&quot;myprog&quot;/&gt;
+
+    &lt;implementation id=&quot;sha1new=67ba178ed33b292efa5ab364d01a8fc13fe9eba3&quot; version=&quot;1.0&quot;&gt;
+      &lt;manifest-digest sha256new=&quot;FBXDJXLMHAPCRNZ5XOQTVYQHD6VP7CZAZ2UKCCV5UYE27C752GIQ&quot;/&gt;
+      &lt;archive extract=&quot;myprog-1.0&quot; href=&quot;http://example.com/downloads/myprog-1.0.zip&quot; size=&quot;352&quot;/&gt;
+    &lt;/implementation&gt;
+  &lt;/group&gt;
+&lt;/interface&gt;
+</code></pre>
+
+<p>Specifically, 0template fills in these values:</p>
+<ul>
+<li>All <code>{...}</code> text is expanded with the values you provided on the command-line.</li>
+<li>The archive is downloaded to the directory containing the feed, if it's not already there.</li>
+<li>The <code>size</code> attribute is set to the size of the archive.</li>
+<li>The <code>extract</code> attribute is set to the single top-level directory in the archive, if it has one.</li>
+<li>The <code>id</code> is set to the sha1new digest of the archive.</li>
+<li>Any empty attributes of <code>manifest-digest</code> are filled in with the calculated digests. If there are no attributes, a <code>sha256new</code> digest is added.</li>
+</ul>
+<p>You can now test this feed using e.g.</p>
+<pre><code class="shell">$ 0launch myprog-1.0.xml
+</code></pre>
+
+<p>Or, for source feeds:</p>
+<pre><code class="shell">$ 0compile autocompile myprog-1.0.xml
+</code></pre>
+
+<p>Once you are happy with it, you can add it to the master feed (which contains all versions) using <a href="../0repo/">0repo</a>. e.g.</p>
+<pre><code class="shell">$ 0repo add myprog-1.2.xml
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../0test/" class="btn btn-neutral float-right" title="0test">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../0share/" class="btn btn-neutral" title="0share"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../0share/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../0test/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../menu.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

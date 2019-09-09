@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/logo.png">
+  
+  <title>0export - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "0export";
+    var mkdocs_page_input_path = "tools/0export.md";
+    var mkdocs_page_url = "/tools/0export/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0compile/">0compile</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">0export</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#using-a-0export-package">Using a 0export package</a></li>
+    
+
+    <li class="toctree-l3"><a href="#current-status">Current status</a></li>
+    
+
+    <li class="toctree-l3"><a href="#installing-0export">Installing 0export</a></li>
+    
+
+    <li class="toctree-l3"><a href="#creating-a-setupsh-for-your-program">Creating a setup.sh for your program</a></li>
+    
+
+    <li class="toctree-l3"><a href="#format-of-the-setupsh">Format of the setup.sh</a></li>
+    
+
+    <li class="toctree-l3"><a href="#testing">Testing</a></li>
+    
+
+    <li class="toctree-l3"><a href="#support-for-multiple-architectures-or-multiple-applications-in-one-bundle">Support for multiple architectures or multiple applications in one bundle</a></li>
+    
+
+    <li class="toctree-l3"><a href="#faq">FAQ</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Tools &raquo;</li>
+        
+      
+    
+    <li>0export</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/tools/0export.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><strong>Name:</strong> 0export<br />
+<strong>Maintainer:</strong> Thomas Leonard<br />
+<strong>License:</strong> GNU General Public License<br />
+<strong>Source:</strong> <a href="http://repo.or.cz/w/0export.git">Git repository</a><br />
+<strong>Zero Install feed:</strong> <a href="http://0install.net/tools/0export.xml">http://0install.net/tools/0export.xml</a></p>
+<p><strong>0export</strong> creates self-installing bundles for distribution on CD, etc</p>
+<p>Normally, a program is run by passing its name (a URI) to the 0launch command. This downloads the appropriate feeds, chooses a set of implementations (a version of the program, along with any libraries it needs) and downloads them too.</p>
+<p>However, it is sometimes useful to bundle a program and its libraries together on a CD (for example) so that it can be used on machines without a network connection, or where the network is very slow. It is also useful for archival purposes, in case the original web-sites supplying required libraries become unavailable.</p>
+<p>0export takes the URI of a program and creates a <code>setup.sh</code> file; a self-extracting archive containing everything needed to run the program. This file can be executed on a machine without a network connection to install or run the program.</p>
+<p>Programs installed using <code>setup.sh</code> are added to the 0install cache and are therefore still <a href="../../details/sharing/">shared between users</a>, and will get updates over the web where possible.</p>
+<p>0export does not work on Windows. However Zero Install for Windows has roughly equivalent functionality built in. See <a href="../../details/export/">Export</a> for details.</p>
+<p>If the target machine has network access, and you just want to provide a launcher script, consider instead using <a href="https://github.com/0install/0bootstrap-php">0bootstrap-php</a>, a PHP script that creates bootstrapping EXEs or bash scripts for installing 0install and then running a feed.</p>
+<p><strong>Contents:</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#using-a-0export-package">Using a 0export package</a></li>
+<li><a href="#current-status">Current status</a></li>
+<li><a href="#installing-0export">Installing 0export</a></li>
+<li><a href="#creating-a-setupsh-for-your-program">Creating a setup.sh for your program</a></li>
+<li><a href="#format-of-the-setupsh">Format of the setup.sh</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#support-for-multiple-architectures-or-multiple-applications-in-one-bundle">Support for multiple architectures or multiple applications in one bundle</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ul>
+</div>
+<h1 id="using-a-0export-package">Using a 0export package</h1>
+<p>Open the file with your file manager, or run <code>sh setup.sh</code> in a terminal:</p>
+<p><img alt="Running a 0export setup file" src="../../img/screens/0export-run.png" /></p>
+<p>The archive will unpack and run:</p>
+<p><img alt="The self-extracting package unpacks itself" src="../../img/screens/0export-unpack.png" /></p>
+<p>You can add the program to your menus or run it directly.</p>
+<p><img alt="Optional actions" src="../../img/screens/0export-actions.png" /></p>
+<h1 id="current-status">Current status</h1>
+<p>This program is not yet complete. In particular, adding the program to the user's menus only works if the user already has 0install itself installed.</p>
+<h1 id="installing-0export">Installing 0export</h1>
+<p>You can download <code>0export</code> and create a short-cut to it in the usual way:</p>
+<pre><code class="shell">$ 0install add 0export http://0install.net/tools/0export.xml
+</code></pre>
+
+<h1 id="creating-a-setupsh-for-your-program">Creating a setup.sh for your program</h1>
+<p>Run 0export, passing in the name of the installer file to create and the name (URI) of the main program. For example, to create an installer for Edit:</p>
+<pre><code class="shell">$ 0export setup.sh http://rox.sourceforge.net/2005/interfaces/Edit
+</code></pre>
+
+<p>The resulting <code>setup.sh</code> file can be copied to a CD and run on another machine. This machine does not need a network connection. It also does not need to have 0install installed on it before-hand.</p>
+<p>However, if the machine does have a network connection then the user will be notified of updates in the usual way.</p>
+<h1 id="format-of-the-setupsh">Format of the setup.sh</h1>
+<p>The bulk of the <code>setup.sh</code> file is an archive containing:</p>
+<ul>
+<li>All feeds needed to run the program.</li>
+<li>All GPG keys signing the feeds.</li>
+<li>All selected implementations (versions).</li>
+<li>A copy of 0install, in case the target system doesn't have it.</li>
+<li>An installation script.</li>
+</ul>
+<p>To make the archive self-extracting, a short shell script is prepended to the archive which unpacks it to a temporary directory and then runs the installer. If you want to extract the files without executing anything, you can get the information you need from the first four lines of the script, which look like this:</p>
+<pre><code class="shell">#!/bin/sh
+# 0export 0.1
+archive_offset=00831
+archive_format=application/x-bzip-compressed-tar
+</code></pre>
+
+<h1 id="testing">Testing</h1>
+<p>To test the installer:</p>
+<pre><code class="shell">$ sh setup.sh
+</code></pre>
+
+<p>The script currently (0export 0.1) does the following:</p>
+<ol>
+<li>Runs <code>gpg --import</code> on each GPG key in the archive, adding the keys that signed the feeds to your key-ring.</li>
+<li>Runs <code>0launch --import</code> on each feed in the archive. Every signing GPG key is added to the trusted list for the feed's domain. This allows checking for updates in future without confirming the keys. If the user already has a newer version of the feed, the import has no effect.</li>
+<li>Chooses a set of implementations (<code>0install select --xml URI</code>) in minimal network use mode and with the implementations in the <code>setup.sh</code> available.</li>
+<li>Copies any selected implementations into the system or user's cache (<code>~/.cache/0install.net/implementations</code>).</li>
+<li>Runs the program (<code>0launch --offline URI</code>).</li>
+</ol>
+<p>All steps use the bundled version of 0launch.</p>
+<h1 id="support-for-multiple-architectures-or-multiple-applications-in-one-bundle">Support for multiple architectures or multiple applications in one bundle</h1>
+<p>You can use the <code>--arch</code> option to set the target architecture(s). For example, this command will select two binaries for each component, one that will run on an <code>i586</code> machine and one that will run on an <code>x86_64</code> machine:</p>
+<pre><code class="shell">$ 0export --arch Linux-i586 --arch Linux-x86_64 setup.sh http://...
+</code></pre>
+
+<p>If a single binary is the best option for both then it will only be included in the bundle once. When the bundle is installed, only the required versions will be copied into the machine's cache.</p>
+<p>You can include multiple applications by listing multiple URIs. All applications will be added to the user's menu, but only the first will be run if the user selects the run option in the dialog. Note that dependencies are included automatically and should not be listed.</p>
+<h1 id="faq">FAQ</h1>
+<dl>
+<dt>What about security?</dt>
+<dd>Running an executable isn't a great way to install a program. The normal 0install process of dragging a feed link to a trusted installation program is much better. However, distributions have been very slow to support this. 0export is an attempt to boot-strap the adoption process. The <code>setup.sh</code> script is designed to be easy to parse, so that in future it can be used as a simple archive.</dd>
+<dt>Why doesn't it confirm before trusting the keys?</dt>
+<dd>If the <code>setup.sh</code> is genuine then this is what you want. If it isn't, it's already too late. Even if the normal install script asked for confirmation, a malicious version could be modified to skip the check. One of many reasons why install scripts are a bad idea.</dd>
+</dl>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../0mirror/" class="btn btn-neutral float-right" title="0mirror">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../0compile/" class="btn btn-neutral" title="0compile"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../0compile/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../0mirror/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../menu.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

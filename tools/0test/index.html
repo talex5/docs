@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/logo.png">
+  
+  <title>0test - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "0test";
+    var mkdocs_page_input_path = "tools/0test.md";
+    var mkdocs_page_url = "/tools/0test/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0template/">0template</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">0test</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#usage">Usage</a></li>
+    
+
+    <li class="toctree-l3"><a href="#other-ways-to-specify-versions">Other ways to specify versions</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#ranges">Ranges</a></li>
+        
+            <li><a class="toctree-l4" href="#nonlocal">%nonlocal</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#passing-test-arguments">Passing test arguments</a></li>
+    
+
+    <li class="toctree-l3"><a href="#specifying-a-test-command">Specifying a test command</a></li>
+    
+
+    <li class="toctree-l3"><a href="#test-only-dependencies">Test-only dependencies</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Tools &raquo;</li>
+        
+      
+    
+    <li>0test</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/tools/0test.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><strong>Name:</strong> 0test<br />
+<strong>Maintainer:</strong> Thomas Leonard<br />
+<strong>License:</strong> GNU General Public License<br />
+<strong>Source:</strong> <a href="http://repo.or.cz/w/0test.git">Git repository</a><br />
+<strong>Zero Install feed:</strong> <a href="http://0install.net/2008/interfaces/0test.xml">http://0install.net/2008/interfaces/0test.xml</a></p>
+<p>A Zero Install <a href="../../specifications/feed/">feed</a> can specify a command to run to test the program automatically using the <code>self-test</code> attribute (or the <code>test</code> command). 0test runs this command. It can also test combinations of various versions of a program and its dependencies.</p>
+<p>Create a short-cut to it in the usual way:</p>
+<pre><code class="shell">$ 0install add 0test http://0install.net/2008/interfaces/0test.xml
+</code></pre>
+
+<p><strong>Contents:</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#other-ways-to-specify-versions">Other ways to specify versions</a><ul>
+<li><a href="#ranges">Ranges</a></li>
+<li><a href="#nonlocal">%nonlocal</a></li>
+</ul>
+</li>
+<li><a href="#passing-test-arguments">Passing test arguments</a></li>
+<li><a href="#specifying-a-test-command">Specifying a test command</a></li>
+<li><a href="#test-only-dependencies">Test-only dependencies</a></li>
+</ul>
+</div>
+<h1 id="usage">Usage</h1>
+<p>Most simply, you can use it to run the tests for a program you have downloaded or checked out of version control. e.g.</p>
+<pre><code class="shell">$ git clone some-program
+$ 0test some-program/program.xml
+</code></pre>
+
+<p>You can also use it to test released programs, e.g. to test the default version of 0compile:</p>
+<pre><code class="shell">$ 0test http://0install.net/2006/interfaces/0compile.xml
+Passed
+ - 0compile v0.21-post, ZeroInstall-Injector v0.51.1, 0publish v0.18-post, ROX-Lib2 v2.0.6-post
+</code></pre>
+
+<p>0test prints out the result and the versions of all components used in the test.</p>
+<p>You can specify a particular set of versions to test:</p>
+<pre><code class="shell">$ 0test http://0install.net/2006/interfaces/0compile.xml 0.26 0.27
+Passed
+ - ZeroInstall-Injector v1.7 0compile v0.26, ROX-Lib2 v2.0.6, python v2.7.3, 0publish v0.20
+ - ZeroInstall-Injector v1.7 0compile v0.27, ROX-Lib2 v2.0.6, python v2.7.3, 0publish v0.20
+None skipped
+None failed
+</code></pre>
+
+<p>A summary is printed at the end showing the result of each combination:</p>
+<dl>
+<dt>Passed</dt>
+<dd>the tests all passed successfully (the command returned an exit status of zero)</dd>
+<dt>Skipped</dt>
+<dd>this combination of versions can't be used together (or no tests are defined)</dd>
+<dt>Failed</dt>
+<dd>some tests failed (the self-test command returned a non-zero exit status)</dd>
+</dl>
+<p>You can specify versions of libraries the program depends on too. 0test will try all combinations. This tests three versions of 0compile against three versions of Zero Install (a total of 3 x 3 = 9 tests):</p>
+<pre><code class="shell">$ 0test --html results.html \
+  http://0install.net/2006/interfaces/0compile.xml 0.19 0.20 0.21 \
+  http://0install.net/2007/interfaces/ZeroInstall.xml 0.47 0.48 0.49
+Passed
+ - 0compile v0.20, ZeroInstall-Injector v0.48, 0publish v0.18-post, ROX-Lib2 v2.0.6-post
+ - 0compile v0.20, ZeroInstall-Injector v0.49, 0publish v0.18-post, ROX-Lib2 v2.0.6-post
+ - 0compile v0.21, ZeroInstall-Injector v0.48, 0publish v0.18-post, ROX-Lib2 v2.0.6-post
+ - 0compile v0.21, ZeroInstall-Injector v0.49, 0publish v0.18-post, ROX-Lib2 v2.0.6-post
+Skipped
+ - 0compile v0.21, ZeroInstall-Injector v0.47
+Failed
+ - 0compile v0.19, ZeroInstall-Injector v0.47, 0publish v0.18-post, ROX-Lib2 v2.0.6-post
+ - 0compile v0.19, ZeroInstall-Injector v0.48, 0publish v0.18-post, ROX-Lib2 v2.0.6-post
+ - 0compile v0.19, ZeroInstall-Injector v0.49, 0publish v0.18-post, ROX-Lib2 v2.0.6-post
+ - 0compile v0.20, ZeroInstall-Injector v0.47, 0publish v0.18-post, ROX-Lib2 v2.0.6-post
+</code></pre>
+
+<p>The <code>--html results.html</code> option causes it to also generate this table:</p>
+<table>
+  <tr>
+     <th/>
+     <th colspan="3">ZeroInstall-Injector</th>
+  </tr>
+  <tr>
+     <th>0compile</th>
+     <th>0.47</th>
+     <th>0.48</th>
+     <th>0.49</th>
+  </tr>
+  <tr>
+     <th>0.19</th>
+     <td style="background:red">0publish 0.18-post ROX-Lib2 2.0.6-post</td>
+     <td style="background:red">0publish 0.18-post ROX-Lib2 2.0.6-post</td>
+     <td style="background:red">0publish 0.18-post ROX-Lib2 2.0.6-post</td>
+  </tr>
+  <tr>
+     <th>0.20</th>
+     <td style="background:red">0publish 0.18-post ROX-Lib2 2.0.6-post</td>
+     <td style="background:green">0publish 0.18-post ROX-Lib2 2.0.6-post</td>
+     <td style="background:green">0publish 0.18-post ROX-Lib2 2.0.6-post</td>
+  </tr>
+  <tr>
+     <th>0.21</th>
+     <td style="background:yellow">skipped</td>
+     <td style="background:green">0publish 0.18-post ROX-Lib2 2.0.6-post</td>
+     <td style="background:green">0publish 0.18-post ROX-Lib2 2.0.6-post</td>
+  </tr>
+</table>
+
+<p>Green = Passed, Red = Failed, Yellow = Skipped. The contents of the cells show the versions of components used in the tests where you didn't specify the version (so 0test selected one for you).</p>
+<p>We can see in this example that the unit-tests for 0compile 0.19 no longer pass, regardless of the version of Zero Install used. This problem was caused by a change to the GNU-Hello test program it uses within its own tests. Ideally, programs should depend on their test data using <code>&lt;requires&gt;</code> (see below), but 0compile actually needed to test downloading of the test code itself. 0compile 0.20 fails with older version of Zero Install due to a bug in the way "0launch --get-selections" generated the XML. 0compile 0.21 depends on a later version explicitly, so the broken combination is skipped.</p>
+<p>If you specify a test matrix with more than two dimensions, 0test will generate a series of tables.</p>
+<h1 id="other-ways-to-specify-versions">Other ways to specify versions</h1>
+<p>As well as passing simple version numbers, you can also allow 0test to choose a suitable version given some constraints. This is useful in test scripts:</p>
+<h2 id="ranges">Ranges</h2>
+<p>You can use <code>,</code> to give a range of possible versions. This is useful with native packages where you don't know the exact version. For example, to test against any Python version 2.6.x (2.6 &lt;= version &lt; 2.7):</p>
+<pre><code class="shell">$ 0test prog.xml http://repo.roscidus.com/python/python 2.6,2.7
+Passed
+ - prog 0.1, python v2.6.8-0.2
+</code></pre>
+
+<h2 id="nonlocal">%nonlocal</h2>
+<p>Don't select a local (i.e. unreleased) version to test against:</p>
+<pre><code class="shell">$ 0test prog.xml
+Passed
+ - prog 0.1, lib v1.11-post
+
+$ 0test prog.xml http://example.com/lib %nonlocal
+Passed
+ - prog 0.1, lib v1.11
+</code></pre>
+
+<h1 id="passing-test-arguments">Passing test arguments</h1>
+<p>You can pass extra arguments to the test command, but you must put them after <code>--</code> to stop 0test interpreting them as arguments or versions. e.g. to run 0test on itself with verbose output:</p>
+<pre><code class="shell">$ 0test alias:0test -- -v
+</code></pre>
+
+<h1 id="specifying-a-test-command">Specifying a test command</h1>
+<p>The <code>--test-command</code> option can be used to run the shell command of your choice, rather than the test command given in the feed's <code>self-test</code> attribute. The command that would be executed if the implemention were run normally is available as <code>$*</code>.</p>
+<p>For example, to check that <code>rox --version</code> worked in versions 2.8 and 2.9 of ROX-Filer:</p>
+<pre><code class="shell">$ 0test -t '$* --version &gt; /dev/null' \
+    http://rox.sourceforge.net/2005/interfaces/ROX-Filer 2.8 2.9
+Passed
+ - ROX-Filer v2.8
+ - ROX-Filer v2.9
+None skipped
+None failed
+</code></pre>
+
+<p>You can use <code>--command</code> to select a different <code>&lt;command&gt;</code>. By default, the command used is <code>test</code> when run normally, or <code>run</code> when using <code>-t</code>. You can also set this to the empty string to select no command (useful with libraries). In that case, <code>$1</code> is the directory itself rather than the command.</p>
+<h1 id="test-only-dependencies">Test-only dependencies</h1>
+<p>Starting from 0test 0.4, you can also use the <code>&lt;command&gt;</code> syntax instead of the self-test attribute. This allows passing extra arguments and specifying test-specific dependencies. For example:</p>
+<pre><code class="xml">  &lt;group&gt;
+    &lt;requires interface=&quot;http://example.com/somelib.xml&quot;&gt;
+      ...
+    &lt;/requires&gt;
+    &lt;command name=&quot;test&quot; path=&quot;tests/testall.py&quot;&gt;
+      &lt;requires interface=&quot;http://testing.com/testframework.xml&quot;&gt;
+    &lt;environment insert=&quot;&quot; mode=&quot;replace&quot; name=&quot;TEST_FRAMEWORK&quot;/&gt;
+      &lt;/requires&gt;
+    &lt;/command&gt;
+    &lt;implementation id=&quot;.&quot; version=&quot;0.1-pre&quot;/&gt;
+  &lt;/group&gt;
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../0watch/" class="btn btn-neutral float-right" title="0watch">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../0template/" class="btn btn-neutral" title="0template"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../0template/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../0watch/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../menu.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/logo.png">
+  
+  <title>0share - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "0share";
+    var mkdocs_page_input_path = "tools/0share.md";
+    var mkdocs_page_url = "/tools/0share/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0repo/">0repo</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">0share</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#testing">Testing</a></li>
+    
+
+    <li class="toctree-l3"><a href="#debugging">Debugging</a></li>
+    
+
+    <li class="toctree-l3"><a href="#realistic-configuration">Realistic configuration</a></li>
+    
+
+    <li class="toctree-l3"><a href="#using-with-0launch">Using with 0launch</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Tools &raquo;</li>
+        
+      
+    
+    <li>0share</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/tools/0share.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><strong>Name:</strong> 0share<br />
+<strong>Maintainer:</strong> Thomas Leonard<br />
+<strong>License:</strong> GNU General Public License<br />
+<strong>Source:</strong> <a href="http://repo.or.cz/w/0share.git">Git repository</a><br />
+<strong>Zero Install feed:</strong> <a href="http://0install.net/2008/interfaces/0share.xml">http://0install.net/2008/interfaces/0share.xml</a></p>
+<p><strong>0share</strong> provides for local peer-to-peer distribution of Zero Install implementations (versions of programs). This means that once one machine on your local network has downloaded something, other machines can get it directly from the first one.</p>
+<p><strong>This program is an experimental proof-of-concept.</strong> It currently requires a modified version of 0install, which can be found in the <a href="https://github.com/0install/0install/tree/peer2peer">peer2peer</a> branch. This branch is now very out-of-date. If you'd like to take over this project, please <a href="http://0install.net/support.html">get in touch</a>!</p>
+<p><img alt="Screenshot" src="../../img/screens/p2p.png" /></p>
+<h1 id="testing">Testing</h1>
+<p>To try it out, run this command on one machine:</p>
+<pre><code class="shell">machine1 $ 0launch http://0install.net/2008/interfaces/0share.xml
+INFO:root:0share started and listening for requests...
+INFO:root:Serving implementations from Store '/home/me/.cache/0install.net/implementations'
+INFO:root:Serving implementations from Store '/var/cache/0install.net/implementations'
+</code></pre>
+
+<p>On another machine on the same network, run this command, replacing <code>DIGEST</code> with the digest of a program installed on the first machine (e.g. the name of a subdirectory of <code>/var/cache/0install.net/implementations/</code>). The digest will be in the program's feed file.</p>
+<pre><code class="shell">machine2 $ 0launch http://0install.net/2008/interfaces/0share.xml -f DIGEST
+</code></pre>
+
+<p>The second machine will broadcast a request (to UDP port 38339) to see if anyone has the given implementation. The first machine should respond. The second machine will then fetch it from the first:</p>
+<pre><code class="shell">machine2 $ ./0share -f sha1new=84e37424bbb87a077e25cec87d3c668f12726817
+INFO:root:Broadcasting query for ['sha1new=84e37424bbb87a077e25cec87d3c668f12726817'] on local network...
+192.168.2.1 has sha1new=84e37424bbb87a077e25cec87d3c668f12726817
+INFO:root:Connecting to 192.168.2.1 to request sha1new=84e37424bbb87a077e25cec87d3c668f12726817
+INFO:root:Caching new implementation (digest sha1new=84e37424bbb87a077e25cec87d3c668f12726817)
+Success
+</code></pre>
+
+<p>The requested version should now be in machine2's cache. On the source machine, you should see something like:</p>
+<pre><code class="shell">INFO:root:Request from ('192.168.2.2', 53182): '0share\nsha1new=84e37424bbb87a077e25cec87d3c668f12726817'
+INFO:root:Yes, we have sha1new=84e37424bbb87a077e25cec87d3c668f12726817
+INFO:root:Sending reply...
+INFO:root:GET /implementation/sha1new=84e37424bbb87a077e25cec87d3c668f12726817
+machine2 - - [13/Dec/2008 21:52:49] &quot;GET /implementation/sha1new=84e37424bbb87a077e25cec87d3c668f12726817 HTTP/1.1&quot; 200 -
+</code></pre>
+
+<h1 id="debugging">Debugging</h1>
+<p>If it doesn't work:</p>
+<ul>
+<li>Check that your firewall allows TCP and UDP connections to port 38339 on the first machine.</li>
+<li>Try using <code>-H</code> on the second machine to give the hostname of the first machine explicitly.</li>
+<li>If you get "Network is unreachable", you may be missing a default route (see <code>ip route</code>).</li>
+</ul>
+<h1 id="realistic-configuration">Realistic configuration</h1>
+<p>Before you start, you should <a href="../../details/sharing/">enable sharing</a> on all machines. This ensures that implementations all go in the single machine-wide shared cache (<code>/var/cache/0install.net/implementations/</code>).</p>
+<p>You'll probably want to run 0share without write access anywhere (for security), so create a new user for that and try running it:</p>
+<pre><code class="shell">$ sudo adduser --system zeroshare
+$ sudo su zeroshare -s /usr/bin/env -- 0launch -vc http://0install.net/2008/interfaces/0share.xml
+</code></pre>
+
+<p>You can then add a line to your crontab file to make it start on boot:</p>
+<pre><code class="shell">@reboot zeroshare 0launch -vc http://0install.net/2008/interfaces/0share.xml 2&gt;&amp;1 &gt;/dev/null
+</code></pre>
+
+<h1 id="using-with-0launch">Using with 0launch</h1>
+<p>As this is experimental, you'll need to use the <a href="https://github.com/0install/0install/tree/peer2peer">peer2peer branch</a> of 0install. In that branch, P2P support is turned on when using the GUI for downloads.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../0template/" class="btn btn-neutral float-right" title="0template">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../0repo/" class="btn btn-neutral" title="0repo"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../0repo/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../0template/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../menu.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

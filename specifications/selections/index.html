@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/logo.png">
+  
+  <title>Selections files - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Selections files";
+    var mkdocs_page_input_path = "specifications/selections.md";
+    var mkdocs_page_url = "/specifications/selections/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../manifest/">Manifest files</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Selections files</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#selections62">&lt;selections></a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#historical-notes">Historical notes</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#selection62">&lt;selection></a></li>
+    
+
+    <li class="toctree-l3"><a href="#executing-the-selections">Executing the selections</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#checking-the-selections-are-up-to-date">Checking the selections are up-to-date</a></li>
+        
+            <li><a class="toctree-l4" href="#processing-bindings">Processing bindings</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#future-plans">Future plans</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../tools/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Specifications &raquo;</li>
+        
+      
+    
+    <li>Selections files</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/specifications/selections.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This document describes the format of 0install's XML selections documents. A selections document contains all the information needed to launch a program. 0install generates a selections document by collecting information from multiple <a href="../feed/">feeds</a> and then running a <a href="../../developers/solver/">solver</a> to choose the best combination of components.</p>
+<p>For example, to generate the selections document for the ROX Edit application:</p>
+<pre><code class="shell">$ 0install select --xml http://rox.sourceforge.net/2005/interfaces/Edit
+</code></pre>
+
+<p>For an <a href="../../basics/using-apps/">app</a>, <em>foo</em>, the current selections can be found in <code>~/.config/0install.net/apps/foo/selections.xml</code>. For binaries generated by <a href="../../tools/0compile/">0compile</a>, the selections used to build it can be found in the <code>0install</code> directory of the binary package, in the <code>build-environment.xml</code> file.</p>
+<p><strong>Contents:</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#selections62">&lt;selections></a><ul>
+<li><a href="#historical-notes">Historical notes</a></li>
+</ul>
+</li>
+<li><a href="#selection62">&lt;selection></a></li>
+<li><a href="#executing-the-selections">Executing the selections</a><ul>
+<li><a href="#checking-the-selections-are-up-to-date">Checking the selections are up-to-date</a></li>
+<li><a href="#processing-bindings">Processing bindings</a></li>
+</ul>
+</li>
+<li><a href="#future-plans">Future plans</a></li>
+</ul>
+</div>
+<h1 id="selections62">&lt;selections></h1>
+<p>A selections document contains a set of selections, one per selected interface.</p>
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; ?&gt;
+&lt;selections
+    xmlns=&quot;http://zero-install.sourceforge.net/2004/injector/interface&quot;
+    interface=&quot;...&quot;
+    command=&quot;...&quot; ?
+    source=&quot;true|false&quot; ? &gt;
+
+  [ selection ] +
+&lt;/selections&gt;
+</code></pre>
+
+<dl>
+<dt><code>interface</code></dt>
+<dd>The URI of the main program being run (e.g. "http://rox.sourceforge.net/2005/interfaces/Edit").</dd>
+<dt><code>command</code></dt>
+<dd>The name of the (optional) <code>&lt;command&gt;</code> to run on the main program (e.g. "run").</dd>
+<dt><code>source</code></dt>
+<dd>Indicates whether the root is source or binary (since 0install 2.8). This is useful if implementations of both are present.</dd>
+</dl>
+<h2 id="historical-notes">Historical notes</h2>
+<p>Before 0install 1.2, there was no <code>command</code> attribute on the root. Instead, the root <code>&lt;selections&gt;</code> element also contained a set of <code>&lt;command&gt;</code> elements as direct children. The first <code>&lt;command&gt;</code> was for the main interface, the second was for its <code>&lt;runner&gt;</code> and so on. In later versions, the commands go inside their <code>&lt;selection&gt;</code> elements, which is needed to support executable bindings.</p>
+<p>Before 0install 0.51, there were no commands at all. Instead, the <code>&lt;selection&gt;</code> for the main interface had a <code>main</code> attribute which was used (the command should be treated as "run" in this case).</p>
+<h1 id="selection62">&lt;selection></h1>
+<pre><code class="xml">&lt;selection
+      interface=&quot;...&quot;
+      from-feed=&quot;...&quot; ?
+      local-path=&quot;...&quot; ?
+      quick-test-file=&quot;...&quot; ?
+      requires-compilation=&quot;true&quot; ?
+      ... &gt;
+    [ dependencies ]
+    [ bindings ]
+    [ digests ]
+    [ commands ]
+&lt;/selection&gt;
+</code></pre>
+
+<dl>
+<dt><code>interface</code></dt>
+<dd>Indicates that this is the selected implementation of this interface.</dd>
+<dt><code>from-feed</code></dt>
+<dd>The URL of the feed which provided this implementation. If missing, use the value of <code>interface</code>.</dd>
+<dt><code>local-path</code></dt>
+<dd>For <a href="../../packaging/local-feeds/">local implementations</a>, this is the path of the directory containing the implementation.</dd>
+<dt><code>quick-test-file</code></dt>
+<dd>A file which, if present, indicates that the selection is still valid. This is sometimes used with distribution-provided selections. If not present and the ID starts with "package:", you'll need to query the distribution's package manager to check that this version is still installed.</dd>
+<dt><code>requires-compilation</code></dt>
+<dd>If present, this attribute indicates that the selection does not yet exist, but could be compiled from the source implementation with the same <code>id</code>. Such selections can be generated when using <code>0install select --may-compile</code> (0install &gt;= 2.9).</dd>
+<dt>Other attributes</dt>
+<dd>All attributes from the selected <code>&lt;implementation&gt;</code> are included on the <code>&lt;selection&gt;</code>, except for <code>stability</code> and the deprecated <code>main</code> and <code>self-test</code> attributes, which were replaced by commands. The most useful ones are <code>id</code> and <code>version</code>.</dd>
+</dl>
+<p>The <code>dependencies</code>, <code>bindings</code>, <code>digests</code> and <code>commands</code> are defined in the <a href="../feed/">feed specification</a>. <code>&lt;restricts&gt;</code> elements are not included.</p>
+<p>As in feed files, the <code>id</code> may also be used as a digest or a local path in older documents. See the feed specification for details.</p>
+<h1 id="executing-the-selections">Executing the selections</h1>
+<p>0install performs the following steps when running an app:</p>
+<ol>
+<li>Load the saved selections XML (or do an update if missing).</li>
+<li>Check that they are valid and up-to-date.</li>
+<li>Process all the bindings to set up the new environment.</li>
+<li>Build the command line arguments, starting with the main command and following the chain of <code>&lt;runner&gt;</code>s.</li>
+<li>Exec the new process.</li>
+</ol>
+<h2 id="checking-the-selections-are-up-to-date">Checking the selections are up-to-date</h2>
+<p>This is how 0install checks the selections for an app before running them:</p>
+<ol>
+<li>
+<p>If any input files have changed or disappeared since the solver last ran, we re-run the solver. The files checked are:</p>
+<ul>
+<li>The previously selected feed files (local or cached).</li>
+<li>Configuration files for the selected interfaces (e.g. preferred stability).</li>
+<li>The global configuration file (e.g. preferred stability).</li>
+</ul>
+<p>0install currently ignores feeds and interfaces which were considered but not selected.</p>
+</li>
+<li>
+<p>If any selections are no longer present, we rerun the solver. For distribution packages, we check that the version hasn't changed.</p>
+</li>
+<li>
+<p>If it has been a while since we checked for updates, we trigger a background update but run the current selections anyway.</p>
+</li>
+</ol>
+<h2 id="processing-bindings">Processing bindings</h2>
+<p>For each <code>&lt;selection&gt;</code>, 0install will:</p>
+<ol>
+<li>Process all bindings directly inside the <code>&lt;selection&gt;</code>.</li>
+<li>Process all dependencies directly inside the <code>&lt;selection&gt;</code>:<ol>
+<li>Find the selection for the required interface (note: may be missing for non-essential dependencies).</li>
+<li>Process all bindings inside the dependency.</li>
+</ol>
+</li>
+<li>Process all commands directly inside the <code>&lt;selection&gt;</code>:<ol>
+<li>Process all bindings inside the command.</li>
+<li>Process all dependencies inside the command, including their bindings (as above) and also including any <code>&lt;runner&gt;</code>.</li>
+</ol>
+</li>
+</ol>
+<p>Having located all the bindings:</p>
+<ol>
+<li>Calculate the environment for the new process by expanding all <code>&lt;environment&gt;</code> bindings.</li>
+<li>Process all <code>&lt;executable-in-var&gt;</code> and <code>&lt;executable-in-path&gt;</code> bindings. Note: you must do this after expanding all other environment variables because of $-expansion in <code>&lt;arg&gt;</code>.</li>
+</ol>
+<p>A binding directly inside a <code>&lt;selection&gt;</code> or <code>&lt;command&gt;</code> binds a selection to itself (e.g. a Python library may wish to add itself to PYTHONPATH). Bindings inside dependencies bind to the dependency (e.g. a Python program may wish to add a library to <code>PYTHONPATH</code>).</p>
+<p>A distribution-provided selection does not have a path, and so any <code>&lt;environment&gt;</code> bindings for it are skipped (e.g. it's up to the distribution package manager to ensure that Python libraries it provides are in the default search path).</p>
+<h1 id="future-plans">Future plans</h1>
+<p>Indexing the selections by interface URI is a bit restrictive. Once we get scoping, we'll need to cope with e.g. a Python 2 program that depends on a Python 3 program, which will require two different selections for the Python interface.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../tools/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../manifest/" class="btn btn-neutral" title="Manifest files"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../manifest/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../tools/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../menu.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

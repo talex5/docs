@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/logo.png">
+  
+  <title>Comparison - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Comparison";
+    var mkdocs_page_input_path = "comparison.md";
+    var mkdocs_page_url = "/comparison/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">About</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Comparison</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#matrix">Matrix</a></li>
+    
+
+    <li class="toctree-l2"><a href="#explanation-of-features">Explanation of features</a></li>
+    
+
+    <li class="toctree-l2"><a href="#by-project">By project</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#appimage">AppImage</a></li>
+        
+            <li><a class="toctree-l3" href="#chocolatey">Chocolatey</a></li>
+        
+            <li><a class="toctree-l3" href="#portableappscom">PortableApps.com</a></li>
+        
+            <li><a class="toctree-l3" href="#java-web-start">Java Web Start</a></li>
+        
+            <li><a class="toctree-l3" href="#maven">Maven</a></li>
+        
+            <li><a class="toctree-l3" href="#autopackage-listaller">Autopackage / Listaller</a></li>
+        
+            <li><a class="toctree-l3" href="#edos-mancoosi">EDOS / Mancoosi</a></li>
+        
+            <li><a class="toctree-l3" href="#nix">Nix</a></li>
+        
+            <li><a class="toctree-l3" href="#ostree">OSTree</a></li>
+        
+            <li><a class="toctree-l3" href="#glick-2">Glick 2</a></li>
+        
+            <li><a class="toctree-l3" href="#doapdescription-of-a-project">DOAPDescription of a Project</a></li>
+        
+            <li><a class="toctree-l3" href="#environment-modules">Environment modules</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../tools/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tools/pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../tools/0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../tools/0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../tools/0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../tools/0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../tools/0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Comparison</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/comparison.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc">
+<ul>
+<li><a href="#matrix">Matrix</a></li>
+<li><a href="#explanation-of-features">Explanation of features</a></li>
+<li><a href="#by-project">By project</a><ul>
+<li><a href="#appimage">AppImage</a></li>
+<li><a href="#chocolatey">Chocolatey</a></li>
+<li><a href="#portableappscom">PortableApps.com</a></li>
+<li><a href="#java-web-start">Java Web Start</a></li>
+<li><a href="#maven">Maven</a></li>
+<li><a href="#autopackage-listaller">Autopackage / Listaller</a></li>
+<li><a href="#edos-mancoosi">EDOS / Mancoosi</a></li>
+<li><a href="#nix">Nix</a></li>
+<li><a href="#ostree">OSTree</a></li>
+<li><a href="#glick-2">Glick 2</a></li>
+<li><a href="#doapdescription-of-a-project">DOAPDescription of a Project</a></li>
+<li><a href="#environment-modules">Environment modules</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="matrix">Matrix</h1>
+<p>This matrix shows some desirable features in a packaging system, and shows which systems provide them. Obviously, these things tend to be a bit biased (both in terms of what features are chosen for comparison, and of what is considered to be a 'pass') but it should give the general idea.</p>
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Source tarball</th>
+        <th><a href="https://wiki.debian.org/Apt">APT</a></th>
+        <th><a href="https://appimage.org/">AppImage</a></th>
+        <th><a href="https://chocolatey.org/">Chocolatey</a></th>
+        <th><a href="https://PortableApps.com/">PortableApps.com</a></th>
+        <th>Zero Install</th>
+    </tr>
+    <tr>
+        <td>Users can install software</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="yellow">Some packages</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td>Supports multiple platforms</td>
+        <td class="green">Yes</td>
+        <td class="red">No (Linux only)</td>
+        <td class="red">No (Linux only)</td>
+        <td class="red">No (Windows only)</td>
+        <td class="red">No (Windows only)</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td>Dependencies handled automatically</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="yellow">Bundled</td>
+        <td class="green">Yes</td>
+        <td class="yellow">Bundled</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td>Automatic upgrading</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="yellow">Some packages</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td>Libraries shared between programs</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="yellow">Partial</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td>Downloads shared between users</td>
+        <td class="red">No</td>
+        <td class="red">No user downloads</td>
+        <td class="red">No</td>
+        <td class="red">No</td>
+        <td class="red">No</td>
+        <td class="green"><a href="/details/sharing/">Yes</a></td>
+    </tr>
+    <tr>
+        <td>Multiple versions coexist</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td>Uninstall</td>
+        <td class="yellow">Sometimes</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+        <td class="yellow">Some packages</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes (cache)</td>
+    </tr>
+    <tr>
+        <td>Digital signatures</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td>Conflict-free</td>
+        <td class="red">No</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td>Decentralised</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td>Non-root install of system</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td>Can install systems software</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="red">No</td>
+    </tr>
+    <tr>
+        <td>Supports sandboxing</td>
+        <td class="red">No</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td>Usable when off-line</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td>Roam applications across machines</td>
+        <td class="red">No</td>
+        <td class="red">No</td>
+        <td class="yellow">Manual, app+config</td>
+        <td class="red">No</td>
+        <td class="yellow">Manual, app+config, manual</td>
+        <td class="yellow"><a href="/details/sync/">Automatic, app only</a> (Windows only)</td>
+    </tr>
+    <tr>
+        <td>Thousands of packages available</td>
+        <td class="green">Yes</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+        <td class="red">No (~1500)</td>
+    </tr>
+</table>
+
+<h1 id="explanation-of-features">Explanation of features</h1>
+<dl>
+<dt>Users can install software</dt>
+<dd>A normal user without special privileges can install software using this system (without unreasonable extra effort).</dd>
+<dt>Supports multiple platforms</dt>
+<dd>The same package format and command-line works across multiple operating systems, such as Linux and Windows.  </dd>
+<dt>Dependencies handled automatically</dt>
+<dd>If a program requires some library to function, the system will locate, download and install the library too.</dd>
+<dt>Automatic upgrading</dt>
+<dd>The system can check for and install upgrades automatically or at the operator's request. User does not have to perform a full install operation manually on each package.</dd>
+<dt>Libraries shared between programs</dt>
+<dd>If two programs use the same library, the library is only downloaded and stored once. Upgrading a library will benefit all programs that use it.</dd>
+<dt>Downloads shared between users</dt>
+<dd>If two users install/use the same program, it is only downloaded once and stored once.<br />
+See <a href="../details/sharing/">Sharing</a> for how to set this up with Zero Install.</dd>
+<dt>Multiple versions coexist</dt>
+<dd>Two versions of a program or library can be installed at the same time, and the user can choose which one to run.</dd>
+<dt>Uninstall</dt>
+<dd>Programs can be cleanly removed from the system easily (reversing the effects of the install).</dd>
+<dt>Signatures</dt>
+<dd>Software comes with a digital signature, which is checked automatically by the system.</dd>
+<dt>Conflict-free</dt>
+<dd>If program A requires an old version of a library, and program B requires a new version, A and B can both be installed and used at the same time. The system will never refuse to install one program because some other program is installed.</dd>
+<dt>Decentralised</dt>
+<dd>A program packaged for this system can be installed easily, without having to be in some special centralised repository.<br />
+Notes: Debian allows extra repositories to be added, but this is a manual step, requires root access, and is a considerable security risk.</dd>
+<dt>Non-root install of system</dt>
+<dd>The packaging system itself can be easily installed without administrator privileges, and the normal selection of software will be available.</dd>
+<dt>Can install systems software</dt>
+<dd>The packaging system can be used to install low-level systems software such as device drivers.</dd>
+<dt>Supports sandboxing</dt>
+<dd>If you have a way of running an application in a sandboxed environment (e.g., a Java virtual machine), then the installation system will let you install and run the program without forcing you to run any of the downloaded code outside of the sandbox.<br />
+See the <a href="../tools/ebox/">EBox sandboxing demo</a> for an example of using 0install in this way.</dd>
+<dt>Usable when off-line</dt>
+<dd>Once a program has been installed, the program can be run again while disconnected.</dd>
+<dt>Roam applications between machines</dt>
+<dd>The packaging system makes it easy to roam applications across machines. This may or may not include the application's configuration files. This may or may not require manual effort by the user, such as setting up an external service like Dropbox.</dd>
+<dt>Thousands of packages available</dt>
+<dd>The system is widely adopted.</dd>
+</dl>
+<h1 id="by-project">By project</h1>
+<h2 id="appimage">AppImage</h2>
+<p><a href="https://appimage.org/">AppImage</a> is a system for packaging Linux applications into self-contained, single-file executables. Some differences between this and Zero Install:</p>
+<ul>
+<li>All dependencies are bundled into a single file and can therefore not be shared between apps.</li>
+<li>Automatic updating is implemented by an <a href="https://github.com/AppImage/AppImageUpdate">additional tool</a> and only supported for some packages. However, unlike Zero Install, it supports delta updates.</li>
+<li>Only supports Linux.</li>
+</ul>
+<p>For projects that do not provide official cross-distribution builds, AppImages are actually good candidates for being published via Zero Install. They can easily be referenced using the <code>&lt;file&gt;</code> <a href="../specifications/feed/#retrieval-methods">retrieval method</a> with <code>executable='true'</code>.</p>
+<h2 id="chocolatey">Chocolatey</h2>
+<p><a href="https://chocolatey.org/">Chocolatey</a> is a package manager for Windows. Some differences between this and Zero Install:</p>
+<ul>
+<li>Relies on packages to implement reliable install and uninstall logic themselves. Cannot guarantee conflict-free or side-by-side installation.</li>
+<li>Uses a central, moderated package repository rather than decentralized files on the web.</li>
+<li>Most packages require administrative permissions for installation.</li>
+<li>Only supports Windows.</li>
+</ul>
+<p>Chocolatey could in future serve the role of the native package manager on Windows. See <a href="Distribution integration">details/distribution-integration.md</a></p>
+<h2 id="portableappscom">PortableApps.com</h2>
+<p><a href="https://portableapps.com/">PortableApps.com</a> is a collection of portable applications for Windows. Some differences between this and Zero Install:</p>
+<ul>
+<li>All dependencies are bundled and can therefore not be shared between apps.</li>
+<li>Only supports Windows.</li>
+</ul>
+<p>PortableApps write their config in the same directory as the installed applications. This makes them inherently incompatible with Zero Install, since it requires (and enforces) cached implementations to be read-only.</p>
+<h2 id="java-web-start">Java Web Start</h2>
+<p>Sun have developed a similar system to Zero Install, Java Web Start, although this only works for Java applications and has been deprecated. Microsoft have an equivalent called <a href="https://docs.microsoft.com/en-us/visualstudio/deployment/clickonce-security-and-deployment">ClickOnce</a>.</p>
+<h2 id="maven">Maven</h2>
+<p><a href="http://maven.apache.org/">Maven</a> is a build tool (like make or ant) for Java programs. Although not an installation system, it is similar to 0install in that each product has a <code>pom.xml</code> file with a list of dependencies. When building a product, Maven downloads the specified version of each dependency and stores it in a cache directory. Some differences between Maven 2.0 and 0install:</p>
+<ul>
+<li>The <code>pom.xml</code> files are not signed. An attacker can therefore cause modified POM files to be downloaded.</li>
+<li>There is no digest of the downloads in the POM file, so no security checks are performed to confirm that the download is OK, and downloads cannot be shared safely between users.</li>
+<li>Only Java is supported (everything is added to <code>CLASSPATH</code>, nowhere else).</li>
+<li>Dependencies are named using a simple two-layer system (e.g., axis/axis-jaxrpc). Therefore, a central repository is required to avoid naming conflicts.</li>
+</ul>
+<p>Note that you can use Zero Install in a maven-like way for compiling programs. See <a href="http://rox.sourceforge.net/desktop/node/289">Easy GTK binary compatibility</a> for an example of using Zero Install to compile a C program against an older version of a library's header files to ensure greater compatibility.</p>
+<h2 id="autopackage-listaller">Autopackage / Listaller</h2>
+<p>Like Zero Install, <a href="http://autopackage.org/">Autopackage</a> aims to let users install software and to make software distribution decentralised. The work done by the Autopackage developers to make packages relocatable is necessary for Zero Install too. Some differences between this and Zero Install:</p>
+<ul>
+<li>A script inside each package installs the files, making sandboxing difficult. It also <a href="http://www.kitenet.net/~joey/blog/entry/autopackage_designed_by_monkeys-2005-03-28-14-20.html">makes conversion to other packaging formats troublesome</a>.</li>
+<li>Security features such as GPG signatures have not been implemented. Given that packages are executable files, the design doesn't seem to allow this to be fixed.</li>
+<li>Downloads cannot be safely shared between users.</li>
+<li>No checking for updates or support for multiple versions.</li>
+<li>Being closer to traditional installation, it's easier to package existing applications with Autopackage.</li>
+</ul>
+<p>Note that it is quite possible to list autopackages in a Zero Install feed, as described in <a href="http://thread.gmane.org/gmane.comp.autopackage.devel/5733/focus=5733">this post on the Autopackage mailing list</a>. In this case, no scripts are run during installation (the package is treated as a normal archive), so not all packages will work, but many do.</p>
+<p>Autopackage is no longer maintained, but has merged with the <a href="http://listaller.tenstral.net/">Listaller project</a>. The Listaller project has also taken over the <a href="http://listaller.tenstral.net/docs/doc/app-development.html">tools for making relocatable applications</a>, which may be useful for making 0install packages too.</p>
+<h2 id="edos-mancoosi">EDOS / Mancoosi</h2>
+<p>The EDOS] (<em>Environment for the development and Distribution of Open Source software</em>) project was a research project looking at dependency management, QA, and efficient distribution of large software systems.</p>
+<p><a href="http://www.mancoosi.org/">Mancoosi</a> is a follow-on project ("Managing the Complexity of the Open Source Infrastructure"). The group invited me to give a talk (March 2009); here are <a href="http://thread.gmane.org/gmane.comp.file-systems.zero-install.devel/2322">my notes</a> from the event.</p>
+<h2 id="nix">Nix</h2>
+<p><a href="http://nixos.org/">Nix</a> is a purely functional package manager. Each version of a package has its own directory. As with Zero Install, "upgrading" creates a new directory for the new version, rather than modifying the existing one. Unlike Zero Install, however, whether a package is installed affects the behaviour of the system. For example, running "firefox" when Firefox isn't installed produces an error in Nix, whereas in Zero Install it will install Firefox first if missing and then continue. In other words, installation has side-effects in Nix.</p>
+<p>Additional feeds (e.g. for pre-built binaries) can be registered using <code>nix-channel --add</code>, which appears to work much like <code>0launch --feed</code>, although each channel can contain binaries for multiple packages. The channel <code>MANIFEST</code> file doesn't appear to have a digital signature. Presumably this will be added at some point.</p>
+<p>Each version of a package has a digest (hash), which includes all build dependencies (e.g. the version of the compiler used), just as it does in Zero Install (for packages built using 0compile, at least).</p>
+<p>An important difference between the two is that the Nix hash is a hash of the <em>inputs</em> used to build the package, whereas the Zero Install hash is a hash of the <em>resulting binary</em>. Nix does this to support binaries that hard code their own paths, since the final hash needs to be known at compile time. For source (non-compiled) packages, the Nix hash is a hash of the contents, as with Zero Install. The Zero Install hash often happens to include the inputs, since it covers the <code>build-environment.xml</code> file which 0compile places in each binary package. Zero Install doesn't allow binaries to include hard-coded paths.</p>
+<p>Update: Nix is planning to use binary hashes everywhere in future (zeroing out self-references for the purposes of calculating the hashes). The same thing was proposed a few years ago for Zero Install (the <a href="http://thread.gmane.org/gmane.comp.file-systems.zero-install.devel/882/focus=882">relocation table</a>). It relies on the cache directory being at a fixed location, whereas people often have Zero Install set up to use their home directory, but it's basically a good idea.</p>
+<p>Another difference between Nix and Zero Install is that Nix treats configurations as packages. Changing your configuration is like "upgrading" your configuration package to a new version. Rolling back a change is like reverting to a previous version. Zero Install doesn't generally handle configuration settings, preferring to let the user use subversion (or similar) for that, but it's an interesting idea.</p>
+<p>Building a Nix package involves creating a "Nix expression" in a (custom) functional language. The expression fills the same role as a Zero Install source feedit says where to download the source, what its digest is, what the build dependencies are, and how to build it.</p>
+<p>While Zero Install is mainly targeted at adding additional packages to an existing system, Nix aims to manage the whole system (although it installs cleanly alongside your existing package manager). Nix packages have short names (like <code>perl</code>) not full URIs, and thus it appears to assume a centrally-controlled repository.</p>
+<p>In Nix, mutually untrusting users cannot share packages. The manual says A setuid installation should only by used if the users in the Nix group are mutually trusted, since any user in that group has the ability to change anything in the Nix store. Because the Nix hash is a hash of the inputs, it is not possible for the system to verify that a package is valid (it would have to download the sources and compile the program itself; Nix can share binaries in this case). Because Zero Install hashes are always hashes of the package contents, it does support <a href="../details/sharing/">sharing</a>.</p>
+<h2 id="ostree">OSTree</h2>
+<p><a href="https://ostree.readthedocs.io/">OSTree</a> describes itself as "git for operating system binaries". It shares many goals with 0install (multiple versions of libraries can coexist on one system and you can roll-back easily). While 0install focuses on applications and their libraries, OSTree focuses on the OS itself. However, there is quite a bit of overlap. For example, OSTree considers GTK+ to be an OS library, while 0install might consider it to be an application dependency (which can optionally, of course, be provided by the OS).</p>
+<h2 id="glick-2">Glick 2</h2>
+<p><a href="http://people.gnome.org/~alexl/glick2/">Glick 2</a> has essentially the same goals as 0install, but includes all dependencies in a single bundle rather than linking libraries dynamically at run-time (for example, when a library is updated, every program using that library must be updated individually). It has support for non-relocatable applications, using some Linux-specific tricks. It might be worth using these in 0install to implement the <code>&lt;mount-point&gt;</code> binding, but few applications are non-relocatable these days.</p>
+<h2 id="doapdescription-of-a-project">DOAPDescription of a Project</h2>
+<p><a href="https://github.com/ewilderj/doap/wiki">DOAP</a> is a project to create an XML/RDF vocabulary to describe open source projects. We should investigate whether any of these elements would be useful in Zero Install feed files.</p>
+<h2 id="environment-modules">Environment modules</h2>
+<p>The <a href="http://modules.sourceforge.net/">Environment Modules</a> package provides for the dynamic modification of a user's environment via modulefiles. Each modulefile contains the information needed to configure the shell for an application. Typically modulefiles instruct the module command to alter or set shell environment variables such as <code>PATH</code>, <code>MANPATH</code>, etc. To be able to load ("install") software, it must first be installed under the <code>$MODULESHOME</code> directory which is in <code>/usr/local/Modules</code> or a shared network filesystem. It is also possible to install it in <code>~/.local</code> without root permissions, but then the modules can't be shared (due to different <code>$HOME</code>).</p>
+<p>The module(1) command doesn't provide a method to share or distribute the applications, so modulefiles typically take advantage of transparent remote network filesystem access such as NFS and AFS. 0install can also be used in this way, with <a href="../packaging/local-feeds/">local feeds</a> taking the place of the modulefiles and giving the path of the software on the network file-system rather than a URL from which it can be downloaded.</p>
+<p>If you believe that any of the information above is inaccurate or out-of-date, please write to <a href="http://0install.net/support.html#lists">mailing list</a> to let us know. Thanks!</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../faq/" class="btn btn-neutral float-right" title="FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../faq/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../menu.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

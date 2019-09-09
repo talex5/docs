@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/logo.png">
+  
+  <title>Inkscape - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Inkscape";
+    var mkdocs_page_input_path = "packaging/examples/inkscape.md";
+    var mkdocs_page_url = "/packaging/examples/inkscape/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../templates/">Templates</a>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../find/">Find</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">Inkscape</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#creating-the-interface">Creating the interface</a></li>
+    
+
+    <li class="toctree-l4"><a href="#testing-it">Testing it</a></li>
+    
+
+    <li class="toctree-l4"><a href="#signing-and-publishing">Signing and publishing</a></li>
+    
+
+    <li class="toctree-l4"><a href="#using-the-published-interface">Using the published interface</a></li>
+    
+
+    <li class="toctree-l4"><a href="#marking-as-stable">Marking as stable</a></li>
+    
+
+    <li class="toctree-l4"><a href="#making-a-new-release">Making a new release</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../tools/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Examples &raquo;</li>
+        
+      
+        
+          <li>Packaging &raquo;</li>
+        
+      
+    
+    <li>Inkscape</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/packaging/examples/inkscape.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><a href="http://inkscape.org/">The Inkscape project</a> makes available a binary RPM which works on various platforms. However, using this RPM directly has a few limitations for users:</p>
+<ul>
+<li>They must be root to install it.</li>
+<li>It doesn't work on all distributions (e.g., Debian).</li>
+<li>The system won't periodically check for updates.</li>
+</ul>
+<p>These limitations can be avoided by creating a Zero Install interface file for it. This guide goes over the steps quite quickly. For more details see <a href="../../guide-gui/">the packaging main guide</a>.</p>
+<p>Note: The original Inkscape binary RPM was compiled with binreloc support disabled, which prevented it from finding its icons (it used hard-coded paths). Jean-François Lemaire, the creator of the RPM, has kindly recompiled it for us with relocation support turned on.</p>
+<div class="toc">
+<ul>
+<li><a href="#creating-the-interface">Creating the interface</a></li>
+<li><a href="#testing-it">Testing it</a></li>
+<li><a href="#signing-and-publishing">Signing and publishing</a></li>
+<li><a href="#using-the-published-interface">Using the published interface</a></li>
+<li><a href="#marking-as-stable">Marking as stable</a></li>
+<li><a href="#making-a-new-release">Making a new release</a></li>
+</ul>
+</div>
+<h1 id="creating-the-interface">Creating the interface</h1>
+<p>We'll be using the <code>0publish</code> command to create the interface file. If you don't have it already, create an alias for <code>0publish</code> in the usual way:</p>
+<pre><code class="shell">$ 0install add 0publish http://0install.net/2006/interfaces/0publish
+</code></pre>
+
+<p>To create the interface file:</p>
+<p>1. Download the static binary RPM:</p>
+<pre><code class="shell">$ wget http://users.skynet.be/jflemaire/files/inkscape-0.43-0.i386.rpm
+</code></pre>
+
+<p>2. Create the interface:</p>
+<pre><code class="shell">$ 0publish Inkscape.xml
+</code></pre>
+
+<pre><code>Fill in the `name`, `summary`, `description`, `icon` and `homepage` fields. Set `main='usr/bin/inkscape'` on the `group` element. Save and quit (using the default filename).
+</code></pre>
+<p>3. Add version 0.43 with the location of the static RPM:</p>
+<pre><code class="shell">$ 0publish Inkscape.xml \
+    --set-version=0.43 \
+    --archive-url=http://users.skynet.be/jflemaire/files/inkscape-0.43-0.i386.rpm \
+    --set-released=today \
+    --set-arch=Linux-i486
+</code></pre>
+
+<h1 id="testing-it">Testing it</h1>
+<p>You can run the new XML file with <code>0launch</code> to download and run Inkscape:</p>
+<pre><code class="shell">$ 0launch ./Inkscape.xml
+</code></pre>
+
+<p><img alt="Running Inkscape with Zero Install" src="../../../img/screens/package-inkscape.png" /></p>
+<h1 id="signing-and-publishing">Signing and publishing</h1>
+<p>Now we need to sign the XML file using our GPG key. If you don't already have a GPG key, create one now:</p>
+<pre><code class="shell">$ gpg --gen-key
+</code></pre>
+
+<p>We also need to decide where the Inkscape XML file will be made available. This URL should not change, since other programs will link to it. We'll assume <code>http://inkscape.org/2006/ZeroInstall/Inkscape.xml</code> here.</p>
+<p>To set the URI and sign the interface:</p>
+<pre><code class="shell">$ 0publish Inkscape.xml \
+  --set-interface-uri=http://inkscape.org/2006/ZeroInstall/Inkscape.xml \
+  --xmlsign
+Exported public key as 'AE07828059A53CC1.gpg'
+</code></pre>
+
+<p>Upload the resulting <code>Inkscape.xml</code> and GPG files to the same directory on the web-server. The XML file should look something like <a href="http://0install.net/2006/3rd-party/Inkscape.xml">the Inkscape.xml test interface</a>.</p>
+<h1 id="using-the-published-interface">Using the published interface</h1>
+<p>You can now run Inkscape like this:</p>
+<pre><code class="shell">$ 0launch http://inkscape.org/2006/ZeroInstall/Inkscape.xml
+</code></pre>
+
+<p>Users can now install Inkscape using this URL, either using some graphical installer (like ROX's <a href="http://rox.sourceforge.net/desktop/AddApp">AddApp</a> or <a href="http://rox.sourceforge.net/desktop/node/269">Xfce 4.4's panel</a>). Command-line users can get it like this:</p>
+<pre><code class="shell">$ 0install add inkscape http://inkscape.org/2006/ZeroInstall/Inkscape.xml
+</code></pre>
+
+<p>They can then run it by typing <code>inkscape</code>. To choose a different version:</p>
+<pre><code class="shell">$ 0install update --gui inkscape
+</code></pre>
+
+<h1 id="marking-as-stable">Marking as stable</h1>
+<p>After the release has been out for a while, mark it as stable:</p>
+<pre><code class="shell">$ 0publish Inkscape.xml --stable
+</code></pre>
+
+<p>Users can configure the injector either to prefer stable versions or to select testing versions by default. This gives your more advanced users the chance to provide feedback before you roll a new release out to all users.</p>
+<h1 id="making-a-new-release">Making a new release</h1>
+<p>When a new static binary RPM is released, add the new version to the XML as follows:</p>
+<ol>
+<li>Download the new RPM (if you're not the person who made it).</li>
+<li>Add it to the XML (note use of <code>add-version</code> rather than <code>set-version</code> here):</li>
+</ol>
+<pre><code class="shell">$ 0publish Inkscape.xml \
+    --add-version=0.44 \
+    --archive-url=http://users.skynet.be/jflemaire/files/inkscape-0.44-0.i386.rpm \
+    --set-released=today \
+    --set-arch=Linux-i486
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../rox/" class="btn btn-neutral float-right" title="ROX-Filer">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../find/" class="btn btn-neutral" title="Find"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../find/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../rox/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../menu.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

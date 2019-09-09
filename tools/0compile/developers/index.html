@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/logo.png">
+  
+  <title>Developers - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Developers";
+    var mkdocs_page_input_path = "tools/0compile/developers.md";
+    var mkdocs_page_url = "/tools/0compile/developers/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pkg2zero/">pkg2zero</a>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">Developers</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#making-source-available">Making source available</a></li>
+    
+
+    <li class="toctree-l4"><a href="#customising-the-binary-implementation">Customising the binary implementation</a></li>
+    
+
+    <li class="toctree-l4"><a href="#pinning-version-ranges">Pinning version ranges</a></li>
+    
+
+    <li class="toctree-l4"><a href="#tips">Tips</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l5" href="#using-a-separate-source-feed">Using a separate source feed</a></li>
+        
+            <li><a class="toctree-l5" href="#making-library-headers-available-dev-packages">Making library headers available (-dev packages)</a></li>
+        
+            <li><a class="toctree-l5" href="#python-distutils">Python distutils</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l4"><a href="#examples">Examples</a></li>
+    
+
+    <li class="toctree-l4"><a href="#further-reading">Further reading</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>0compile &raquo;</li>
+        
+      
+        
+          <li>Tools &raquo;</li>
+        
+      
+    
+    <li>Developers</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/tools/0compile/developers.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This page explains how to publish source code using Zero Install. Publishing source this way means that:</p>
+<ul>
+<li>Users can compile it easily <a href="../">using 0compile</a>.</li>
+<li>Build dependencies, such as header files and build tools, can be downloaded automatically.</li>
+<li><a href="../../0release/">0release</a> can automatically compile binaries for your software during the release process.</li>
+</ul>
+<p><strong>Contents:</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#making-source-available">Making source available</a></li>
+<li><a href="#customising-the-binary-implementation">Customising the binary implementation</a></li>
+<li><a href="#pinning-version-ranges">Pinning version ranges</a></li>
+<li><a href="#tips">Tips</a><ul>
+<li><a href="#using-a-separate-source-feed">Using a separate source feed</a></li>
+<li><a href="#making-library-headers-available-dev-packages">Making library headers available (-dev packages)</a></li>
+<li><a href="#python-distutils">Python distutils</a></li>
+</ul>
+</li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#further-reading">Further reading</a></li>
+</ul>
+</div>
+<h1 id="making-source-available">Making source available</h1>
+<p>There are two common situations:</p>
+<ul>
+<li>You already have a source tarball somewhere and you want to publish an XML feed saying how to download and compile it (ideally, no changes should be needed to support 0install). For this, you should first read the <a href="../../../packaging/guide-gui/">Guide to packaging binaries</a>.</li>
+<li>You have a development checkout (e.g. a Git clone or similar) and you want to say how to compile it. For this, you should first read the page about <a href="../../../packaging/local-feeds/">local feeds</a>.</li>
+</ul>
+<p>To make source code available for others to use you need to add source implementations to the program's feed file. This is almost exactly the same as adding binaries, except that you give <code>src</code> as the machine (CPU) type:</p>
+<p><img alt="Adding a source implementation" src="../../../img/screens/add-source-impl.png" /></p>
+<p>(if you want to script this process, take a look at <a href="../../0template/">0template</a>)</p>
+<p>You can also edit the XML directly, which gives more control. A minimal source implementation might look like this:</p>
+<pre><code class="xml">&lt;implementation arch=&quot;*-src&quot; id=&quot;.&quot; version=&quot;0.1-pre&quot;&gt;
+  &lt;command name='compile' path='Makefile'&gt;
+    &lt;runner interface='http://repo.roscidus.com/devel/make'&gt;
+      &lt;arg&gt;-f&lt;/arg&gt;
+    &lt;/runner&gt;
+  &lt;/command&gt;
+&lt;/implementation&gt;
+</code></pre>
+
+<p>Note: you only need to use <code>arch='*-src'</code> to publish implementations for things that need to be compiled. Shell scripts, etc should not be marked as source code; use <code>arch="*-*"</code> instead (which is the default anyway if <code>arch</code> is not given). For header files (-dev packages), there will often be a source implementation that generates the header files, but the resulting headers are not source (and will often be architecture-specific, e.g. <code>Linux-i386</code>).</p>
+<p>The job of the <code>compile</code> command is to call the actual build system. It is executed inside the <code>build</code> directory (<code>$BUILDDIR</code>). It must compile the source in <code>$SRCDIR</code>, putting the final result (ready for distribution) in <code>$DISTDIR</code>. The path to the generated feed for the new binary is <code>$BINARYFEED</code>, if you need it during the build.</p>
+<p>Instead of giving a <code>&lt;runner&gt;</code>, you may prefer to use a shell command. This is useful if you need to run more than one command. However, if the command starts to get complicated, you should move it to a script, either inside the main source archive or in a separate dependency, and just set this attribute to the command to run the script):</p>
+<pre><code class="xml">&lt;implementation arch=&quot;*-src&quot; id=&quot;.&quot; version=&quot;0.1-pre&quot;&gt;
+  &lt;command name='compile'
+    shell-command='&quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; &amp;&amp; make install'/&gt;
+
+  &lt;requires interface='http://repo.roscidus.com/devel/make'&gt;
+    &lt;executable-in-path name='make'/&gt;
+  &lt;/requires&gt;
+&lt;/implementation&gt;
+</code></pre>
+
+<p>Starting with 0compile 1.1, this even works on Windows (it uses win-bash).</p>
+<p>There are also some extra attributes you can add to the <code>implementation</code> element:</p>
+<dl>
+<dt><code>compile:binary-main</code></dt>
+<dd>Deprecated. Use <code>&lt;compile:implementation&gt;</code> instead (see below).</dd>
+<dt><code>compile:dup-src</code></dt>
+<dd>Some programs insist on creating files in their source directory, which is typically a read-only directory when using Zero Install. In this case, set <code>compile:dup-src='../img/true'</code> and 0compile will copy everything in <code>$SRCDIR</code> into <code>build</code> before building.</dd>
+<dt><code>compile:binary-lib-mappings</code> (binary library major mappings)</dt>
+<dd>This is needed if you want to use 0install to compile a <code>-dev</code> package (containing header files) that works with a distribution-provided runtime package; see <a href="../../make-headers/">MakeHeaders</a> for details.</dd>
+</dl>
+<h1 id="customising-the-binary-implementation">Customising the binary implementation</h1>
+<p>You can specify a template <code>&lt;implementation&gt;</code> for the binary using <code>&lt;compile:implementation&gt;</code>. You can use this, for example, to add <code>&lt;command&gt;</code> elements to it. Here's a more complex example for a Java program:</p>
+<pre><code class="xml">  ... xmlns:compile=&quot;http://zero-install.sourceforge.net/2006/namespaces/0compile&quot; ...
+
+  &lt;implementation arch=&quot;*-src&quot; id=&quot;.&quot; version=&quot;0.1-pre&quot;&gt;
+
+    &lt;command name=&quot;compile&quot; path=&quot;src/Makefile&quot;&gt;
+      &lt;runner interface='http://repo.roscidus.com/devel/make'&gt;
+        &lt;arg&gt;-f&lt;/arg&gt;
+      &lt;/runner&gt;
+
+      &lt;compile:implementation arch='*-*'&gt;
+        &lt;environment name='CLASSPATH' insert='.'/&gt;
+        &lt;requires interface=&quot;http://repo.roscidus.com/utils/graphviz&quot;/&gt;
+        &lt;command name='run'&gt;
+          &lt;runner interface='http://repo.roscidus.com/java/openjdk-jre'/&gt;
+          &lt;arg&gt;com.example.MainClass&lt;/arg&gt;
+        &lt;/command&gt;
+      &lt;/compile:implementation&gt;
+    &lt;/command&gt;
+
+    &lt;requires interface=&quot;http://repo.roscidus.com/java/iris&quot; compile:include-binary='true'/&gt;
+    &lt;requires interface=&quot;http://repo.roscidus.com/java/openjdk-jdk&quot;&gt;
+      &lt;environment name='PATH' insert='bin'/&gt;
+    &lt;/requires&gt;
+  &lt;/implementation&gt;
+</code></pre>
+
+<p>The interesting bits here are:</p>
+<dl>
+<dt><code>arch="*-src"</code></dt>
+<dd>tells us that the root <code>&lt;implementation&gt;</code> describes some source code.</dd>
+<dt><code>&lt;compile:implementation&gt;</code></dt>
+<dd>this is the template for the implementation that will be created by the compile.</dd>
+<dt><code>arch='*-*'</code></dt>
+<dd>indicates that the generated binary is platform independent (Java bytecode).</dd>
+<dt><code>&lt;command name='run'&gt;</code></dt>
+<dd>says how to run the resulting binary (by using the Java runtime).</dd>
+</dl>
+<p>The dependencies are:</p>
+<dl>
+<dt><code>graphviz</code> and <code>openjdk-jre</code></dt>
+<dd>only used at run-time (since they occur inside the <code>&lt;compile:implementation&gt;</code>).</dd>
+<dt><code>openjdk-jdk</code></dt>
+<dd>only used at compile-time (occurs directly inside the source <code>&lt;implementation&gt;</code>).</dd>
+<dt><code>iris</code></dt>
+<dd>used at compile-time and at run-time (has <code>compile:include-binary</code> attribute).</dd>
+</dl>
+<p>Finally, there is a <code>compile:if-0install-version</code> attribute that you can place on any element in the template. 0compile will convert this to a plain <code>if-0install-version</code> in the generated output (you can't use <code>if-0install-version</code> directly because 0install would strip them out as appropriate for its version before 0compile saw them).</p>
+<h1 id="pinning-version-ranges">Pinning version ranges</h1>
+<p>Sometimes, you have a build time dependency with a wide range of possible versions, but the generated binary will have a runtime dependency on whichever version was used to compile it. The <code>compile:pin-components</code> attribute on a <code>&lt;version&gt;</code> element in the template will expand into <code>before</code> and <code>after</code> attributes that require the binary version to match the first <em>n</em> components of the version used to compile it. For example, if this program is compiled using Python 2.7.3, then the binary will have <code>&lt;version not-before='2.7' before='2.8'/&gt;</code>:</p>
+<pre><code class="xml">&lt;compile:implementation&gt;
+  &lt;runner interface='http://repo.roscidus.com/python/python'&gt;
+    &lt;version compile:pin-components=&quot;2&quot;/&gt;
+  &lt;/runner&gt;
+&lt;/compile:implementation&gt;
+</code></pre>
+
+<p>(added in 0compile 1.4)</p>
+<h1 id="tips">Tips</h1>
+<h2 id="using-a-separate-source-feed">Using a separate source feed</h2>
+<p>You can keep the source implementations in a separate file (<code>MyProg-src.xml</code>) and add a feed from the main feed, e.g.:</p>
+<pre><code class="xml">  &lt;feed src='http://mysite/interfaces/MyProg-src.xml' arch='*-src'/&gt;
+</code></pre>
+
+<p>The <code>arch</code> attribute lets the injector know that it doesn't need to fetch this file unless it's looking for source code.</p>
+<h2 id="making-library-headers-available-dev-packages">Making library headers available (-dev packages)</h2>
+<p>See <a href="../../make-headers/">Make-headers</a> for information about publishing library source and <code>-dev</code> packages.</p>
+<h2 id="python-distutils">Python distutils</h2>
+<p>You should use the <code>--build-base</code> option to make distutils build to 0compile's build directory, not under the source code (which is read-only). Unfortunately, this option isn't available with the <code>install</code> command, so you have to do the build in two steps. A typical command is:</p>
+<pre><code class="shell">$ cd &quot;$SRCDIR&quot; &amp;&amp;
+$ python setup.py build --build-base=&quot;$BUILDDIR/build&quot; &amp;&amp;
+$ cd &quot;$BUILDDIR&quot; &amp;&amp;
+$ python &quot;$SRCDIR&quot;/setup.py install --home=&quot;$DISTDIR&quot; --skip-build
+</code></pre>
+
+<h1 id="examples">Examples</h1>
+<p>There are some <a href="../../../packaging/templates/">template projects</a> which can be used as a starting point for publishing your own software for various languages and build systems.</p>
+<h1 id="further-reading">Further reading</h1>
+<dl>
+<dt><a href="../example-scons/">Example: SCons</a></dt>
+<dd>This example shows how to compile a simple "Hello world" program using the SCons build system. Both the source and SCons are fetched using Zero Install.</dd>
+</dl>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../example-scons/" class="btn btn-neutral float-right" title="Example: SCons">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../chroot-build/" class="btn btn-neutral" title="Chroot build"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../chroot-build/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../example-scons/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../menu.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

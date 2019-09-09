@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/logo.png">
+  
+  <title>Find - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Find";
+    var mkdocs_page_input_path = "packaging/examples/find.md";
+    var mkdocs_page_url = "/packaging/examples/find/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../templates/">Templates</a>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">Find</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#running-find-directly">Running Find directly</a></li>
+    
+
+    <li class="toctree-l4"><a href="#creating-the-interface-file">Creating the interface file</a></li>
+    
+
+    <li class="toctree-l4"><a href="#adding-the-archive">Adding the archive</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l5" href="#note-on-weaknesses-in-sha-1">Note on weaknesses in SHA-1</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l4"><a href="#publishing-the-interface">Publishing the interface</a></li>
+    
+
+    <li class="toctree-l4"><a href="#registering-the-local-feed">Registering the local feed</a></li>
+    
+
+    <li class="toctree-l4"><a href="#problems-with-manifest-digests">Problems with manifest digests</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../tools/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Examples &raquo;</li>
+        
+      
+        
+          <li>Packaging &raquo;</li>
+        
+      
+    
+    <li>Find</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/packaging/examples/find.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>In the <a href="../../guide-gui/">main packaging guide</a> (which should be read before this one) we saw how to make a simple Python program available. When the user asked to run the program, the injector downloaded it for them and cached it. However, most programs depend on other programs, libraries and resources and these can also be fetched using the injector. Our example package will be <a href="http://www.hayber.us/rox/Find">Find</a>, a little utility for searching for files which depends on the ROX-Lib Python library.</p>
+<div class="toc">
+<ul>
+<li><a href="#running-find-directly">Running Find directly</a></li>
+<li><a href="#creating-the-interface-file">Creating the interface file</a></li>
+<li><a href="#adding-the-archive">Adding the archive</a><ul>
+<li><a href="#note-on-weaknesses-in-sha-1">Note on weaknesses in SHA-1</a></li>
+</ul>
+</li>
+<li><a href="#publishing-the-interface">Publishing the interface</a></li>
+<li><a href="#registering-the-local-feed">Registering the local feed</a></li>
+<li><a href="#problems-with-manifest-digests">Problems with manifest digests</a></li>
+</ul>
+</div>
+<h1 id="running-find-directly">Running Find directly</h1>
+<p>Start by downloading <a href="http://www.hayber.us/rox/find/Find-006.tgz">Find-006</a>. This is just a normal application, not specially designed for the injector. If you try to run it, you should get an error:</p>
+<pre><code class="shell">$ wget http://www.hayber.us/rox/find/Find-006.tgz
+$ tar xzf Find-006.tgz
+$ cd Find
+$ ./AppRun
+*** This program needs ROX-Lib2 (version 2.0.0) to run.
+</code></pre>
+
+<p>Note: If it runs without an error, then either you've installed ROX-Lib manually (not using the injector) or your <code>PYTHONPATH</code> already points to it.</p>
+<h1 id="creating-the-interface-file">Creating the interface file</h1>
+<p>Start by creating an XML interface file (<code>Find.xml</code>) as we did before:</p>
+<pre><code class="shell">$ 0publish Find.xml
+</code></pre>
+
+<p>Fill in the fields as before. The only difference is the addition of the <code>requires</code> element, which states that this program requires <strong>ROX-Lib</strong>, and the <code>main</code> attribute which is now <code>AppRun</code>. The final result should look something like this:</p>
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; ?&gt;
+&lt;?xml-stylesheet type='text/xsl'
+     href='http://0install.net/2006/stylesheets/interface.xsl'?&gt;
+
+&lt;interface xmlns=&quot;http://zero-install.sourceforge.net/2004/injector/interface&quot;&gt;
+  &lt;name&gt;Find&lt;/name&gt;
+  &lt;summary&gt;a find-in-files utility&lt;/summary&gt;
+  &lt;description&gt;
+Searches files for specific text, displaying the results in a window. Double click
+on the result line(s) to open the file at that point.
+
+Configuration options are available to customize the search command and the editor with which to
+open the files.
+  &lt;/description&gt;
+  &lt;homepage&gt;http://www.hayber.us/rox/Find&lt;/homepage&gt;
+  &lt;icon type='image/png' href='http://www.hayber.us/0install/Find.png'/&gt;
+
+  &lt;group main='AppRun'&gt;
+    &lt;requires interface=&quot;http://rox.sourceforge.net/2005/interfaces/ROX-Lib&quot;&gt;
+      &lt;environment insert=&quot;ROX-Lib2/python&quot; name=&quot;PYTHONPATH&quot;/&gt;
+    &lt;/requires&gt;
+    &lt;implementation id='.' version='6'/&gt;
+  &lt;/group&gt;
+</code></pre>
+
+<p>Let's go over the group part in detail:</p>
+<ul>
+<li>The <code>&lt;group&gt;</code> element contains a set of implementations of the interface (versions of <strong>Find</strong>) and their requirements. The group saves us having to repeat the requirements for each implementation (since they often don't change). We have also given the <code>main</code> attribute here, since all versions of <strong>Find</strong> are run using a script with this name.</li>
+<li>We have a single requirement, ROX-Lib, which is identified by the URI of its interface. The URI is chosen by the publisher of the ROX-Lib interface, just as we chose the URI for our SCons interface in the previous tutorial.</li>
+<li>The <code>&lt;environment&gt;</code> element inside tells the injector how to make its choice known to <strong>Find</strong>. In this case, it is by inserting <code>/path/of/cache/DIGEST/ROX-Lib2/python</code> to the beginning of the <code>PYTHONPATH</code> environment variable. When Find (a Python program) does <code>import rox</code>, it will then get the chosen version of <strong>ROX-Lib</strong>.</li>
+<li>Also inside the group we have a single (local) implementation, as before. The <strong>id</strong> gives the location of the implementation directory relative to the interface file. In this case, we are assuming that the <code>Find.xml</code> file is in the same directory as the <code>AppRun</code> script.</li>
+</ul>
+<p>Save the interface using the default file name (a temporary file chosen by <code>0publish</code>) and try running it:</p>
+<pre><code class="shell">$ 0launch ./Find.xml
+</code></pre>
+
+<p>If you don't already have ROX-Lib, you will be prompted to download it as usual. Once ROX-Lib is available, Find runs:</p>
+<p><img alt="Find running" src="../../../img/screens/find.png" /></p>
+<p>As usual, you can run <code>0launch -g ./Find.xml</code> to force the 0launch GUI to appear. You will see that there is a single version of Find available, but that you can choose any version of ROX-Lib to use with it.</p>
+<h1 id="adding-the-archive">Adding the archive</h1>
+<p>We will now change the implementation as we did before so that the injector will download <strong>Find</strong> for us instead of requiring it to be on the machine already:</p>
+<pre><code class="shell">$ 0publish Find.xml \
+  --set-version=6 \
+  --set-released=today \
+  --archive-url=http://www.hayber.us/rox/find/Find-006.tgz \
+  --archive-file=../Find-006.tgz \
+  --archive-extract=Find
+</code></pre>
+
+<p>As the archive file isn't in the current directory, we give its location with <code>--archive-file</code>. <code>0publish</code> needs this to get the digest, but it doesn't download the archive from the network because it wouldn't be able to check that it hasn't been tampered with (although if the program's author doesn't provide a signature then there may be no way to check anyway).</p>
+<p>We also use the <code>--archive-extract</code> attribute. This is because each <strong>Find</strong> archive contains a single top-level directory, which we don't need (and the name might change in different versions, e.g. if the author decides to include the version number). Extracting just the contents means the every version will have the same structure, which makes it easier for other programs to depend on it. This is mostly useful for libraries like ROX-Lib, where we need to know that the path will always be <code>lib</code>, not <code>libfoo-1.1/lib</code> with version 1.1 and <code>libfoo-1.2/lib</code> with version 1.2, since a fixed path has to go in the <code>environment</code> element above.</p>
+<p>The resulting file will contain this:</p>
+<pre><code class="xml">    &lt;implementation id='sha1=ff9d9e11fde0a146c7e1781511fd9afb17752e34' released=&quot;2006-05-19&quot; version='6'&gt;
+      &lt;archive href=&quot;http://www.hayber.us/rox/find/Find-006.tgz&quot; size=&quot;23161&quot; extract='Find'/&gt;
+    &lt;/implementation&gt;
+</code></pre>
+
+<p>The attributes of <code>&lt;archive&gt;</code> are:</p>
+<dl>
+<dt><code>href</code></dt>
+<dd>a URL from which the archive can be downloaded (in escaped form, so a space is written as %20, etc).</dd>
+<dt><code>size</code></dt>
+<dd>the size of the archive (for progress bars).</dd>
+<dt><code>extract</code></dt>
+<dd>(optional) a subdirectory of the archive to use. We could have omitted this and changed the implementation's <code>main</code> to <code>Find/AppRun</code> instead, but it's better to keep the main attribute the same, if possible.</dd>
+</dl>
+<p>If you run the new <code>Find.xml</code>, the injector should download and unpack the archive into the cache, and run Find from it.</p>
+<h2 id="note-on-weaknesses-in-sha-1">Note on weaknesses in SHA-1</h2>
+<p>Some weaknesses in the SHA-1 algorithm have been discovered. At present, it is still strong enough for our use, but you may wish to use some other algorithm, with the <code>--manifest-algorithm</code> option. See the <a href="../../../specifications/manifest/#algorithms">specification</a> for a list of available secure hashing algorithms and which versions of the injector support them.</p>
+<p>See the <a href="http://www.cryptography.com/cnews/hash.html">HASH COLLISION Q&amp;A</a> for more details.</p>
+<h1 id="publishing-the-interface">Publishing the interface</h1>
+<p>The <code>Find.xml</code> interface file can now be signed and published as described before:</p>
+<pre><code class="shell">$ 0publish Find.xml --set-interface-uri=http://www.hayber.us/0install/Find
+$ 0publish Find.xml --xmlsign
+</code></pre>
+
+<h1 id="registering-the-local-feed">Registering the local feed</h1>
+<p>We have already seen how to use a local <code>Find.xml</code> file inside the <strong>Find</strong> directory to run the local version with a chosen version of <strong>ROX-Lib</strong> (i.e., by setting the <code>id</code> attribute to <code>.</code>). It is quite useful to add this file to your CVS (or similar system) to let developers test new versions easily, since it will get the libraries for them.</p>
+<p>In fact, we'd often like to see both downloadable implementations (e.g., official releases) and local versions (e.g., developer CVS checkouts) of Find together. To do this, all we need is to add a <code>feed-for</code> line in the local <code>Find/Find.xml</code> file (the one where the implementation <code>id</code> is <code>.</code>):</p>
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; ?&gt;
+&lt;interface xmlns=&quot;http://zero-install.sourceforge.net/2004/injector/interface&quot;&gt;
+  &lt;feed-for interface='http://www.hayber.us/0install/Find'/&gt;
+</code></pre>
+
+<p>You can now register the local feed in the normal way:</p>
+<pre><code class="shell">$ 0launch --feed Find.xml
+</code></pre>
+
+<p>When another program runs <strong>Find</strong> using its official URI, this local version will be included in the list of available versions that can be selected. It is traditional to add <code>.0</code> to the end of the version number for CVS versions, so that the CVS version will be preferred to the previous release.</p>
+<h1 id="problems-with-manifest-digests">Problems with manifest digests</h1>
+<p>There is one possible problem with the digests, where the 'actual' manifest changes each time the archive is extracted! This happens when you include only some deep subdirectories in the archive, but not the top-level directory. Eg:</p>
+<pre><code class="shell">$ tar czf archive.tgz deeply/nested/path
+</code></pre>
+
+<p>When tar extracts the archive, it restores the original mtime of 'path', but creates 'deeply' and 'nested' with the current time. This is what causes the digest to change. There are two possible solutions:</p>
+<ul>
+<li>Always list all top-level directories when creating archives.</li>
+<li>Use any algorithm except <code>sha1</code>, as this is the only one that includes directory mtimes in the digest (for backwards compatibility).</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../inkscape/" class="btn btn-neutral float-right" title="Inkscape">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../dotnet-lib/" class="btn btn-neutral" title=".NET library"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../dotnet-lib/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../inkscape/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../menu.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

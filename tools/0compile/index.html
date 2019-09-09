@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/logo.png">
+  
+  <title>0compile - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "0compile";
+    var mkdocs_page_input_path = "tools/0compile.md";
+    var mkdocs_page_url = "/tools/0compile/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0bootstrap/">0bootstrap</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">0compile</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#autocompile">Autocompile</a></li>
+    
+
+    <li class="toctree-l3"><a href="#manual-compilation">Manual compilation</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#creating-the-build-environment">Creating the build environment</a></li>
+        
+            <li><a class="toctree-l4" href="#building">Building</a></li>
+        
+            <li><a class="toctree-l4" href="#modifying-the-source">Modifying the source</a></li>
+        
+            <li><a class="toctree-l4" href="#publishing-the-binary">Publishing the binary</a></li>
+        
+            <li><a class="toctree-l4" href="#bundling-dependencies">Bundling dependencies</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#legacy-helper-features">Legacy helper features</a></li>
+    
+
+    <li class="toctree-l3"><a href="#recreating-a-build-environment">Recreating a build environment</a></li>
+    
+
+    <li class="toctree-l3"><a href="#making-source-available">Making source available</a></li>
+    
+
+    <li class="toctree-l3"><a href="#building-in-a-clean-chroot">Building in a clean chroot</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Tools &raquo;</li>
+        
+      
+    
+    <li>0compile</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/tools/0compile.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><strong>Name:</strong> 0compile<br />
+<strong>Maintainer:</strong> Thomas Leonard<br />
+<strong>License:</strong> GNU Lesser General Public License<br />
+<strong>Source:</strong> <a href="https://github.com/0install/0compile">Git repository</a><br />
+<strong>Zero Install feed:</strong> <a href="http://0install.net/2006/interfaces/0compile.xml">http://0install.net/2006/interfaces/0compile.xml</a></p>
+<p>Normally, Zero Install will select a pre-built binary for your system. However, it can also be used to compile a new binary from a source package. This is useful if:</p>
+<ul>
+<li>no binary is available for your platform;</li>
+<li>you wish to build using different library versions; or</li>
+<li>you wish to make changes to a program or library.</li>
+</ul>
+<p>This tutorial shows how to use <code>0compile</code> for these purposes. It is assumed that you have already installed <a href="http://0install.net/injector.html">Zero Install</a> and know how to run programs using it. To get <code>0compile</code> itself, use:</p>
+<pre><code class="shell">$ 0install add 0compile http://0install.net/2006/interfaces/0compile.xml
+</code></pre>
+
+<p>Note: this page describes the command-line interface to <code>0compile</code>. There is also a graphical interface, which is used when you click on the <strong>Compile</strong> button in the injector. The graphical interface provides similar options, but is slightly more limited. Here are <a href="http://rox.sourceforge.net/desktop/node/360">some screenshots</a>.</p>
+<p><strong>Contents:</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#autocompile">Autocompile</a></li>
+<li><a href="#manual-compilation">Manual compilation</a><ul>
+<li><a href="#creating-the-build-environment">Creating the build environment</a></li>
+<li><a href="#building">Building</a></li>
+<li><a href="#modifying-the-source">Modifying the source</a></li>
+<li><a href="#publishing-the-binary">Publishing the binary</a></li>
+<li><a href="#bundling-dependencies">Bundling dependencies</a></li>
+</ul>
+</li>
+<li><a href="#legacy-helper-features">Legacy helper features</a></li>
+<li><a href="#recreating-a-build-environment">Recreating a build environment</a></li>
+<li><a href="#making-source-available">Making source available</a></li>
+<li><a href="#building-in-a-clean-chroot">Building in a clean chroot</a></li>
+</ul>
+</div>
+<h1 id="autocompile">Autocompile</h1>
+<p>If you just want to compile some existing source code (without changing it), then the <code>autocompile</code> sub-command does the job. Given the URI of a program, it will download and compile the source in a temporary directory, add the resulting binary to the Zero Install cache, and register the new binary with <code>0launch</code>. If the source depends on other programs, it will also download and compile them in the same way if no binary is currently available for the preferred version.</p>
+<p>For example (GNU-Hello is a simple test program which depends only on <code>make</code>):</p>
+<pre><code class="shell">$ 0compile autocompile http://0install.net/tests/GNU-Hello.xml
+================= http://0install.net/tests/GNU-Hello.xml ==================
+
+Selecting versions for GNU Hello...
+Selection done.
+
+Plan:
+
+- GNU Hello: Compile 1.3 (sha1=2aae32fd27d194167eac7eb611d7ce0983f83dd7)
+  - make: Use existing binary 3.81-5 (Linux-x86_64)
+
+No dependencies need compiling... compile GNU Hello itself...
+Waiting for selected implementations to be downloaded...
+
+...
+</code></pre>
+
+<p>Note that GNU-Hello does not get the C-compiler through Zero Install, so you will need that already (hint: <code>apt-get install build-essential</code>). Once compiled, you can run it like this:</p>
+<pre><code class="shell">$ 0launch http://0install.net/tests/GNU-Hello.xml
+Hello, world!
+</code></pre>
+
+<p>You can also use <code>autocompile --gui</code> for a graphical version. This makes it easier to see the overall progress, because the verbose build output is shown separately in the lower pane:</p>
+<p><img alt="0compile autocompile --gui" src="../../img/screens/0compile-autocompile.png" /></p>
+<h1 id="manual-compilation">Manual compilation</h1>
+<p>If you want to modify the source before building, keep the object files around for rebuilding, or choose the versions used, you'll want to use the manual commands, described in the following sections.</p>
+<h2 id="creating-the-build-environment">Creating the build environment</h2>
+<p>To get started, run <code>0compile setup</code> with the URL of the program you want to build. In this example, we'll use <a href="http://www.gnu.org/software/hello/">GNU-Hello</a>, a simple program written by the FSF to demonstrate use of the popular GNU build tools:</p>
+<pre><code class="shell">$ 0compile setup http://0install.net/tests/GNU-Hello.xml GNU-Hello
+Created directory GNU-Hello
+</code></pre>
+
+<p><code>0compile</code> will run <code>0install select --source</code> to select a suitable version of the source code and download it. It will also locate and download any dependencies (e.g. build tools or header files) the source may have. It will download the <code>make</code> utility in this case, or use your distribution's package.</p>
+<p>The final argument names a directory for the build environment. If omitted, it defaults to the last component of the URI, without the <code>.xml</code> extension (so we could have just left it off in this case). <code>0compile</code> will create this directory in the current directory.</p>
+<p>All further <code>0compile</code> commands are run from inside this new directory, which is currently empty except for a <code>0compile.properties</code> file recording the URI of the program. If you want to change the selected version(s) later, do:</p>
+<pre><code class="shell">$ cd GNU-Hello
+$ 0compile setup
+</code></pre>
+
+<h2 id="building">Building</h2>
+<p>To compile the program, use the <code>build</code> command (from inside the <code>GNU-Hello</code> directory):</p>
+<pre><code class="shell">$ 0compile build
+TMPDIR=/tmp/0compile-T5GJBj
+BUILDDIR=/home/me/GNU-Hello/build
+DISTDIR=/home/me/GNU-Hello/gnu-hello-linux-x86_64-1.3
+SRCDIR=/home/me/.cache/0install.net/implementations/...
+cd /tmp/GNU-Hello/build
+Executing: &quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; &amp;&amp; make install
+...
+</code></pre>
+
+<p>Note: GNU-Hello does not use Zero Install to get the C compiler (<code>gcc</code>) or the standard library header files (<code>libc-dev</code>), so you should install these yourself. They come with most distributions.</p>
+<p><code>0compile</code> starts by creating two sub-directories: <code>gnu-hello-linux-x86_64</code> for the final result (the exact name will depend on your system) and <code>build</code> for any temporary files. It then executes a command specified in the source feed, which actually builds the software (using the standard GNU build system in this case).</p>
+<p>Note that the command installs to the <code>gnu-hello-linux-x86_64</code> directory rather than to the usual <code>/usr/local</code>.</p>
+<p>Assuming the build is successful, <code>gnu-hello-linux-x86_64</code> will contain the final result, including a handy <code>gnu-hello-linux-x86_64/0install/feed.xml</code> local feed file, which you can use to run the new binary (note: this used to be <code>gnu-hello-linux-x86_64/0install/GNU-Hello.xml</code> on older versions of 0compile):</p>
+<pre><code class="shell">$ 0launch gnu-hello-linux-x86_64/0install/feed.xml
+Hello, world!
+</code></pre>
+
+<p>In fact, since <code>GNU-Hello</code> doesn't list any run-time dependencies, we could have just run the <code>gnu-hello-linux-x86_64/bin/hello</code> binary directly in this case. For more complex programs, the feed file will be useful. You can also pass it to <code>0install add-feed</code> to register the new binary under the program's normal URI:</p>
+<pre><code class="shell">$ 0launch -c http://0install.net/tests/GNU-Hello.xml
+Interface 'http://0install.net/tests/GNU-Hello.xml' has no usable implementations
+
+$ 0install add-feed gnu-hello-linux-x86_64/0install/feed.xml
+1) Add as feed for 'http://0install.net/tests/GNU-Hello.xml'
+
+$ 0launch -c http://0install.net/tests/GNU-Hello.xml
+Hello, world!
+</code></pre>
+
+<p>If everything worked, you can now delete the <code>build</code> directory to save space. However, if you're planning to modify the source and rebuild (described in the next section) then you'll want to leave it there, as it will make rebuilding faster.</p>
+<p>For future reference, there is also a <code>gnu-hello-linux-x86_64/0install/build-environment.xml</code> file. This is a selections file, as produced by <code>0install select --source --xml</code>, but with a few extra details of the build added, including the hostname of the machine used for the build, a timestamp and your username. You can use this to rebuild later with the same environment (e.g. using this exact version of <code>make</code>). The file is written before the build starts, so the build process may add to it.</p>
+<h2 id="modifying-the-source">Modifying the source</h2>
+<p>By default, <code>0compile</code> keeps the source code in the (read-only) Zero Install cache, so if you want to make changes, the first step is to make a copy of it:</p>
+<pre><code class="shell">$ 0compile copy-src
+Copied as '/home/me/GNU-Hello/src'
+</code></pre>
+
+<p>Edit the source as needed with the text editor of your choice. For example, we can change the message (here we're using <a href="http://www.gnu.org/fun/jokes/ed.msg.html">ed, the standard text editor</a>):</p>
+<pre><code class="shell">$ ed src/hello.c
+5207
+%s/Hello, world!/Goodbye, world!/
+wq
+5209
+
+Recompile with `0compile build` as before:
+
+```shell
+$ 0compile build
+$ 0launch gnu-hello-linux-x86_64/0install/feed.xml
+Goodbye, world!
+</code></pre>
+
+<p>If you compare the new <code>gnu-hello-linux-x86_64/0install</code> directory with the old one, you'll discover a couple of differences:</p>
+<ul>
+<li>A new file is present, <code>gnu-hello-linux-x86_64/0install/from-1.3.patch</code>, containing a diff between the original sources and your modified ones (to display this without rebuilding, use <code>0compile diff</code>).</li>
+<li>The version number in the local feed has <code>-1</code> appended, to indicate that this version has been modified.</li>
+</ul>
+<p>These two features make it very easy to keep track of what you changed, which may well come in handy later! However, if you are making larger changes to the code then you will want to use a proper version control system (such as <a href="http://git.or.cz/">Git</a>).</p>
+<h2 id="publishing-the-binary">Publishing the binary</h2>
+<p>To share our new binary with other people, we just need to archive up the <code>gnu-hello-linux-x86_64</code> directory and upload it to an FTP or HTTP server somewhere. Pass the URL of the remote directory to <code>0compile</code> and upload the resulting binary (note: the version will be 1.3-1 if you modified the source):</p>
+<pre><code class="shell">$ 0compile publish http://mysite/downloads
+Now upload 'gnu-hello-linux-x86_64-1.3.tar.bz2' as:
+http://mysite/downloads/gnu-hello-linux-x86_64-1.3.tar.bz2
+$ scp gnu-hello-linux-x86_64-1.3.tar.bz2 mysite:/var/www/downloads/
+</code></pre>
+
+<p>As well as the <code>.tar.bz2</code> file, you will also get a <code>GNU-Hello-1.3.xml</code> file in the main <code>GNU-Hello</code> directory. You can use this new XML file to download the archive and run the program:</p>
+<pre><code class="shell">$ 0launch GNU-Hello-1.3.xml
+</code></pre>
+
+<p>You can either ask the maintainer of the program to add the implementation in this file to the master feed, or you can create your own feed (and ask them to add that). See the <a href="../0publish/">0publish page</a> for full details, but as a quick summary you can create a new signed feed like this:</p>
+<pre><code class="shell">$ 0publish .../GNU-Hello.xml \
+  --xmlsign \
+  --set-interface-uri=http://mysite/interfaces/GNU-Hello.xml \
+  --local=GNU-Hello-1.3.xml
+</code></pre>
+
+<p>Then upload the signed <code>.../GNU-Hello.xml</code> file and the exported GPG key to your webserver.</p>
+<h2 id="bundling-dependencies">Bundling dependencies</h2>
+<p>You might want to build on a machine without network access, or to archive everything needed to build a particular program. To do that, use this command:</p>
+<pre><code class="shell">$ 0compile include-deps
+</code></pre>
+
+<p>The source code and all dependencies will be copied into a new <code>dependencies</code> sub-directory. When building, this directory is added to <a href="../../details/cache/">the implementation cache</a> search path (using <code>0launch --with-store</code>).</p>
+<h1 id="legacy-helper-features">Legacy helper features</h1>
+<p>0compile has some special code to detect and handle some common cases in legacy code:</p>
+<p>Generated <code>pkgconfig</code> files with absolute paths</p>
+<p>If <code>$DISTDIR</code> ends up containing a directory called <code>pkgconfig</code>, it checks each <code>.pc</code> file inside for an absolute prefix. If found, it is changed to a relative path.</p>
+<p>Note: for "pure" Zero Install libraries, just use a relative path (e.g. <code>prefix=${pcfiledir}/..</code>) in the <code>.pc</code> file in the source, and copy it unchanged to <code>$DISTDIR</code>.</p>
+<p>Build dependencies containing <code>/usr/lib/lib*.so</code> broken symlinks</p>
+<p>RPM unpacks all packages over the root, so one package can have a symlink to a file provided by a different package. This is often used to set the default version of a library in RPM packages. e.g.</p>
+<ul>
+<li><code>-devel</code> package: <code>libSDL.so</code> -&gt; <code>libSDL-1.2.so.0.11.2</code> (broken link)</li>
+<li>runtime package: provides <code>libSDL-1.2.so.0.11.2</code></li>
+</ul>
+<p>Since Zero Install keeps every package in its own directory, this doesn't work. Therefore, 0compile searches for such broken links, searches for a matching target, and creates a fixed link in a temporary directory, added to <code>LD_LIBRARY_PATH</code>. This makes it easy to depend on unmodified <code>-devel</code> packages which were designed for non-Zero Install systems.</p>
+<p>Note: a "pure" Zero Install library wouldn't need to include the version number in the library filename, so no symlink would be needed. If you did want to include the number in the filename, the symlink to it would go in the runtime package, not the <code>-dev</code>el package.</p>
+<p>Build dependencies with lib64 directories</p>
+<p>If the feed tries to add a directory under <code>lib</code> or <code>usr/lib</code> to <code>$PKG_CONFIG_PATH</code>, and the directory doesn't exist, 0compile uses the corresponding <code>lib64</code> directory instead, if present. This is for existing RPMs which use a different directory structure for different architectures.</p>
+<p>Libtool archive (.la) files</p>
+<p>0compile searches for <code>lib/*.la</code> files in <code>$DISTDIR</code> and automatically deletes them for you (there is a safely check that it really is a <code>libtool</code> file first). These files were only needed on very old systems that don't support dynamic linking. These days they just cause trouble by using absolute paths which were only valid during the build.</p>
+<h1 id="recreating-a-build-environment">Recreating a build environment</h1>
+<p>If you want to rebuild a binary package, see if it includes the <code>0install/build-environment.xml</code> file that 0compile generates automatically. If so, you can re-create the build like this:</p>
+<pre><code class="shell">$ 0compile setup .../someprog-binary/0install/build-environment.xml some-prog
+$ cd some-prog
+$ 0compile build
+</code></pre>
+
+<p>For example, in the GNU-Hello case this would allow you to build using the same source code and the exact same version of <code>make</code> used in the original compile.</p>
+<h1 id="making-source-available">Making source available</h1>
+<p>If you want to publish source code so that other people can compile it using 0compile, see <a href="developers/">0compile: Developers</a>.</p>
+<h1 id="building-in-a-clean-chroot">Building in a clean chroot</h1>
+<p>If you want to build the source package in a clean <code>chroot</code> sandbox environment, see <a href="chroot-build/">0compile: Chroot Build</a>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../0export/" class="btn btn-neutral float-right" title="0export">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../0bootstrap/" class="btn btn-neutral" title="0bootstrap"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../0bootstrap/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../0export/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../menu.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

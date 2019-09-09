@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/logo.png">
+  
+  <title>Feed files - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Feed files";
+    var mkdocs_page_input_path = "specifications/feed.md";
+    var mkdocs_page_url = "/specifications/feed/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../catalog/">Catalog files</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Feed files</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+    
+
+    <li class="toctree-l3"><a href="#groups">Groups</a></li>
+    
+
+    <li class="toctree-l3"><a href="#implementations">Implementations</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#historical-note-about-id">Historical note about id</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#commands">Commands</a></li>
+    
+
+    <li class="toctree-l3"><a href="#package-implementations">Package implementations</a></li>
+    
+
+    <li class="toctree-l3"><a href="#retrieval-methods">Retrieval methods</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#recipes">Recipes</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#dependencies">Dependencies</a></li>
+    
+
+    <li class="toctree-l3"><a href="#constraints">Constraints</a></li>
+    
+
+    <li class="toctree-l3"><a href="#bindings">Bindings</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#environment-bindings">Environment bindings</a></li>
+        
+            <li><a class="toctree-l4" href="#executable-bindings">Executable bindings</a></li>
+        
+            <li><a class="toctree-l4" href="#generic-bindings">Generic bindings</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#versions">Versions</a></li>
+    
+
+    <li class="toctree-l3"><a href="#stability">Stability</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#when-to-use-buggy">When to use 'buggy'</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#entry-points">Entry points</a></li>
+    
+
+    <li class="toctree-l3"><a href="#metadata">Metadata</a></li>
+    
+
+    <li class="toctree-l3"><a href="#digital-signatures">Digital signatures</a></li>
+    
+
+    <li class="toctree-l3"><a href="#valid-architecture-names">Valid architecture names</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-if-0install-version-attribute">The if-0install-version attribute</a></li>
+    
+
+    <li class="toctree-l3"><a href="#well-known-extensions">Well-known extensions</a></li>
+    
+
+    <li class="toctree-l3"><a href="#future-plans">Future plans</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../tools/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Specifications &raquo;</li>
+        
+      
+    
+    <li>Feed files</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/specifications/feed.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This document is a formal description of the XML feed file format. An interface describes a program, library or other component. A feed provides a list of known implementations of the interface (versions of the program) and details about how to get them, how to check that they are authentic, how to run them and what other components they depend on.</p>
+<p>This class diagram shows how the different concepts are related. Each feed file contributes information to this model:</p>
+<p><img alt="Class diagram for feed files" src="../../img/uml/zero-install-feed-classes.png" /></p>
+<p>Each Feed lists a number of Implementations (versions). An Identity is a way to recognise an Implementation (e.g. a cryptographic digest). A Retrieval method is a way to get an Implementation (e.g. by downloading from an FTP site). A Command says how to run an Implementation as a program.A Dependency indicates that one component depends on another (e.g. Gimp requires the GTK library). A Binding says how to let the program locate the Implementations when run. A Constraint limits the choice of a dependency (e.g. Gimp requires a version of GTK &gt;= 2.6).</p>
+<p>Note on terminology: originally the word 'interface' was used to mean both 'interface' and 'feed', so don't be confused if you see it used this way.</p>
+<p><a href="http://0install.de/schema/injector/interface/interface.xsd">XSD schema</a></p>
+<p><strong>Contents:</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#groups">Groups</a></li>
+<li><a href="#implementations">Implementations</a><ul>
+<li><a href="#historical-note-about-id">Historical note about id</a></li>
+</ul>
+</li>
+<li><a href="#commands">Commands</a></li>
+<li><a href="#package-implementations">Package implementations</a></li>
+<li><a href="#retrieval-methods">Retrieval methods</a><ul>
+<li><a href="#recipes">Recipes</a></li>
+</ul>
+</li>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#constraints">Constraints</a></li>
+<li><a href="#bindings">Bindings</a><ul>
+<li><a href="#environment-bindings">Environment bindings</a></li>
+<li><a href="#executable-bindings">Executable bindings</a></li>
+<li><a href="#generic-bindings">Generic bindings</a></li>
+</ul>
+</li>
+<li><a href="#versions">Versions</a></li>
+<li><a href="#stability">Stability</a><ul>
+<li><a href="#when-to-use-buggy">When to use 'buggy'</a></li>
+</ul>
+</li>
+<li><a href="#entry-points">Entry points</a></li>
+<li><a href="#metadata">Metadata</a></li>
+<li><a href="#digital-signatures">Digital signatures</a></li>
+<li><a href="#valid-architecture-names">Valid architecture names</a></li>
+<li><a href="#the-if-0install-version-attribute">The if-0install-version attribute</a></li>
+<li><a href="#well-known-extensions">Well-known extensions</a></li>
+<li><a href="#future-plans">Future plans</a></li>
+</ul>
+</div>
+<h1 id="introduction">Introduction</h1>
+<p>Feed files are introduced in the <a href="../../packaging/">Packagers Documentation</a>. They have the following syntax (<code>?</code> follows optional items, <code>*</code> means zero-or-more, order of elements is not important, and extension elements can appear anywhere as long as they use a different namespace):</p>
+<pre><code class="xml">&lt;?xml version='1.0'?&gt;
+&lt;interface xmlns='http://zero-install.sourceforge.net/2004/injector/interface'
+       min-injector-version='...' ?
+       uri='...' ? &gt;
+  &lt;name&gt;...&lt;/name&gt;
+  &lt;summary&gt;...&lt;/summary&gt;
+  &lt;description&gt;...&lt;/description&gt; ?
+  &lt;homepage&gt;...&lt;/homepage&gt; ?
+  &lt;category type='...' ? &gt;...&lt;/category&gt; *
+  &lt;needs-terminal/&gt; ?
+
+  &lt;icon type='...' href='...'/&gt; *
+  &lt;feed src='../img/...' langs='...' ? arch='...' ?/&gt; *
+
+  &lt;feed-for interface='...'/&gt; *
+  &lt;replaced-by interface='...'/&gt; ?
+
+  [group] *
+  [implementation] *
+  [entry-point] *
+
+&lt;/interface&gt;
+</code></pre>
+
+<dl>
+<dt><code>min-injector-version</code></dt>
+<dd>This attribute gives the oldest version of 0install that can read this file. Older versions will tell the user to upgrade if they are asked to read the file. Versions prior to 0.20 do not perform this check, however. If the attribute is not present, the file can be read by all versions.</dd>
+<dt><code>uri</code></dt>
+<dd>This attribute is only needed for remote feeds (fetched via HTTP). The value must exactly match the expected URL, to prevent an attacker replacing one correctly-signed feed with another (e.g., returning a feed for the <code>shred</code> program when the user asked for the <code>backup</code> program).</dd>
+<dt><code>&lt;name&gt;</code></dt>
+<dd>a short name to identify the interface (e.g. "Foo")</dd>
+<dt><code>&lt;summary&gt;</code></dt>
+<dd>a short one-line description; the first word should not be upper-case unless it is a proper noun (e.g. "cures all ills")</dd>
+<dt><code>&lt;description&gt;</code></dt>
+<dd>a full description, which can be several paragraphs long (optional since 0.32, but recommended)</dd>
+<dt><code>&lt;homepage&gt;</code></dt>
+<dd>the URL of a web-page describing this interface in more detail</dd>
+<dt><code>&lt;category&gt;</code></dt>
+<dd>a classification for the interface. If no type is given, then the category is one of the 'Main' categories defined by the <a href="http://standards.freedesktop.org/menu-spec/latest/apa.html">freedesktop.org menu specification</a>. Otherwise, it is a URI giving the namespace for the category.</dd>
+<dt><code>&lt;needs-terminal&gt;</code></dt>
+<dd>if present, this element indicates that the program requires a terminal in order to run. Graphical launchers should therefore run this program in a suitable terminal emulator.</dd>
+<dt><code>&lt;icon&gt;</code></dt>
+<dd>an icon to use for the program; this is used by programs such as <a href="http://rox.sourceforge.net/desktop/AddApp">AddApp</a> and <a href="../../basics/windows/">desktop integration</a>. You should provide an icon of the type <code>image/png</code> (<code>.png</code>) for display in browsers and launchers on Linux. For Windows apps you should additionally provide an icon of the type <code>image/vnd.microsoft.icon</code> (<code>.ico</code>).</dd>
+<dt><code>&lt;feed&gt;</code></dt>
+<dd>the linked feed contains more implementations of this feed's interface. The <code>langs</code> and <code>arch</code> attributes, if present, indicate that all implementations will fall within these limits (e.g. <code>arch='*-src'</code> means that there is no point fetching this feed unless you are looking for source code). See the <code>&lt;implementation&gt;</code> element for a description of the values of these attributes.</dd>
+<dt><code>&lt;feed-for&gt;</code></dt>
+<dd>the implementations in this feed are implementations of the given interface. This is used when adding an optional extra feed to an interface with <code>0install add-feed</code> (e.g. a <a href="../../packaging/local-feeds/">local feed</a> for a development version).</dd>
+<dt><code>&lt;replaced-by&gt;</code></dt>
+<dd>this feed's interface (the one in the root element's <code>uri</code> attribute) has been replaced by the given interface. Any references to the old URI should be updated to use the new one.</dd>
+</dl>
+<h1 id="groups">Groups</h1>
+<p>A group has this syntax:</p>
+<pre><code class="xml">  &lt;group
+    version='...' ?
+    released='...' ?
+    main='...' ?
+    self-test='...' ?
+    doc-dir='...' ?
+    license='...' ?
+    released='...' ?
+    stability='...' ?
+    langs='...' ?
+        arch='...' ? &gt;
+    [requires] *
+    [group] *
+    [command] *
+    [binding] *
+    [implementation] *
+    [package-implementation] *
+  &lt;/group&gt;
+</code></pre>
+
+<p>All attributes of the group are inherited by any child groups and implementations as defaults, but can be overridden there. All dependencies (<code>requires</code>), bindings and commands are inherited (sub-groups may add more dependencies and bindings to the list, but cannot remove anything).</p>
+<h1 id="implementations">Implementations</h1>
+<p>An implementation has this syntax (an unspecified argument is inherited from the closest ancestor <code>&lt;group&gt;</code> which defines it):</p>
+<pre><code class="xml">  &lt;implementation
+    [all &lt;group&gt; attributes]
+    id='...'
+    local-path='...' ? &gt;
+    &lt;manifest-digest [digest] * /&gt; *
+    [command] *
+    [retrieval-method] *
+    [binding] *
+    [requires] *
+  &lt;/implementation&gt;
+</code></pre>
+
+<p><img alt="Identity classes" src="../../img/uml/zero-install-id.png" /></p>
+<dl>
+<dt><code>id</code></dt>
+<dd>A unique identifier for this implementation. For example, when the user marks a particular version as buggy this identifier is used to keep track of it, and saving and restoring selections uses it. However, see the important historical note below.</dd>
+<dt><code>local-path</code></dt>
+<dd>If the feed file is a local file (the interface <code>uri</code> starts with <code>/</code>) then the <code>local-path</code> attribute <em>may</em> contain the pathname of a local directory (either an absolute path or a path relative to the directory containing the feed file). See the historical note below.</dd>
+<dt><code>version</code></dt>
+<dd>The version number. See the version numbers section below for more details.</dd>
+<dt><code>main</code> (deprecated)</dt>
+<dd>The relative path of an executable inside the implementation that should be executed by default when the interface is run. If an implementation has no <code>main</code> setting, then it cannot be executed without specifying one manually (with <code>0launch --main=MAIN</code>). This typically means that the interface is for a library. Note: <code>main</code> is being replaced by the <code>&lt;command&gt;</code> element.</dd>
+<dt><code>self-test</code> (deprecated)</dt>
+<dd>The relative path of an executable inside the implementation that can be executed to test the program. The program must be non-interactive (e.g. it can't open any windows or prompt for input). It should return with an exit status of zero if the tests pass. Any other status indicates failure. Note: <code>self-test</code> is being replaced by the <code>&lt;command&gt;</code> element.</dd>
+<dt><code>doc-dir</code></dt>
+<dd>The relative path of a directory inside the implementation that contains the package's documentation. This is the directory that would end up inside <code>/usr/share/doc</code> on a traditional Linux system.</dd>
+<dt><code>released</code></dt>
+<dd>The date this implementation was made available, in the format <code>YYYY-MM-DD</code>. For development versions checked out from version control this attribute should not be present.</dd>
+<dt><code>stability</code></dt>
+<dd>The default stability rating for this implementation. If not present, <code>testing</code> is used. See the stability section below for more details.</dd>
+<dt><code>langs</code></dt>
+<dd>The natural language(s) which this package supports, as a space-separated list of languages codes (in the same format as used by the <code>$LANG</code> environment variable). For example, the value <code>en_GB fr</code> would be used for a package supporting British English and French. Supported since 0.48. Note that versions before 0.54 require the region separator to be <code>_</code> (underscore), while later versions also allow the use of <code>-</code> for consistency with the <code>xml:lang</code> format.</dd>
+<dt><code>arch</code></dt>
+<dd>For platform-specific binaries, the platform for which this implementation was compiled, in the form <code>os-cpu</code>. 0install knows that certain platforms are backwards-compatible with others, so binaries with <code>arch="Linux-i486"</code> will still be available on <code>Linux-i686</code> machines, for example. Either the <code>os</code> or <code>cpu</code> part may be <code>*</code>, which will make it available on any OS or CPU. If missing, the default is <code>*-*</code>. See also: <a href="#valid-architecture-names">Valid architecture names</a>.</dd>
+<dt><code>license</code></dt>
+<dd>License terms. This is typically a <a href="http://catb.org/~esr/trove/">Trove</a> category. See <a href="http://pypi.python.org/pypi?%3Aaction=list_classifiers">the PyPI list</a> for some examples (the leading <code>License ::</code> is not included).</dd>
+</dl>
+<p>The <code>manifest-digest</code> element is used to give digests of the .manifest file using various hashing algorithms (but see the historical note below). Having multiple algorithms allows a smooth upgrade to newer digest algorithms without breaking old clients. Each non-namespaced attribute gives a digest, with the attribute name being the algorithm. For example:</p>
+<pre><code class="xml">&lt;manifest-digest sha256=&quot;4f078f9080bd9b3b87e8360f014268886ec653ed077bb3cb6725185c0a07473a&quot;/&gt;
+</code></pre>
+
+<p>For non-local implementations (those without a local-path attribute), the <code>&lt;implementation&gt;</code> element contains a set of <em>retrieval methods</em>, each of which gives a different way of getting the implementation (i.e. of getting a directory structure whose digest matches the ones given).</p>
+<p>Currently, 0install always chooses the first of the methods it understands, but in future it may use other strategies (such as choosing the closest mirror, or letting the user select one manually). It may also use other methods which aren't listed, such as searching for the implementation on a peer-to-peer network.</p>
+<p>Unrecognised elements inside an implementation are ignored.</p>
+<h2 id="historical-note-about-id">Historical note about id</h2>
+<p>0launch &gt;= 0.45 generally treats the ID as a simple identifier, and gets the local path (if any) from the local-path attribute and the digests from the <code>&lt;manifest-digest&gt;</code>.</p>
+<p>0launch &lt; 0.45 ignores the local-path attribute and the <code>&lt;manifest-digest&gt;</code> element. If the ID starts with <code>.</code> or <code>/</code> then the ID is also the local path; otherwise, it is the single manifest digest.</p>
+<p>For backwards compatibility, 0launch &gt;= 0.45 will treat an ID starting with <code>.</code> or <code>/</code> as a local path if no <code>local-path</code> attribute is present, and it will treat it as an additional digest if it contains an <code>=</code> character.</p>
+<p>Therefore, if you want to generate feeds compatible with past and future versions:</p>
+<ul>
+<li>If you have a digest, set the ID to <code>sha1new=...</code> and put the sha256 digest in the <code>&lt;manifest-digest&gt;</code>.</li>
+<li>If you have a local implementation then set both id and local-path to the pathname.</li>
+</ul>
+<h1 id="commands">Commands</h1>
+<p>The <code>main</code> attribute above provides a simple way to say how to run this implementation. The <code>&lt;command&gt;</code> element (supported since 0.51, released Dec 2010) provides a more flexible alternative.</p>
+<pre><code class="xml">  &lt;command
+    name='...'
+    path='...' ? &gt;
+    [binding] *
+    [requires] *
+    [runner] ?
+    &lt;arg&gt; ... &lt;/arg&gt; *
+    &lt;for-each item-from='...' separator='...'? &gt; ... &lt;/for-each&gt; *
+  &lt;/command&gt;
+</code></pre>
+
+<dl>
+<dt><code>name</code></dt>
+<dd>By default, 0launch executes the <code>run</code> command, but the <code>--command</code> option can be used to specify a different one. <a href="../../tools/0test/">0test</a> runs the <code>test</code> command (replacing the old <code>self-test</code> attribute) and <a href="../../tools/0compile/">0compile</a> runs the <code>compile</code> command (replacing the <code>compile:command</code> attribute).</dd>
+<dt><code>path</code></dt>
+<dd>The relative path of the executable within the implementation (optional if <code>&lt;runner&gt;</code> is used).</dd>
+</dl>
+<p>Additional arguments can be passed using the <code>&lt;arg&gt;</code> element. Within an argument, <code>${name}</code> is expanded to the value of the corresponding environment variable. These arguments are passed to the program before any arguments specified by the user.</p>
+<p>If an environment variable should be expanded to multiple arguments, use <code>&lt;for-each&gt;</code>. The variable in the <code>item-from</code> attribute is split using the given separator (which defaults to the OS path separator, <code>:</code> on POSIX and <code>;</code> on Windows) and the arguments inside the element are added for each item. The current item is available as <code>${item}</code>. If the variable given in <code>item-from</code> is not set or is empty, no arguments are added. See below for an example. Versions of 0install before 1.15 ignore <code>&lt;for-each&gt;</code> elements and their contents.</p>
+<p>Command-specific dependencies can be specified for a command by nesting <code>&lt;requires&gt;</code> elements. For example, an interpreter might only depend on libreadline when used interactively, but not when used as a library, or the <code>test</code> command might depend on a test framework.</p>
+<p>Command-specific bindings (0launch &gt;= 1.3) create a binding from the implementation to itself. For example, the <code>test</code> command may want to make the <code>run</code> command available in <code>$PATH</code> using <code>&lt;executable-in-path&gt;</code>.</p>
+<p>The <code>&lt;runner&gt;</code> element introduces a special kind of dependency: the program that is used to run this one. For example, a Python program might specify Python as its runner. <code>&lt;runner&gt;</code> is a subclass of <code>&lt;requires&gt;</code> and accepts the same attributes and child elements. In addition, you can specify arguments to pass to the runner by nesting them inside the <code>&lt;runner&gt;</code> element. These arguments are passed before the path of the executable given by the <code>path</code> attribute.</p>
+<p>For example:</p>
+<pre><code class="xml">    &lt;command name='run' path=&quot;causeway.e-swt&quot;&gt;
+      &lt;runner interface='http://repo.roscidus.com/e/e-core'&gt;
+        &lt;arg&gt;-cpa&lt;/arg&gt;
+        &lt;arg&gt;$SWT_JAR&lt;/arg&gt;
+        &lt;for-each item-from=&quot;EXTRA_E_OPTIONS&quot; separator=&quot; &quot;&gt;
+          &lt;arg&gt;${item}&lt;/arg&gt;
+        &lt;/for-each&gt;
+      &lt;/runner&gt;
+    &lt;/command&gt;
+</code></pre>
+
+<p>In this case, 0install will run the equivalent of <code>/path/to/e-interpreter -cpa /path/to/swt.jar $EXTRA_E_OPTIONS /path/to/causeway.e-swt</code>.</p>
+<h1 id="package-implementations">Package implementations</h1>
+<p>This element names a distribution-provided package which, if present, is a valid implementation of this interface. The syntax is:</p>
+<pre><code class="xml">  &lt;package-implementation
+    package='...'
+    distributions='...' ?
+    main='...' ? 
+    version='...' ? &gt;
+    [command] *
+    [requires] *
+  &lt;/package-implementation&gt;
+</code></pre>
+
+<p>Support for distribution packages was added in version 0.28 of 0install. Earlier versions ignore this element.</p>
+<p>If the named package is available then it will be considered as a possible implementation of the interface. If <code>main</code> is given then it must be an absolute path.</p>
+<p>If the <code>distributions</code> attribute is present then it is a space-separated list of distribution names where this element applies. 0launch &gt;= 0.45 ranks the <code>&lt;package-implementation&gt;</code> elements according to how well they match the host distribution and then only uses the best match (or matches, if several get the same score). See <a href="../../details/distribution-integration/">Distribution integration</a> for a list of supported distributions.</p>
+<p>Earlier versions of 0launch ignore the <code>distributions</code> attribute and process all of the elements.</p>
+<p>Note that, unlike a normal implementation, a distribution package does not resolve to a directory. Any bindings inside <code>&lt;requires&gt;</code> elements for the interface will be ignored; it is assumed that the requiring component knows how to use the packaged version without further help. Therefore, adding distribution packages to your interface considerably weakens the guarantees you are making about what the requester may get.</p>
+<p>Package implementations still inherit attributes and dependencies from their parent group. The <code>doc-dir</code> and <code>license</code> attributes may be given, but <code>version</code> and <code>released</code> are read from the native packaging system.</p>
+<p>If <code>version</code> is given then only implmentations matching this pattern are used (0install &gt;= 2.14). This allows multiple <code>&lt;packages-implmentation&gt;</code> elements for a single distribution package, which is useful if different versions have different requirements. See <a href="#constraints">Constraints</a> for the syntax.</p>
+<h1 id="retrieval-methods">Retrieval methods</h1>
+<p>A retrieval method is a way of getting an implementation.</p>
+<p><img alt="Retrieval method classes" src="../../img/uml/zero-install-retr.png" /></p>
+<p>The most common retrieval method is the <code>&lt;archive&gt;</code> element:</p>
+<pre><code class="xml">    &lt;archive
+      href='...'
+      size='...'
+      extract='...' ?
+      dest='...' ?
+      type='...' ?
+      start-offset='...' ? /&gt;
+</code></pre>
+
+<p>This states that an archive may be downloaded from the address given in the <code>href</code> attribute. The archive must have the given <code>size</code> or it will be rejected. When unpacked (either the subdirectory named in the <code>extract</code> attribute, or the whole archive if it is not present), the resulting tree will generate a manifest with the secure hash value given as the implementation's <code>id</code>. If <code>dest</code> is given (0install &gt;= 2.1), then the archive is unpacked to the specified subdirectory. It is an error to specify a target outside of the implementation directory (e.g. <code>../foo</code> or attempting to follow a symlink that points out of the implementation).</p>
+<p>Note that the <code>extract</code> attribute cannot contain <code>/</code> or <code>\</code> characters, so it can only be used to extract a top-level directory. It is intended for archives that contain their own name as the single top-level entry.</p>
+<p>The type of the archive is given as a MIME type in the <code>type</code> attribute (since 0install version 0.21). If missing, the type is guessed from the extension on the <code>href</code> attribute (all versions). Known types and extensions (case insensitive) are:</p>
+<ul>
+<li><code>application/x-rpm</code> (<code>.rpm</code>) - not supported by Windows version</li>
+<li><code>application/x-deb</code> (<code>.deb</code>) - not supported by Windows version</li>
+<li><code>application/x-tar</code> (<code>.tar</code>)</li>
+<li><code>application/x-bzip-compressed-tar</code> (<code>.tar.bz2</code>)</li>
+<li><code>application/x-lzma-compressed-tar</code> (<code>.tar.lzma</code>)</li>
+<li><code>application/x-compressed-tar</code> (<code>.tar.gz</code> or <code>.tgz</code>)</li>
+<li><code>application/zip</code> (<code>.zip</code>)</li>
+<li><code>application/vnd.ms-cab-compressed</code> (<code>.cab</code>)</li>
+<li><code>application/x-xz-compressed-tar</code> (<code>.tar.xz</code>) - since version 0.43, not supported by Windows version</li>
+<li><code>application/x-ruby-gem</code> (<code>.gem</code>) - since version 1.0-rc1, not supported by Windows version</li>
+<li><code>application/x-7z-compressed</code> (<code>.7z</code>) - Windows version only</li>
+<li><code>application/x-msi</code> (<code>.msi</code>) - Windows version only</li>
+</ul>
+<p>The <code>start-offset</code> attribute (since version 0.21) gives the number of bytes at the beginning of the file which should be ignored. This is useful for some self-extracting archives which are made up of a shell script followed by a normal archive in a single file. If missing, it defaults to 0. The value in the <code>size</code> attribute does not include the skipped bytes.</p>
+<p>You can also fetch individual files (0install &gt;= 2.1). This is useful for e.g. jar files, which are typically not unpacked:</p>
+<pre><code class="xml">    &lt;file
+      href='...'
+      size='...'
+      dest='...'
+      executable='true|false' /&gt;
+</code></pre>
+
+<p>The file is downloaded from <code>href</code>, must be of the given <code>size</code>, and is placed within the implementation directory as <code>dest</code>.<br />
+If <code>executable</code> is set to <code>true</code> (0install &gt;= 2.14.2) the file is marked as executable after download.</p>
+<h2 id="recipes">Recipes</h2>
+<p>An implementation can also be created by following a <code>&lt;recipe&gt;</code>:</p>
+<pre><code class="xml">  &lt;recipe&gt;
+    ( &lt;archive ...&gt; | &lt;file ...&gt; | &lt;rename ...&gt; | &lt;remove ...&gt; | &lt;copy-from ...&gt; ) +
+  &lt;/recipe&gt;
+</code></pre>
+
+<p>In this case, each child element of the recipe represents a step. To get an implementation by following a recipe, a new empty directory is created and then all of the steps are performed in sequence. The resulting directory must have the digest given in the implementation's <code>&lt;manifest-digest&gt;</code>. A recipe containing only a single archive is equivalent to just specifying the archive on its own. If a recipe contains an unrecognised element then the whole recipe must be ignored.</p>
+<dl>
+<dt><code>&lt;archive ...&gt;</code></dt>
+<dd>Causes the named archive to be fetched and unpacked over the top of whatever is currently in the temporary directory. It supports the same attributes as when used outside of a recipe.</dd>
+<dt><code>&lt;file ...&gt;</code></dt>
+<dd>Causes the named file to be fetched and saved over the top of whatever is currently in the temporary directory (0install &gt;= 2.1). It supports the same attributes as when used outside of a recipe.</dd>
+<dt><code>&lt;rename source='...' dest='...'&gt;</code></dt>
+<dd>Renames or moves a file or directory (0install &gt;= 1.10). It is an error if the source or destination are outside the implementation.</dd>
+<dt><code>&lt;remove path='...'&gt;</code></dt>
+<dd>Delete the file or directory from the implementation (0install &gt;= 2.1). It is an error if the path is outside the implementation.</dd>
+<dt><code>&lt;copy-from id='...' source='...' ? dest='...' ?&gt;</code></dt>
+<dd>Copies files or directories from another implementation, e.g., for applying an update to a previous version (0install &gt;= 2.13). The specified id must exactly match the id attribute of another implementation specified elsewhere in the same feed. You can specify the source and destination file or directory to be copied relative to the implementation root. Leave them unset to copy the entire implementation.</dd>
+</dl>
+<p>Note: A recipe is generally only useful for patching existing archives without having to host the complete result yourself. Normally, if your program requires files from several different packages then it is better to use the <code>&lt;requires&gt;</code> element instead. This allows libraries to be shared between different programs, and lets the user choose the versions and upgrade them individually.</p>
+<h1 id="dependencies">Dependencies</h1>
+<p>A <code>&lt;requires&gt;</code> element means that every implementation within the same group (including nested sub-groups) requires an implementation of the specified interface when run. 0install will choose a suitable implementation, downloading one if required.</p>
+<pre><code class="xml">  &lt;requires
+    interface='...'
+    importance='...' ?
+    version='...' ?
+    os='...' ?
+    distribution='...' ?
+    source='true|false' ?
+    use='...' ? &gt;
+    [ constraints ] *
+    [ bindings ] *
+  &lt;/requires&gt;
+</code></pre>
+
+<p>The constraint elements (if any) limit the set of acceptable versions. The bindings specify how 0install should make its choice known (typically, by setting environment variables).</p>
+<p>The <code>use</code> attribute can be used to indicate that this dependency is only needed in some cases. By default, 0launch &gt;= 0.43 will skip any <code>&lt;requires&gt;</code> element with this attribute set. Earlier versions process all <code>&lt;requires&gt;</code> elements whether this attribute is present or not. <a href="../../tools/0test/">0test</a> &gt;= 0.2 will process dependencies where <code>use="testing"</code>, in addition to the program's normal dependencies. This attribute is deprecated - it's usually better to use a <code>&lt;command&gt;</code> for this.</p>
+<p>The <code>importance</code> attribute (0install &gt;= 1.1) can be either <code>essential</code> (the default; a version of this dependency must be selected) or <code>recommended</code> (no version is also an option, although selecting a version is preferable to not selecting one).</p>
+<p>The <code>version</code> attribute (0install &gt;= 1.13) provides a quick way to specify the permitted versions. See the <a href="#constraints">Constraints</a> section below.</p>
+<p>The <code>distribution</code> attribute (0install &gt;= 1.15) can be used to require the selected implementation to be from the given distribution. For example, a Python library available through MacPorts can only be used with a version of Python which is also from MacPorts. The value of this attribute is a space-separated list of distribution names. In addition to the <a href="../../details/distribution-integration/">official list of distribution names</a>, the special value <code>0install</code> may be used to require an implementation provided by 0instal (i.e. one not provided by a <code>&lt;package-implementation&gt;</code>).</p>
+<p>The <code>os</code> attribute (0install &gt;= 1.12) can be used to indicate that the dependency only applies to the given OS (e.g. <code>os="Windows"</code> for dependencies only needed on Windows systems).</p>
+<p>The <code>source</code> attribute (0install &gt;= 2.8) can be used to indicate that a source implementation is needed rather than a binary. This may be useful if you want to get e.g. header files from a source package. Note that if you select both source and binary implementations of an interface, 0install does not automatically force them to be the same version.</p>
+<p>A <code>&lt;restricts&gt;</code> element (0install &gt;= 1.10) can be used to apply constraints without creating a dependency:</p>
+<pre><code class="xml">  &lt;restricts
+    interface='...'
+    version='...' ?
+    os='...' ?
+    distribution='...' ? &gt;
+    [ constraints ] *
+  &lt;/restricts&gt;
+</code></pre>
+
+<p>Internally, <code>&lt;restricts&gt;</code> behaves much like <code>&lt;requires importance='recommended'&gt;</code>, except that it doesn't try to cause the interface to be selected at all.</p>
+<h1 id="constraints">Constraints</h1>
+<p>Constraints appear on <code>&lt;requires&gt;</code>, <code>&lt;restricts&gt;</code>, <code>&lt;package-implementation&gt;</code> and <code>&lt;runner&gt;</code> elements. They restrict the set of versions from which 0install may choose an implementation.</p>
+<p>Since 0install 1.13, you can use the <code>version</code> attribute on the dependency element. The attribute's value is a list of ranges, separated by <code>|</code>, any of which may match. For example:</p>
+<pre><code class="xml">&lt;restricts interface='http://repo.roscidus.com/python/python'
+           version='2.6..!3 | 3.2.2..'/&gt;
+</code></pre>
+
+<p>This allows Python versions 2.6, 2.7 and 3.3, but not 2.5 or 3.</p>
+<p>Each range is in the form <code>START..!END</code>. The range matches versions where <code>START</code> &lt;= <code>VERSION</code> &lt; <code>END</code>. The start or end may be omitted. A single version number may be used instead of a range to match only that version, or <code>!VERSION</code> to match everything except that version.</p>
+<p>There is also an older syntax which also works with 0install &lt; 1.13, where a child node is used instead:</p>
+<pre><code class="xml">    &lt;version
+    not-before='...' ?
+    before='...' ? &gt;
+</code></pre>
+
+<dl>
+<dt><code>not-before</code></dt>
+<dd>This is the lowest-numbered version that can be chosen.</dd>
+<dt><code>before</code></dt>
+<dd>This version and all later versions are unsuitable.</dd>
+</dl>
+<p>For example, <code>&lt;version not-before='2.4' before='2.6'&gt;</code> allows any of these versions: 2.4, 2.4.0, and 2.4.8. It will not select 2.3.9 or 2.6.</p>
+<p>This older syntax is not supported with <code>&lt;packager-implementation&gt;</code>.</p>
+<h1 id="bindings">Bindings</h1>
+<p>Bindings specify how the chosen implementation is made known to the running program. Bindings can appear in a <code>&lt;requires&gt;</code> element, in which case they tell a component how to find its dependency, or in an <code>&lt;implementation&gt;</code> (or group), where they tell a component how to find itself.</p>
+<p><img alt="Binding classes" src="../../img/uml/zero-install-binding.png" /></p>
+<h2 id="environment-bindings">Environment bindings</h2>
+<pre><code class="xml">    &lt;environment
+      name='...'
+      (insert='...' | value='...')
+      mode='prepend|append|replace' ?
+      separator='...' ?
+      default='...' ? /&gt; *
+</code></pre>
+
+<p>Details of the chosen implementation are passed to the program by setting environment variables, as specified by the <code>&lt;environment&gt;</code> elements (typically, there will be exactly one of these in each <code>&lt;requires&gt;</code> element). Each environment element gives the name of the variable and the relative path of the item within the implementation to insert into the variable's value.</p>
+<p>Usually, the (badly-named) <code>insert</code> attribute is used, which adds a path to a file or directory inside the implementation to the environment variable. For example, <code>&lt;environment name='PATH' insert='bin'/&gt;</code> would perform something similar to the bash shell statement <code>export PATH=/path/to/impl/bin:$PATH</code>.</p>
+<p>Alternatively, you can use the <code>value</code> attribute to use a literal string. For example, <code>&lt;environment name='GRAPHICAL_MODE' value='TRUE' mode='replace'/&gt;</code>. This requires 0launch &gt;= 0.52.</p>
+<p>If <code>mode</code> is <code>prepend</code> (or not set), then the absolute path of the item is prepended to the current value of the variable. The default separator character is the colon character on POSIX systems, and semi-colon on Windows. This can be overridden using <code>separator</code> (0install &gt;= 1.1). If the environment variable is not currently set then the path is prepended to the value of the default attribute. If no default value is given either then the default for that environment variable is used, or the environment variable's value is set to the absolute path directly if there is no default.</p>
+<p>If <code>mode</code> is <code>append</code> then the same thing happens, except that the new value is added at the end instead of the beginning. If the mode is <code>replace</code> then the old value is overwritten, and the <code>default</code> attribute is ignored.</p>
+<p>The following environment variables have known defaults and therefore the <code>default</code> attribute is not needed with them:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PATH</code></td>
+<td><code>/bin:/usr/bin</code></td>
+</tr>
+<tr>
+<td><code>XDG_CONFIG_DIRS</code></td>
+<td><code>/etc/xdg</code></td>
+</tr>
+<tr>
+<td><code>XDG_DATA_DIRS</code></td>
+<td><code>/usr/local/share:/usr/share</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="executable-bindings">Executable bindings</h2>
+<p>These both require 0install &gt;= 1.2.</p>
+<pre><code class="xml">    &lt;executable-in-var
+      name='...'
+      command='...' ? /&gt;
+
+    &lt;executable-in-path
+      name='...'
+      command='...' ? /&gt;
+</code></pre>
+
+<p>These are used when the program needs to run another program. <code>command</code> says which of the program's commands to use; the default is <code>run</code>.</p>
+<p><code>&lt;executable-in-var&gt;</code> stores the path of the selected executable in the named environment variable. For example, if a program uses <code>$MAKE</code> to run make, you can provide the required command like this:</p>
+<pre><code class="xml">  &lt;requires interface=&quot;http://repo.roscidus.com/devel/make&quot;&gt;
+    &lt;executable-in-var name='MAKE'/&gt;
+  &lt;/requires&gt;
+</code></pre>
+
+<p><code>&lt;executable-in-path&gt;</code> works in a similar way, except that it adds a directory containing the executable to <code>$PATH</code>. For example, if the program instead just runs the <code>make</code> command, you would use:</p>
+<pre><code class="xml">  &lt;requires interface=&quot;http://repo.roscidus.com/devel/make&quot;&gt;
+    &lt;executable-in-path name='make'/&gt;
+  &lt;/requires&gt;
+</code></pre>
+
+<p>It is preferable to use <code>&lt;executable-in-var&gt;</code> where possible, to avoid making <code>$PATH</code> very long.</p>
+<p>Implementation note: On POSIX systems, 0install will create a shell script under <code>~/.cache/0install.net/injector/executables</code> and pass the path of this script.</p>
+<h2 id="generic-bindings">Generic bindings</h2>
+<p>Custom bindings can be specified using the <code>&lt;binding&gt;</code> element (0install &gt;= 2.1). 0install will not know how to run a program using custom bindings itself, but it will include them in any selections documents it creates, which can then be executed by your custom code. The syntax is:</p>
+<pre><code class="xml">&lt;binding
+    path='...' ?
+    command='...' ?
+    ... &gt;
+  ...
+&lt;/binding&gt;
+</code></pre>
+
+<p>If <code>command</code> is given, then 0install will select the given <code>&lt;command&gt;</code> within the implementation (which may cause additional dependencies and bindings to be selected). Otherwise, no command is selected.</p>
+<p>Any additional attributes and child elements are not processed, but are just passed through. If your binding needs a path within the selected implemention, it is suggested that the <code>path</code> attribute be used for this. Other attributes and child elements should be namespaced to avoid collisions.</p>
+<p>For example, the <a href="../../tools/ebox/">EBox</a> application launcher allows each code module to specify its dependencies, which are then available in the module's scope as <em>getters</em>. The ebox-edit application depends on the help library like this:</p>
+<pre><code class="xml">&lt;requires interface=&quot;http://0install.net/tests/ebox-help.xml&quot;&gt;
+  &lt;binding e:getter='help'/&gt;
+&lt;/requires&gt;
+</code></pre>
+
+<h1 id="versions">Versions</h1>
+<p>A version number string has the following form:</p>
+<pre><code class="plain">Version := DottedList (&quot;-&quot; Modifier? DottedList?)*
+DottedList := (Integer (&quot;.&quot; Integer)*)
+Modifier := &quot;pre&quot; | &quot;rc&quot; | &quot;post&quot;
+</code></pre>
+
+<p>Numerically, the modifiers come in the order <code>-pre</code> (pre-release), <code>-rc</code> (release candidate), <code>-</code> (no modifier name), <code>-post</code> (post-release or patch level). Versions are ordered like this:</p>
+<ul>
+<li>0.1</li>
+<li>1</li>
+<li>1.0</li>
+<li>1.1</li>
+<li>1.2-pre</li>
+<li>1.2-pre1</li>
+<li>1.2-rc1</li>
+<li>1.2</li>
+<li>1.2-0</li>
+<li>1.2-post</li>
+<li>1.2-post1-pre</li>
+<li>1.2-post1</li>
+<li>1.2.1-pre</li>
+<li>1.2.1.4</li>
+<li>1.2.2</li>
+<li>1.2.10</li>
+<li>3</li>
+</ul>
+<p>0install doesn't care about anything other than the sort order (i.e., whether one version comes before or after another). It is expected that an implementation can be safely replaced by one with a later version number, but not necessarily with an earlier one. So, if an application works with version <code>1.2.1</code> of a library then it should also work with version <code>1.2.2</code> or <code>1.3</code> or even <code>5.7</code>, but not <code>1.2.0</code>. This is a little different to some other systems, where numbers in different places have different meanings.</p>
+<p>For example, if the latest version of a library you use is version 5.1, then you shouldn't add the restriction <code>before='5.2'</code>, because when 5.2 comes out it should still work with your program. Of course, this might not always work, and hopefully the problem will be reported while the new library version is marked as testing (before most users hit the problem). Once you know that 5.2 is a problem, you can add the <code>before='5.2'</code> restriction to the implementation then.</p>
+<p>Incompatible changes (where a newer version cannot be used in place of an older version) to an interface should be handled by creating a new interface URI. Eg:</p>
+<ul>
+<li>http://gtk.org/2005/interfaces/GTK-1.2.x (contains 1.2.0, 1.2.1, 1.2.2, ...)</li>
+<li>http://gtk.org/2005/interfaces/GTK-2.x (contains 2.0.0, 2.0.1, 2.2.0, 2.4.0, 2.4.1, ...)</li>
+</ul>
+<p>Note that version numbers containing dash characters were not supported before version 0.24 of 0install and so a <code>version-modifier</code> attribute was added to allow new-style versions to be added without breaking older versions. This should no longer be used.</p>
+<p>The integers in version numbers must be representable as 64-bit signed integers.</p>
+<h1 id="stability">Stability</h1>
+<p>The feed file also gives a stability rating for each implementation. The following levels are allowed (must be lowercase in the feed files):</p>
+<ul>
+<li><code>stable</code></li>
+<li><code>testing</code></li>
+<li><code>developer</code></li>
+<li><code>buggy</code></li>
+<li><code>insecure</code></li>
+</ul>
+<p>Stability ratings are expected to change over time. When any new release is made, its stability should be set to <code>testing</code>. Users who have selected <strong>Help test new versions</strong> will then start using it. Other users will continue with the previous stable release. After a while (days, weeks or months, depending on the project) with no serious problems found, the implementation's stability can be changed to <code>stable</code> so that everyone will use it.</p>
+<p>If problems are found, it can instead be marked as <code>buggy</code>, or <code>insecure</code>. 0install won't select either by default, but it is useful to users to see the reason (users may opt to continue using a buggy version if it seems to work for them, but they should never use an insecure one). <code>developer</code> is like a more extreme version of <code>testing</code>, where the program is expected to have bugs.</p>
+<h3 id="when-to-use-buggy">When to use 'buggy'</h3>
+<p>Don't mark old releases as <code>buggy</code> every time you do a new release, just because a few bugs have been fixed. People who have selected <code>Network use: Full</code> will automatically upgrade to the new version anyway, so marking an older version as buggy only affects people who have explicitly stated that they <strong>don't</strong> want to use the latest version, but would prefer to use an older release to save network use.</p>
+<h1 id="entry-points">Entry points</h1>
+<p>(only used on the Windows version currently)</p>
+<p>Entry points allow you to associate additional information with <code>&lt;command&gt;</code> names, such as user-friendly names and descriptions. Entry points are used by the Zero Install GUI to help the user choose a command and by the desktop integration system to generate appropriate menu entries for commands. An entry point is not necessary for a command to work but it makes it more discoverable to end-users.</p>
+<p>Entry points are top-level elements and, unlike commands, are not associated with any specific implementation or group. One entry point represents all commands in all implementations that carry the same name. An entry point has this syntax:</p>
+<pre><code class="xml">  &lt;entry-point
+          command='...'
+          binary-name='...' ? &gt;
+    &lt;needs-terminal/&gt; ?
+    &lt;name&gt;...&lt;/name&gt; ?
+    &lt;summary&gt;...&lt;/summary&gt; ?
+    &lt;description&gt;...&lt;/description&gt; ?
+    &lt;icon type='...' href='...'/&gt; *
+  &lt;/group&gt;
+</code></pre>
+
+<dl>
+<dt><code>command</code></dt>
+<dd>the name of the command this entry point represents</dd>
+<dt><code>binary-name</code></dt>
+<dd>the canonical name of the binary supplying the command (without file extensions); this is used to suggest suitable alias names.</dd>
+<dt><code>&lt;needs-terminal&gt;</code></dt>
+<dd>if present, this element indicates that the command represented by this entry point requires a terminal in order to run.</dd>
+<dt><code>&lt;name&gt;</code></dt>
+<dd>user-friendly name for the command. If not present, the value of the <code>command</code> attribute is used instead.</dd>
+<dt><code>&lt;summary&gt;</code></dt>
+<dd>a short one-line description; the first word should not be upper-case unless it is a proper noun (e.g. "cures all ills")</dd>
+<dt><code>&lt;description&gt;</code></dt>
+<dd>a full description, which can be several paragraphs long</dd>
+<dt><code>&lt;icon&gt;</code></dt>
+<dd>an icon to represent the command; this is used when creating menu entries. You should provide an icon of the type <code>image/png</code> (<code>.png</code>) for Linux apps and <code>image/vnd.microsoft.icon</code> (<code>.ico</code>) for Windows apps.</dd>
+</dl>
+<h1 id="metadata">Metadata</h1>
+<p>All elements can contain extension elements, provided they are not in the Zero Install namespace used by the elements defined here. 0install does not currently make use of these elements itself, but other programs may find them useful. In future, some of these may be used (for example, the GUI may display the license terms).</p>
+<p>The use of <a href="http://dublincore.org">Dublin Core</a> is suggested for the following concepts, which have the following meanings when found as a direct child of a <code>&lt;group&gt;</code> or <code>&lt;implementation&gt;</code> element:</p>
+<dl>
+<dt><code>dc:creator</code></dt>
+<dd>The primary author of the program.</dd>
+<dt><code>dc:publisher</code></dt>
+<dd>The person who created this implementation. For a binary, this is the person who compiled it.</dd>
+</dl>
+<p>Other Dublin Core terms that may be useful include <code>contributor</code>, <code>dateCopyrighted</code>, <code>language</code>, <code>rights</code> and <code>rightsHolder</code>.</p>
+<p>These terms are not required as they are duplicated by the core Zero Install terms: <code>identifier</code> (<code>id</code>), <code>available</code> (<code>released</code>) and <code>requires</code> (<code>requires</code>).</p>
+<p>The source element may be used in future to record the source used to build this implementation.</p>
+<h1 id="digital-signatures">Digital signatures</h1>
+<p>When a feed is downloaded from the web, it must contain a digital signature. A feed is signed by appending an XML comment block of the form:</p>
+<pre><code class="xml">&lt;!-- Base64 Signature
+iD8DBQBEXM/qrgeCgFmlPMERArNSAKDBuNz5SQMZ8rwJmW2fhNHJwor6KwCgwx7XEfY+6gUC90rJ
+b5eCY+I8HNA=
+
+--&gt;
+</code></pre>
+
+<p>This block <strong>must</strong> go at the end of the file, and contains a Base64-encoded version of the file that would be created by using <code>gpg --detach-sign</code> on the original feed. The signature block must start on a new line, may not contain anything except valid base64 characters, and nothing may follow the signature block. XML signature blocks are supported from version 0.18 of 0install and may be generated easily using the <a href="../../tools/0publish/">0publish</a> command.</p>
+<p>Local interfaces are plain XML, although having an XML signature block is no problem as it will be ignored as a normal XML comment.</p>
+<h1 id="valid-architecture-names">Valid architecture names</h1>
+<p>The <code>arch</code> attribute is a value in the form <code>OS-CPU</code>. The values come from the <code>uname</code> system call, but there is some normalisation (e.g. because Windows doesn't report the same CPU names as Linux). Valid values for OS include:</p>
+<ul>
+<li>*</li>
+<li>Cygwin (a Unix-compatibility layer for Windows)</li>
+<li>Darwin (MacOSX, without the proprietary bits)</li>
+<li>FreeBSD</li>
+<li>Linux</li>
+<li>MacOSX</li>
+<li>Windows</li>
+</ul>
+<p>Valid values for CPU include:</p>
+<ul>
+<li>*</li>
+<li>src</li>
+<li>i386</li>
+<li>i486</li>
+<li>i586</li>
+<li>i686</li>
+<li>ppc</li>
+<li>ppc64</li>
+<li>x86_64</li>
+<li>armv6l</li>
+<li>armv7l</li>
+</ul>
+<h1 id="the-if-0install-version-attribute">The if-0install-version attribute</h1>
+<p>To make it possible to use newer features in a feed without breaking older versions of 0install, the <code>if-0install-version</code> attribute may be placed on any element to indicate that the element should only be processed by the specified versions of 0install. For example:</p>
+<pre><code class="xml">  &lt;group&gt;
+    &lt;new-element if-0install-version='1.14..'/&gt;
+    &lt;fallback if-0install-version='..!1.14'/&gt;
+  &lt;/group&gt;
+</code></pre>
+
+<p>In this example, 0install 1.14 and later will see <code>&lt;new-element&gt;</code>, while older versions see <code>&lt;fallback&gt;</code>. The syntax is as described in <a href="#constraints">Constraints</a>.</p>
+<p>However, 0install versions before 1.13 ignore this attribute and process all elements.</p>
+<h1 id="well-known-extensions">Well-known extensions</h1>
+<p>The following are well-known extensions to the Zero Install format:</p>
+<ul>
+<li><a href="../capabilities/">Capabilities</a> (provides information for desktop integration of applications)</li>
+</ul>
+<h1 id="future-plans">Future plans</h1>
+<ul>
+<li>The extra meta-data elements need to be better specified.</li>
+<li>As well as before and not-before, we should support after and not-after.</li>
+<li>It should be possible to give a delta (binary patch) against a previous version, to make upgrading quicker.</li>
+<li>It should be possible to scope bindings. For example, when a DTP package requires a clipart package, the clipart package should not be allowed to affect the DTP package's environment.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../manifest/" class="btn btn-neutral float-right" title="Manifest files">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../catalog/" class="btn btn-neutral" title="Catalog files"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../catalog/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../manifest/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../menu.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

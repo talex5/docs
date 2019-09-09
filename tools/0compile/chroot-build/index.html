@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/logo.png">
+  
+  <title>Chroot build - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Chroot build";
+    var mkdocs_page_input_path = "tools/0compile/chroot-build.md";
+    var mkdocs_page_url = "/tools/0compile/chroot-build/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../pkg2zero/">pkg2zero</a>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">Chroot build</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#chroot-setup">Chroot setup</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l5" href="#debian">Debian</a></li>
+        
+            <li><a class="toctree-l5" href="#red-hat">Red Hat</a></li>
+        
+            <li><a class="toctree-l5" href="#linux-from-scratch">Linux From Scratch</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l4"><a href="#0compile-setup">0compile setup</a></li>
+    
+
+    <li class="toctree-l4"><a href="#0compile-build">0compile build</a></li>
+    
+
+    <li class="toctree-l4"><a href="#publish-results">Publish results</a></li>
+    
+
+    <li class="toctree-l4"><a href="#future-directions">Future directions</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>0compile &raquo;</li>
+        
+      
+        
+          <li>Tools &raquo;</li>
+        
+      
+    
+    <li>Chroot build</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/tools/0compile/chroot-build.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This page explains how to build in a <code>chroot</code> sandbox environment <a href="../">using 0compile</a>. It offers a few advantages:</p>
+<ul>
+<li>Building doesn't affect the host environment, and the host doesn't influence the build.</li>
+<li>Builds can target a different architecture, such as building x86 packages from a x64 host.</li>
+<li>The build sandbox is smaller than a virtual machine, and the download is typically smaller.</li>
+</ul>
+<p>The build system (<code>chroot</code>) comes with development tools such as gcc and make, and the <code>0launch</code> command.</p>
+<p><strong>Contents:</strong></p>
+<div class="toc">
+<ul>
+<li><a href="#chroot-setup">Chroot setup</a><ul>
+<li><a href="#debian">Debian</a></li>
+<li><a href="#red-hat">Red Hat</a></li>
+<li><a href="#linux-from-scratch">Linux From Scratch</a></li>
+</ul>
+</li>
+<li><a href="#0compile-setup">0compile setup</a></li>
+<li><a href="#0compile-build">0compile build</a></li>
+<li><a href="#publish-results">Publish results</a></li>
+<li><a href="#future-directions">Future directions</a></li>
+</ul>
+</div>
+<h1 id="chroot-setup">Chroot setup</h1>
+<p>Alternatives:</p>
+<ul>
+<li>Build on a <a href="#debian">Debian system</a> (including Ubuntu), using APT and .deb with <code>pbuilder</code></li>
+<li>Build on a <a href="#red-hat">Red Hat system</a> (including Fedora), using Yum and .rpm with <code>mock</code></li>
+<li>Build on a <a href="#linux-from-scratch">Linux From Scratch</a> system, using only source tarballs with <code>chroot</code></li>
+</ul>
+<p>For all systems we use a <code>build</code> directory, that is bind-mounted inside the chroot, to hold our build results.</p>
+<h2 id="debian">Debian</h2>
+<p><a href="http://pbuilder.alioth.debian.org/">http://pbuilder.alioth.debian.org/</a></p>
+<p>Install and configure the software:</p>
+<pre><code class="shell">$ sudo apt-get install pbuilder
+
+$ mkdir -p build
+$ echo &quot;BINDMOUNTS='build'&quot; &gt;&gt; /etc/pbuilderrc
+</code></pre>
+
+<p>Prepare the build environment cache:</p>
+<pre><code class="shell">MIRROR=http://ftp.debian.org/debian/
+DIST=lenny
+
+ARCH=i386 # or amd64
+CPU=i486 # or x86_64
+
+BASEDIR=/var/cache/pbuilder
+TGZ=${BASEDIR}/${DIST}-${ARCH}.tgz
+
+$ sudo pbuilder --create --basetgz $TGZ --mirror $MIRROR \
+                --distribution $DIST --architecture $ARCH \
+                --extrapackages &quot;zeroinstall-injector&quot;
+</code></pre>
+
+<p>Enter the build environment chroot:</p>
+<pre><code class="shell">$ setarch $CPU sudo pbuilder --login --basetgz $TGZ
+# cat /etc/debian_version
+5.0.8
+# 0launch --version
+0launch (zero-install) 0.34
+Copyright (C) 2007 Thomas Leonard
+...
+</code></pre>
+
+<p>Has <code>build-essential</code> dependencies:</p>
+<ul>
+<li><code>dpkg-dev</code><ul>
+<li><code>dpkg</code></li>
+<li><code>perl5</code></li>
+<li><code>perl-modules</code></li>
+<li><code>cpio</code></li>
+<li><code>bzip2</code></li>
+<li><code>lzma</code></li>
+<li><code>patch</code></li>
+<li><code>make</code></li>
+<li><code>binutils</code></li>
+<li><code>libtimedate-perl</code></li>
+<li><code>gcc | c-compiler</code></li>
+</ul>
+</li>
+<li><code>g++</code></li>
+<li><code>libc6-dev | libc-dev</code></li>
+<li><code>make</code></li>
+</ul>
+<h2 id="red-hat">Red Hat</h2>
+<p><a href="https://fedorahosted.org/mock/">https://fedorahosted.org/mock/</a></p>
+<p>Install and configure the software:</p>
+<pre><code class="shell">$ su -c &quot;yum install mock&quot;
+$ su -c &quot;usermod -G mock $USER&quot;
+
+$ mkdir -p build
+$ echo &quot;config_opts['plugin_conf']['bind_mount_opts']['dirs'].append(('./build', '/build'))&quot; &gt;&gt; /etc/mock/site-defaults.cfg
+</code></pre>
+
+<p>Prepare the build environment cache:</p>
+<pre><code class="shell">ARCH=i386 # or x86_64
+
+ROOT=epel-5-$ARCH
+
+$ mock --root=$ROOT --arch=$ARCH --init
+$ mock --root=$ROOT --arch=$ARCH --install &quot;zeroinstall-injector&quot;
+</code></pre>
+
+<p>Enter the build environment chroot:</p>
+<pre><code class="shell">$ mock --root=$ROOT --arch=$ARCH --shell
+&gt; cat /etc/redhat-release
+CentOS release 5.6 (Final)
+&gt; 0launch --version
+0launch (zero-install) 0.38
+Copyright (C) 2007 Thomas Leonard
+...
+
+$ mock --root=$ROOT --arch=$ARCH --clean
+</code></pre>
+
+<p>Has <code>buildsys-build</code> dependencies:</p>
+<ul>
+<li><code>bash</code></li>
+<li><code>buildsys-macros</code></li>
+<li><code>bzip2</code></li>
+<li><code>coreutils</code></li>
+<li><code>cpio</code></li>
+<li><code>diffutils</code></li>
+<li><code>elfutils</code></li>
+<li><code>gcc-c++</code></li>
+<li><code>gcc</code></li>
+<li><code>gzip</code></li>
+<li><code>make</code></li>
+<li><code>patch</code></li>
+<li><code>perl</code></li>
+<li><code>redhat-release</code></li>
+<li><code>redhat-rpm-config</code></li>
+<li><code>rpm-build</code></li>
+<li><code>sed</code></li>
+<li><code>tar</code></li>
+<li><code>unzip</code></li>
+<li><code>which</code></li>
+</ul>
+<h2 id="linux-from-scratch">Linux From Scratch</h2>
+<p><a href="http://www.linuxfromscratch.org/lfs/">http://www.linuxfromscratch.org/lfs/</a></p>
+<p>Build LFS:</p>
+<ul>
+<li><a href="http://www.linuxfromscratch.org/lfs/view/stable/">Read the Linux From Scratch Book</a></li>
+</ul>
+<p>Enter chroot:</p>
+<pre><code class="shell">export LFS=/mnt/lfs
+
+sudo mount -v --bind /dev $LFS/dev
+
+sudo mount -vt devpts devpts $LFS/dev/pts
+sudo mount -vt tmpfs shm $LFS/dev/shm
+sudo mount -vt proc proc $LFS/proc
+sudo mount -vt sysfs sysfs $LFS/sys
+
+sudo mkdir -pv $LFS/build
+sudo mount -v --bind ./build $LFS/build
+
+$ sudo chroot $LFS /usr/bin/env -i \
+    HOME=/root TERM=&quot;$TERM&quot; PS1='\u:\w\$ ' \
+    PATH=/bin:/usr/bin:/sbin:/usr/sbin \
+    /bin/bash --login
+# cat /etc/lfs-release
+6.8
+</code></pre>
+
+<p>BLFS packages:</p>
+<ul>
+<li><a href="http://www.linuxfromscratch.org/blfs/view/svn/postlfs/openssl.md">OpenSSL</a> (Python dependency)</li>
+<li><a href="http://www.linuxfromscratch.org/blfs/view/svn/general/python.md">Python</a></li>
+<li><a href="http://www.linuxfromscratch.org/blfs/view/svn/postlfs/gnupg.md">GnuPG</a></li>
+<li><a href="http://www.linuxfromscratch.org/blfs/view/svn/general/pcre.md">PCRE</a> (Glib dependency)</li>
+<li><a href="http://www.linuxfromscratch.org/blfs/view/svn/general/glib2.md">GLib</a> (PyGObject dependency)</li>
+<li><a href="http://www.linuxfromscratch.org/blfs/view/svn/general/python-modules.html#pygobject">PyGObject</a></li>
+</ul>
+<p>Zero Install itself:</p>
+<ul>
+<li><a href="http://0install.net/install-source.md">ZeroInstall-Injector</a></li>
+</ul>
+<h1 id="0compile-setup">0compile setup</h1>
+<p>Now we have a chroot with <code>0launch</code>, and can add <code>0compile</code>:</p>
+<pre><code class="shell">CMD=&quot;0compile&quot;
+URI=&quot;http://0install.net/2006/interfaces/0compile.xml&quot;
+
+$ yes Y | /usr/bin/0launch -cd $URI
+$ 0alias -d /usr/bin $CMD $URI
+</code></pre>
+
+<p>Note: depending on your build OS and Python version, you might need to use an older version of 0compile.</p>
+<h1 id="0compile-build">0compile build</h1>
+<p>Begin with downloading the source code, in console mode:</p>
+<pre><code class="shell">$ 0launch -cd -s http://www.example.com/interfaces/foo.xml
+</code></pre>
+
+<p>Then we setup the build sub-directory using the source feed:</p>
+<pre><code class="shell">$ cd /build
+$ 0compile setup http://www.example.com/interfaces/foo.xml foo
+</code></pre>
+
+<p>Next we proceed with building the binary from the source:</p>
+<pre><code class="shell">$ cd foo
+$ 0compile build
+</code></pre>
+
+<p>Finally we tell 0compile to prepare the binary feed/archive:</p>
+<pre><code class="shell">$ 0compile publish http://www.example.com/implementations
+</code></pre>
+
+<p>After exiting the chroot, we can find the results in build/foo.</p>
+<h1 id="publish-results">Publish results</h1>
+<p>The new binary feed is now ready to be merged with our source feed, signed (using <code>0publish --xmlsign</code>), and published with the archives.</p>
+<p>Since we used a new clean chroot to build the binary, we can be reasonably sure that all dependencies are included in the source feed.</p>
+<h1 id="future-directions">Future directions</h1>
+<p>In the future it might be possible to use the <a href="http://open-build-service.org/">Open Build Service</a> (OBS), to build Zero Install packages using a distributed development platform.</p>
+<p>Currently it (OBS) supports building RPM and Debian packages, those can be converted to Zero Install feeds using <a href="../../pkg2zero/">pkg2zero</a> (when relocatable).</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../developers/" class="btn btn-neutral float-right" title="Developers">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../pkg2zero/" class="btn btn-neutral" title="pkg2zero"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../pkg2zero/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../developers/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../menu.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

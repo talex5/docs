@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/logo.png">
+  
+  <title>ROX-Filer - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "ROX-Filer";
+    var mkdocs_page_input_path = "packaging/examples/rox.md";
+    var mkdocs_page_url = "/packaging/examples/rox/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../templates/">Templates</a>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">ROX-Filer</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#general-operation">General operation</a></li>
+    
+
+    <li class="toctree-l4"><a href="#creating-a-binary-of-rox-filer">Creating a binary of ROX-Filer</a></li>
+    
+
+    <li class="toctree-l4"><a href="#adding-the-archive-to-the-interface">Adding the archive to the interface</a></li>
+    
+
+    <li class="toctree-l4"><a href="#publishing-the-interface-with-zero-install">Publishing the interface with Zero Install</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../tools/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../tools/pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../../tools/0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Examples &raquo;</li>
+        
+      
+        
+          <li>Packaging &raquo;</li>
+        
+      
+    
+    <li>ROX-Filer</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/packaging/examples/rox.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This guide shows some more advanced features of Zero Install:</p>
+<ul>
+<li>Creating platform-specific binaries (ROX-Filer is written in C).</li>
+<li>Local interfaces in source releases.</li>
+<li>Adding extra feeds (the maintainer of the PPC and ix86 interfaces are different people, but users get the right binary automatically).</li>
+</ul>
+<p>This guide assumes you've already read <a href="../../guide-gui/">the packaging guide</a>, which explains how to create and publish interface files. We won't explain all the concepts in detail again, we'll just show how to script the steps.</p>
+<div class="toc">
+<ul>
+<li><a href="#general-operation">General operation</a></li>
+<li><a href="#creating-a-binary-of-rox-filer">Creating a binary of ROX-Filer</a></li>
+<li><a href="#adding-the-archive-to-the-interface">Adding the archive to the interface</a></li>
+<li><a href="#publishing-the-interface-with-zero-install">Publishing the interface with Zero Install</a></li>
+</ul>
+</div>
+<h1 id="general-operation">General operation</h1>
+<p><code>0publish</code> edits interface files in place. It loads the file, transforms it in some way (such as setting the release date, or adding a new implementation) and then writes it back out again. If the input file was signed, it will resign it when saving with the same key by default. You can also use it to add a signature, or to change the signing key.</p>
+<p>You can create an alias for <code>0publish</code> in the usual way, to save typing:</p>
+<pre><code class="shell">$ 0install add 0publish http://0install.net/2006/interfaces/0publish
+</code></pre>
+
+<h1 id="creating-a-binary-of-rox-filer">Creating a binary of ROX-Filer</h1>
+<p>For this example we'll compile a binary of ROX-Filer for our platform (we'll assume there isn't one already) and make a feed for other people with the same platform (I'll use ppc64 for the examples). Start by creating an archive as normal:</p>
+<p>1. Download the ROX-Filer source release (and detached signature):</p>
+<pre><code class="shell">$ wget http://heanet.dl.sourceforge.net/sourceforge/rox/rox-2.4.1.tgz
+$ wget http://heanet.dl.sourceforge.net/sourceforge/rox/rox-2.4.1.tgz.sig
+$ gpg rox-2.4.1.tgz.sig
+gpg: Signature made Fri 30 Dec 2005 17:32:53 GMT using DSA key ID 59A53CC1
+gpg: Good signature from &quot;Thomas Leonard &lt;...&gt;&quot;
+</code></pre>
+
+<p>2. Build as normal:</p>
+<pre><code class="shell">$ tar xzf rox-2.4.1.tgz
+$ cd rox-2.4.1
+$ ./ROX-Filer/AppRun --compile
+</code></pre>
+
+<p>3. Delete the debugging symbols and the <code>build</code> and <code>src</code> directories to save space:</p>
+<pre><code class="shell">$ rm -r ROX-Filer/{ROX-Filer.dbg,build,src}
+</code></pre>
+
+<p>4. The ROX-Filer source download includes a <em>local interface</em> file called <code>ROX-Filer.xml</code>. This allows people to register local versions using <code>0launch --feed</code>. Set the release date and architecture in it:</p>
+<pre><code class="shell">$ 0publish --set-released 2006-02-26 ROX-Filer.xml
+$ 0publish --set-arch Linux-ppc64 ROX-Filer.xml
+</code></pre>
+
+<p>You can also edit it to change the name and description if you want. The file should now look like this:</p>
+<pre><code class="xml">&lt;?xml version='1.0'?&gt;
+&lt;interface xmlns='http://zero-install.sourceforge.net/2004/injector/interface'&gt;
+  &lt;name&gt;ROX-Filer-ppc64&lt;/name&gt;
+  &lt;summary&gt;PPC64 binaries for ROX-Filer&lt;/summary&gt;
+  &lt;description&gt;
+    ROX-Filer is a fast and powerful graphical file manager. It has full drag-and-drop support
+    and background file operations, and is highly configurable. It can also act as a pinboard,
+    allowing you to pin frequently used files to the desktop background.
+  &lt;/description&gt;
+  &lt;feed-for interface='http://rox.sourceforge.net/2005/interfaces/ROX-Filer'/&gt;
+  &lt;group main='ROX-Filer/AppRun'&gt;
+    &lt;implementation id=&quot;.&quot; version=&quot;2.4.1&quot; released='2006-02-26' arch='Linux-ppc64'/&gt;
+  &lt;/group&gt;
+&lt;/interface&gt;
+</code></pre>
+
+<p>5. Add the architecture to the directory name and tar it all up (we include the architecture in the directory and archive names for clarity only; you can name them whatever you like):</p>
+<pre><code class="shell">$ cd ..
+$ mv rox{,-linux-ppc64}-2.4.1
+$ tar czf rox-linux-ppc64-2.4.1{.tgz,}
+</code></pre>
+
+<p>6. Upload it somewhere. I'll assume <code>http://example.org/rox-linux-ppc64-2.4.1.tgz</code> in the following examples.</p>
+<h1 id="adding-the-archive-to-the-interface">Adding the archive to the interface</h1>
+<p>To make our new binary available through Zero Install:</p>
+<p>1. Take a copy of the local interface from the archive. We'll use <code>0publish</code> to change the <code>id</code> from <code>.</code> to the archive's digest and to add an <code>&lt;archive&gt;</code> element:</p>
+<pre><code class="shell">$ cp rox-linux-ppc64-2.4.1/ROX-Filer.xml ROX-Filer-ppc64
+$ 0publish ROX-Filer-ppc64 \
+    --archive-url http://example.org/rox-linux-ppc64-2.4.1.tgz  \
+    --archive-file rox-linux-ppc64-2.4.1.tgz \
+    --archive-extract rox-linux-ppc64-2.4.1
+</code></pre>
+
+<p>The local .tgz file is used by <code>0publish</code> to get the size and manifest digest. The extract value is used as the <code>&lt;archive&gt;</code>'s extract attribute and must match the name of the top-level directory in the archive.</p>
+<p>If you now view the <code>ROX-Filer-ppc64</code> file, you should see that <code>0publish</code> has converted the old <code>&lt;implementation&gt;</code> to give the digest and download location:</p>
+<pre><code class="xml">  &lt;group main=&quot;ROX-Filer/AppRun&quot;&gt;
+    &lt;implementation arch=&quot;Linux-ppc64&quot; id=&quot;sha1=2bce88f31415898760373fff900890a8719ab1e6&quot; released=&quot;2006-02-26&quot; version=&quot;2.4.1&quot;&gt;
+      &lt;archive extract=&quot;rox-linux-ppc64-2.4.1&quot; href=&quot;http://example.org/rox-linux-ppc64-2.4.1.tgz&quot; size=&quot;1375566&quot;/&gt;
+    &lt;/implementation&gt;
+  &lt;/group&gt;
+</code></pre>
+
+<p>You should be able to download and test your binary with this command:</p>
+<pre><code class="shell">$ 0launch ./ROX-Filer-ppc64
+</code></pre>
+
+<h1 id="publishing-the-interface-with-zero-install">Publishing the interface with Zero Install</h1>
+<p>1. Set the uri at the top of the file to where-ever you're going to upload it:</p>
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; ?&gt;
+&lt;interface xmlns=&quot;http://zero-install.sourceforge.net/2004/injector/interface&quot;
+       uri='http://example.com/2006/0launch/ROX-Filer-ppc'&gt;
+</code></pre>
+
+<p>TODO: 0publish should have a working <code>--local</code> option! (note: from version 0.3, 0publish does support --local in this case, when creating a new interface)</p>
+<p>2. Sign and upload the interface (see the <a href="../../guide-gui/">packaging guide</a> for information about creating, exporting and uploading your GPG key):</p>
+<pre><code class="shell">$ 0publish --gpgsign ROX-Filer-ppc64
+$ mv ROX-Filer-ppc64 /var/www/...
+</code></pre>
+
+<p>Other users of ppc64 machines can now either run this directly, or add it as a feed (so it will be used by other programs trying to run ROX-Filer):</p>
+<pre><code class="shell">$ 0launch --feed http://example.com/2006/0launch/ROX-Filer-ppc
+</code></pre>
+
+<p>You should now tell the maintainer of the master feed about this one, so that they can add a <code>&lt;feed&gt;</code> element to the master copy to save users from having to add the feed manually. For an example of a master interface with feeds for different architectures, take a look at the <code>&lt;feed&gt;</code> elements in <a href="http://rox.sourceforge.net/2005/interfaces/ROX-Filer">the real ROX-Filer interface</a>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../../specifications/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../inkscape/" class="btn btn-neutral" title="Inkscape"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../inkscape/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../../specifications/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../menu.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

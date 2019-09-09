@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/logo.png">
+  
+  <title>Packaging guide (command-line) - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Packaging guide (command-line)";
+    var mkdocs_page_input_path = "packaging/guide-cli.md";
+    var mkdocs_page_url = "/packaging/guide-cli/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../details/">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../details/windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../concepts/">Concepts</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Packaging guide (command-line)</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+    
+
+    <li class="toctree-l3"><a href="#creating-the-interface-file">Creating the interface file</a></li>
+    
+
+    <li class="toctree-l3"><a href="#adding-the-archive">Adding the archive</a></li>
+    
+
+    <li class="toctree-l3"><a href="#publishing-the-interface">Publishing the interface</a></li>
+    
+
+    <li class="toctree-l3"><a href="#marking-as-stable">Marking as stable</a></li>
+    
+
+    <li class="toctree-l3"><a href="#adding-more-versions">Adding more versions</a></li>
+    
+
+    <li class="toctree-l3"><a href="#notes">Notes</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#archives-with-top-level-directories">Archives with top-level directories</a></li>
+        
+            <li><a class="toctree-l4" href="#supported-archive-formats">Supported Archive formats</a></li>
+        
+            <li><a class="toctree-l4" href="#dependencies">Dependencies</a></li>
+        
+            <li><a class="toctree-l4" href="#why-do-we-need-to-put-the-url-in-the-xml">Why do we need to put the URL in the XML?</a></li>
+        
+            <li><a class="toctree-l4" href="#xml-signature-format">XML signature format</a></li>
+        
+            <li><a class="toctree-l4" href="#when-to-use-the-buggy-rating">When to use the 'buggy' rating</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#further-reading">Further reading</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../tools/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Packaging &raquo;</li>
+        
+      
+    
+    <li>Packaging guide (command-line)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/packaging/guide-cli.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This guide shows how to make software available through <a href="http://0install.net/injector.html">Zero Install</a>, using the command-line <a href="../../tools/0publish/">0publish</a> program. New users will probably prefer to start with the <a href="../guide-gui/">graphical interface</a> instead, but this version is useful when writing scripts to automatically publish new versions, or if you can't run the graphical version for some reason.</p>
+<p>We will start by packaging SCons, a build system (a little like Make).</p>
+<p>You should already be familiar with the general operation of 0install. In not, start by reading the <a href="../../basics/">Introduction tutorial</a>.</p>
+<div class="toc">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#creating-the-interface-file">Creating the interface file</a></li>
+<li><a href="#adding-the-archive">Adding the archive</a></li>
+<li><a href="#publishing-the-interface">Publishing the interface</a></li>
+<li><a href="#marking-as-stable">Marking as stable</a></li>
+<li><a href="#adding-more-versions">Adding more versions</a></li>
+<li><a href="#notes">Notes</a><ul>
+<li><a href="#archives-with-top-level-directories">Archives with top-level directories</a></li>
+<li><a href="#supported-archive-formats">Supported Archive formats</a></li>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#why-do-we-need-to-put-the-url-in-the-xml">Why do we need to put the URL in the XML?</a></li>
+<li><a href="#xml-signature-format">XML signature format</a></li>
+<li><a href="#when-to-use-the-buggy-rating">When to use the 'buggy' rating</a></li>
+</ul>
+</li>
+<li><a href="#further-reading">Further reading</a></li>
+</ul>
+</div>
+<h1 id="introduction">Introduction</h1>
+<p>SCons is particularly easy to package, because it is designed to be bundled with other applications and used in their build process, and can therefore be executed in place right after unpacking. To try it out, download the <code>scons-local</code> archive from their web-site, unpack it, and run it:</p>
+<pre><code class="shell">$ mkdir scons
+$ cd scons
+$ wget http://heanet.dl.sourceforge.net/sourceforge/scons/scons-local-0.96.92.tar.gz
+$ tar xzf scons-local-0.96.92.tar.gz
+$ ./scons.py --version
+SCons by Steven Knight et al.:
+        script: v0.96.92.D002, 2006/04/11 07:39:43, by knight on roxbury
+        engine: v0.96.92.D002, 2006/04/11 07:39:43, by knight on roxbury
+Copyright (c) 2001, 2002, 2003, 2004 The SCons Foundation
+</code></pre>
+
+<p>Programs that can be run in this way are the easiest to make available through Zero Install. To do this we need to create a small XML file stating:</p>
+<ul>
+<li>Which versions are available.</li>
+<li>Where each one can be downloaded from.</li>
+<li>How each version can be run.</li>
+<li>Any dependencies each version has on other packages.</li>
+</ul>
+<p>You can write this <em>interface file</em> with a text editor just by reading the <a href="../../specifications/feed/">file format specification</a>, but it's easier to use the <code>0publish</code> command. <code>0publish</code> will create an initial template for you, check that the file is valid, and makes many operations easier. The command is, of course, available through Zero Install. To save typing it's full URI each time you run it, create an alias now:</p>
+<pre><code class="shell">$ 0install add 0publish http://0install.net/2006/interfaces/0publish
+$ 0publish --version
+0publish (zero-install) 0.5
+</code></pre>
+
+<p>See also:</p>
+<ul>
+<li><a href="../../tools/0publish/">0publish</a></li>
+<li><a href="http://www.scons.org">SCons homepage</a></li>
+</ul>
+<h1 id="creating-the-interface-file">Creating the interface file</h1>
+<p><code>0publish</code> works by reading in an XML interface file, modifying it in some way, checking that it is still valid, and then writing it back out. If the file doesn't already exist it will offer to create it for you. Run <code>0publish</code> now to create a new file called <code>SCons.xml</code>:</p>
+<pre><code class="shell">$ 0publish SCons.xml
+Interface file 'SCons.xml' does not exist. Create it? [Y/N] Y
+</code></pre>
+
+<p><code>0publish</code> will create a new template and fire up an editor to let you change it. If you don't like the default, set your <code>EDITOR</code> environment variable to something better, or create an alias called <code>sensible-editor</code>. E.g., to edit interfaces using Edit:</p>
+<pre><code class="shell">$ 0install add sensible-editor http://rox.sourceforge.net/2005/interfaces/Edit
+</code></pre>
+
+<p>Fill in the fields in the XML template. The comments should guide you, but these are the exact changes we will make now:</p>
+<ul>
+<li>Set the <code>summary</code> to a short description. Start with a lower-case letter (except for proper nouns) and don't include the name of the program. The summary is normally shown after a dash, e.g. <em>SCons - a software construction tool</em>.</li>
+<li>The <code>description</code> fields can be longer. Copying some text from the web page or from freshmeat often works well.</li>
+<li>Set the <code>homepage</code> to the program's main web-site (or to your own site if you have a page for it). This is where users will go if they want more information than is in the description. Don't forget to uncomment it by removing the <code>&lt;!--</code> and <code>--&gt;</code> markers around it.</li>
+<li>Set the <code>icon</code> to the URL of a small PNG format icon if you want.</li>
+<li>The main program (which we ran above) is called <code>scons.py</code>, so change the <code>main</code> attribute to that.</li>
+</ul>
+<p>You can leave the other elements alone for now. Save your file using the default name (it will be to a temporary file) and <code>0publish</code> will write it as <code>SCons.py</code> if it's valid. If you made a mistake, <code>0publish</code> will prompt you to fix it first.</p>
+<p>Your final version should look something like this:</p>
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; ?&gt;
+&lt;?xml-stylesheet type='text/xsl'
+     href='http://0install.net/2006/stylesheets/interface.xsl'?&gt;
+
+&lt;interface xmlns=&quot;http://zero-install.sourceforge.net/2004/injector/interface&quot;&gt;
+  &lt;name&gt;SCons&lt;/name&gt;
+  &lt;summary&gt;a software construction tool&lt;/summary&gt;
+  &lt;description&gt;
+SCons is a software construction tool (build tool substitute for Make)
+implemented in Python. It features a modular build engine that can be
+embedded in other software. SCons configuration files are Python scripts
+that call the build engine API.
+
+It can scan files to detect dependencies automatically and maintain a global
+view of all dependencies in a build tree, and uses MD5 signatures to detect
+changed file contents reliably. Timestamps can be used if you prefer. SCons
+also supports parallel builds and is easily extensible through user-defined
+builder and scanner objects.
+  &lt;/description&gt;
+
+  &lt;homepage&gt;http://www.scons.org/&lt;/homepage&gt;
+
+  &lt;group main=&quot;scons.py&quot;&gt;
+    &lt;implementation id=&quot;.&quot; version=&quot;0.1&quot; released='Snapshot'/&gt;
+  &lt;/group&gt;
+&lt;/interface&gt;
+</code></pre>
+
+<p>If you created the <code>SCons.xml</code> file in the same directory as you ran <code>./scons.py</code> above, then you can now execute it already, like this:</p>
+<pre><code class="xml">$ 0launch ./SCons.xml --version
+SCons by Steven Knight et al.: ...
+</code></pre>
+
+<p>This type of XML file is known as a <em>local interface</em> because its name is a simple filename (normally, interfaces start with <code>http://</code> and need to be downloaded). Also, the single version (<em>implementation</em>) is a <em>local implementation</em>, because it is also identified by a pathname (the directory containing the XML file, <code>.</code>). In this case, the local interface isn't very useful on its own because we could have just run <code>./scons.py</code> directly. However, if we had listed any dependencies in the XML file then running it this way would have fetched them through Zero Install, so local interfaces can still be useful (especially for CVS checkouts of software, for example).</p>
+<p>See also:</p>
+<ul>
+<li><a href="../../specifications/feed/">Feed file format specification</a></li>
+</ul>
+<h1 id="adding-the-archive">Adding the archive</h1>
+<p>The next step is to change the implementation so that Zero Install will download the archive from the SCons web-site instead of requiring the user to have it locally. We should also change the version number and release date to their correct values. Adding the archive is a little tricky to do manually because we need to calculate the <em>secure hash</em> of the contents of the archive. This is needed when downloading from the web to check that the archive hasn't been tampered with.</p>
+<p>Luckily, <code>0publish</code> can make the necessary changes and add the required hash at the same time. Use this command (split on to multiple lines for clarity):</p>
+<pre><code class="shell">$ 0publish SCons.xml \
+  --set-version=0.96.92 \
+  --set-released=today \
+  --archive-url=http://heanet.dl.sourceforge.net/sourceforge/scons/scons-local-0.96.92.tar.gz
+</code></pre>
+
+<p>If you now run the program using <code>0launch</code> again, it will offer to download SCons for you:</p>
+<pre><code class="shell">$ 0launch ./SCons.xml --version
+</code></pre>
+
+<p><img alt="Downloading SCons with Zero Install" src="../../img/screens/scons-download.png" /></p>
+<p>If you look in the <code>SCons.xml</code> file, you'll see that <code>0publish</code> changed the old <code>implementation</code> element to this:</p>
+<pre><code class="xml">&lt;implementation
+    id=&quot;sha1=4a12f3ecc173b779cda1ece201e08616d2c11758&quot;
+    released=&quot;2006-05-18&quot;
+    version=&quot;0.96.92&quot;&gt;
+  &lt;archive
+      href=&quot;http://heanet.dl.sourceforge.net/sourceforge/scons/scons-local-0.96.92.tar.gz&quot;
+      size=&quot;249688&quot;/&gt;
+&lt;/implementation&gt;
+</code></pre>
+
+<p>The <code>id</code> gives the secure hash of the contents of the package. If the archive is changed (e.g., by someone breaking into SCons's web-server) then the hash won't match and Zero Install will refuse the download. Inside the <code>implementation</code> element is a list of ways of getting it. In this case, we state that a directory with the given hash can be created by downloading the named archive and extracting it.</p>
+<p>See also:</p>
+<ul>
+<li><a href="../../specifications/feed/#retrieval-methods">Archives</a></li>
+</ul>
+<h1 id="publishing-the-interface">Publishing the interface</h1>
+<p>You'll probably want to put your new interface up on the web, so that other people can get it easily. However, we can't just stick it up as it is because someone might be able to break into the web-server tamper with it, or intercept a user's network connection and insert their own version. We need to put our <em>digital signature</em> on it, using the <strong>GnuPG</strong> program, so that people can check that it's really from us.</p>
+<p>If you do not already have a GPG key-pair, create one now. You can accept the defaults for most fields; just enter your name and email address:</p>
+<pre><code class="shell">$ gpg --gen-key
+</code></pre>
+
+<p>We also need to decide on the URL people will use to download it. Since other programs that depend on this one will use the URL to find it, try to pick a URL that won't change. Here, we'll use <code>http://0install.net/tests/SCons.xml</code>, which isn't a very good URL, to discourage people from relying on this test example! Once you've picked a URL you need to add it to the XML file:</p>
+<pre><code class="shell">$ 0publish SCons.xml --set-interface-uri=http://0install.net/tests/SCons.xml
+</code></pre>
+
+<p>The interface file now starts like this:</p>
+<pre><code class="xml">&lt;interface uri=&quot;http://0install.net/tests/SCons.xml&quot; ...
+</code></pre>
+
+<p>Finally, we'll add the GPG signature (if you have more than one key, use <code>-k</code> to specify which one to use). You'll need to enter the passphrase you set when you created the key above:</p>
+<pre><code class="shell">$ 0publish SCons.xml --xmlsign
+Enter passphrase:
+Exported public key as 'AE07828059A53CC1.gpg'
+</code></pre>
+
+<p>This command adds a digital signature to the XML file. It also exports a copy of your GPG public key, which people will need in order to check the signature. Upload both files to the same directory on your web-server. You should now be able to run your interface with its full URI:</p>
+<pre><code class="shell">$ 0launch http://0install.net/tests/SCons.xml --version
+SCons by Steven Knight et al.:
+</code></pre>
+
+<p>If this is your first interface, the injector should now ask you to confirm that you trust the new key for signing software.</p>
+<h1 id="marking-as-stable">Marking as stable</h1>
+<p>Each implementation in an XML file has a <em>stability</em> setting. Typically, this is <code>testing</code> for a new release and <code>stable</code> for versions that have been around for a while. Normally, the injector will select the highest-numbered stable version by default. However, users who selected <strong>Help test new versions</strong> will get any newer testing version selected by default instead.</p>
+<p>By default, new releases are considered to have a stability rating of <code>testing</code>. After a week or so without major problems, set the stability of the testing version to <code>stable</code>:</p>
+<pre><code class="shell">$ 0publish SCons.xml --stable
+</code></pre>
+
+<p>If the version turns out to have <em>serious</em> problems, set it to <code>buggy</code> or <code>insecure</code> instead. There's no automatic option for this, so use <code>-e</code> to edit the file (<code>0publish</code> will automatically resign it when you save):</p>
+<pre><code class="shell">$ 0publish SCons.xml --edit
+</code></pre>
+
+<h1 id="adding-more-versions">Adding more versions</h1>
+<p>You can add more versions of SCons to your interface using <code>0publish</code>. The process is very similar to before, except that you use <code>--add-version</code> instead of <code>--set-version</code>. So, when version 1.0 is released, do this:</p>
+<pre><code class="shell">$ 0publish SCons.xml \
+  --add-version=1.0 \
+  --set-released=today \
+  --archive-url=http://heanet.dl.sourceforge.net/sourceforge/scons/scons-local-1.0.tar.gz
+</code></pre>
+
+<p>You can also add earlier versions, which may be useful if some programs aren't compatible with the newest version.</p>
+<h1 id="notes">Notes</h1>
+<h2 id="archives-with-top-level-directories">Archives with top-level directories</h2>
+<p>The SCons archive is a little unusual because it unpacks the files directly into the current directory when you extract it. Most archives would have just a single top-level directory named after the archive (e.g. <code>scons-local-0.96.92</code>) and put all the files in that. While you could cope with that by setting the <code>main</code> attribute to be <code>scons-local-VVV/scons.py</code> for each version, it's better to use the <a href="../../specifications/feed/#retrieval-methods">extract</a> attribute on the <code>archive</code> element so that all versions have the same structure. This is especially important for libraries, where the <code>main</code> attribute isn't used. Use the <code>--archive-extract=DIR</code> argument to <code>0publish</code> for this.</p>
+<h2 id="supported-archive-formats">Supported Archive formats</h2>
+<p>Archive formats are recognised by their file extensions. Supported formats are:</p>
+<ul>
+<li><code>.zip</code></li>
+<li><code>.tar</code></li>
+<li><code>.tar.gz</code> or <code>.tgz</code></li>
+<li><code>.tar.bz2</code></li>
+<li><code>.tar.lzma</code></li>
+<li><code>.tar.xz</code> (since version 0.43, not supported by Windows version)</li>
+<li><code>.7z</code> (Windows version only)</li>
+<li><code>.msi</code> (Windows version only)</li>
+<li><code>.cab</code></li>
+<li><code>.deb</code> (not supported by Windows version)</li>
+<li><code>.rpm</code> (not supported by Windows version)</li>
+<li><code>.gem</code> (since version 1.0-rc1, not supported by Windows version)</li>
+</ul>
+<h2 id="dependencies">Dependencies</h2>
+<p>You can specify that your program depends on other programs using the <code>requires</code> element. See the <a href="../../specifications/feed/">feed file format</a> document for details. See <a href="http://rox.sourceforge.net/desktop/node/289">Easy GTK binary compatibility</a> for an example (building an application requires SCons and the GTK headers).</p>
+<p>The <a href="../examples/find/">Packaging Find case study</a> gives an example of this.</p>
+<h2 id="why-do-we-need-to-put-the-url-in-the-xml">Why do we need to put the URL in the XML?</h2>
+<p>This is a security feature to let <code>0launch</code> check that it downloaded the XML the user asked for. Without it, this could happen:</p>
+<ol>
+<li>I may trust the author of the <em>SecureDelete</em> program to supply software.</li>
+<li>I tell <code>0launch</code> to invoke a text editor on a precious document.</li>
+<li><code>0launch</code> tries to download the XML for the text editor from the web.</li>
+<li>An attacker returns the XML file for <em>SecureDelete</em>, correctly signed by the author of <em>SecureDelete</em> (possibly the same person who wrote the text editor).</li>
+<li>My file gets securely deleted!</li>
+</ol>
+<h2 id="xml-signature-format">XML signature format</h2>
+<p>There are two ways to sign interface files. The <code>--gpgsign</code> option creates signatures in a format that all versions of the injector can read but they don't look great if you view the interface using a web-browser. The <code>--xmlsign</code> option still uses <code>gpg</code> to sign it, but the result is still XML and can therefore be styled nicely. However, such interfaces require users to have version <code>0.18</code> or later of the injector.</p>
+<h2 id="when-to-use-the-buggy-rating">When to use the 'buggy' rating</h2>
+<p>Only mark versions as <code>buggy</code> if there's a serious problem that means people really shouldn't use it (not just a few minor annoyances; all software has <em>some</em> bugs). Normally, just releasing a newer (fixed) version is sufficient, since the injector will offer to upgrade the version anyway.</p>
+<h1 id="further-reading">Further reading</h1>
+<dl>
+<dt><a href="../examples/find/">Example: Find</a></dt>
+<dd>Find is a Python program with a dependency on a Python library. This example shows how to depend on other components.</dd>
+<dt><a href="../examples/inkscape/">Example: Inkscape</a></dt>
+<dd>Inkscape is distributed as a binary RPM (among other formats). This guide shows how to publish these RPMs so that they can be run using Zero Install (by users without root access or on Debian systems, for example).</dd>
+<dt><a href="../examples/rox/">Example: ROX-Filer</a></dt>
+<dd>ROX-Filer is a C program, which requires different binaries for different platforms. These binaries are built and published in interface files maintained by different people. Using the injector's feed mechanism, users only need to use the main ROX-Filer interface and will automatically get a binary for their platform, from the maintainer of that binary.</dd>
+<dt><a href="../../tools/0publish/">0publish</a></dt>
+<dd>A command reference for the <code>0publish</code> command.</dd>
+<dt><a href="http://rox.sourceforge.net/desktop/node/300">Compiling with SCons and GTK</a></dt>
+<dd>Now that we've made SCons available through Zero Install, we can use it in our build scripts. This example shows how to build a GTK application written in C using Zero Install to get the build tool and the header files automatically.</dd>
+</dl>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../guide-gui/" class="btn btn-neutral float-right" title="Packaging guide (graphical)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../concepts/" class="btn btn-neutral" title="Concepts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../concepts/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../guide-gui/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../menu.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

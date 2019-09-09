@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/logo.png">
+  
+  <title>Sharing downloads between users - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Sharing downloads between users";
+    var mkdocs_page_input_path = "details/sharing.md";
+    var mkdocs_page_url = "/details/sharing/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../file-locations/">File locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../os-differences/">OS-specific differences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../servers/">Servers</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Sharing downloads between users</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#how-it-works">How it works</a></li>
+    
+
+    <li class="toctree-l3"><a href="#setting-up-sharing">Setting up sharing</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#linux">Linux</a></li>
+        
+            <li><a class="toctree-l4" href="#windows">Windows</a></li>
+        
+            <li><a class="toctree-l4" href="#questions">Questions</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../tools/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Details &raquo;</li>
+        
+      
+    
+    <li>Sharing downloads between users</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/details/sharing.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>On systems with multiple users, it would be very inefficient if each user had to download their own copy of each program. Most packaging systems require users to have root access in order to share software (either the root password, or admin access through sudo). However, this is a security risk. Zero Install allows software to be shared automatically and safely between mutually-untrusting users.</p>
+<p>Note: this page is about sharing between users on a single computer. If you want to do peer-to-peer sharing on a LAN, see <a href="../../tools/0share/">0share</a>. If you want to share between virtual machines running on a single host, see <a href="../virtual-machines/">virtual machines</a>.</p>
+<div class="toc">
+<ul>
+<li><a href="#how-it-works">How it works</a></li>
+<li><a href="#setting-up-sharing">Setting up sharing</a><ul>
+<li><a href="#linux">Linux</a><ul>
+<li><a href="#apparmor-policy">AppArmor policy</a></li>
+</ul>
+</li>
+<li><a href="#windows">Windows</a><ul>
+<li><a href="#technical-details">Technical details</a></li>
+</ul>
+</li>
+<li><a href="#questions">Questions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="how-it-works">How it works</h1>
+<p>A digest is a short value calculated from a (usually much bigger) file. There are various different algorithms that can be used. For example, this command calculates the SHA1 digest of the <code>ls</code> binary:</p>
+<pre><code class="shell">$ sha1sum /bin/ls
+90b703d3d29ef20f3ef711eb38625d618c70c4f6  /bin/ls
+</code></pre>
+
+<p>A <em>cryptographic</em> digest (like SHA1) is one where it is believed to be infeasibly difficult to create a different program with the same digest. So, if someone gives you a binary with digest above, you can be sure that it's identical to the version of <code>ls</code> that I'm using.</p>
+<p>Cryptographic digests are the basis of secure sharing in Zero Install. Here's we'll see an example of how two users (Alice and Bob) can share the ROX-Filer program, even if they don't trust each other.</p>
+<p><img alt="How sharing works in Zero Install" src="../../img/diagrams/sharing.png" /></p>
+<p>First, Alice runs ROX-Filer:</p>
+<ol>
+<li>Alice visits <a href="http://rox.sourceforge.net">rox.sourceforge.net</a> and downloads the small <a href="http://rox.sourceforge.net/2005/interfaces/ROX-Filer">ROX-Filer.xml</a> feed file.</li>
+<li>She decides to run ROX-Filer version 2.5 from this file.</li>
+<li>The Zero Install software gets the digest for this version (<code>sha1=d22a35871bad157e32aa169e3f4feaa8d902fdf2</code>) from the file. It also downloads the package and unpacks it.</li>
+<li>The software passes the unpacked archive to the privileged helper, which checks the digest and copies the directory to <code>/var/cache/0install.net/implementations/sha1=d22a35871bad157e32aa169e3f4feaa8d902fdf2</code> on Linux or <code>C:\ProgramData\0install.net\implementations\sha1=d22a35871bad157e32aa169e3f4feaa8d902fdf2</code> on Windows (see <a href="../file-locations/">File locations</a>).</li>
+<li>ROX-Filer runs.</li>
+</ol>
+<p>Later, Bob decides to run it too. The system doesn't need to download a second copy:</p>
+<ol>
+<li>Bob visits <a href="http://rox.sourceforge.net">rox.sourceforge.net</a> and downloads the small <a href="http://rox.sourceforge.net/2005/interfaces/ROX-Filer">ROX-Filer.xml</a> feed file.</li>
+<li>He decides to run ROX-Filer version 2.5 from this file.</li>
+<li>The Zero Install software gets the digest for this version (<code>sha1=d22a35871bad157e32aa169e3f4feaa8d902fdf2</code>) from the file.</li>
+<li>Zero Install sees that the directory <code>/var/cache/0install.net/implementations/sha1=d22a35871bad157e32aa169e3f4feaa8d902fdf2</code> (or <code>C:\ProgramData\0install.net\...</code>) already exists, so it doesn't download the software again.</li>
+<li>ROX-Filer runs.</li>
+</ol>
+<p>But what if we have a malicious user, Charlie? A new machine arrives, and Charlie decides to install a malicious version of ROX-Filer before anyone else installs a good copy:</p>
+<ol>
+<li>Charlie visits <a href="http://rox.sourceforge.net">rox.sourceforge.net</a> and downloads the small <a href="http://rox.sourceforge.net/2005/interfaces/ROX-Filer">ROX-Filer.xml</a> feed file.</li>
+<li>He decides to use ROX-Filer version 2.5 from this file.</li>
+<li>The Zero Install software gets the digest for this version (<code>sha1=d22a35871bad157e32aa169e3f4feaa8d902fdf2</code>) from the file. It also downloads the package and unpacks it.</li>
+<li>Charlie modifies the download to do something nasty (or, the download has been tampered with, or Charlie's account has been infected with a virus which modifies it, etc).</li>
+<li>If Charlie tries to install the result to <code>/var/cache/0install.net/implementations/sha1=d22a35871bad157e32aa169e3f4feaa8d902fdf2</code>, the privileged helper rejects it, because the digest of the directory's contents no longer matches that name.</li>
+<li>Charlie is forced to install his malicious version as <code>/var/cache/0install.net/implementations/sha1=3ab21d8f410e3a5a863d3a32a152edb31ba42f75</code> instead.</li>
+</ol>
+<p>When Alice runs ROX-Filer as before, the software sees that <code>/var/cache/0install.net/implementations/sha1=d22a35871bad157e32aa169e3f4feaa8d902fdf2</code> doesn't exist and downloads a genuine copy as before. When Bob runs ROX-Filer, he will use Alice's version.</p>
+<p><img alt="Charlie adds a modified copy to the system" src="../../img/diagrams/sharing-evil.png" /></p>
+<p>You might be worried that Charlie was able to put malicious code in the shared cache. However, it doesn't matter because other users won't try to run it, since it doesn't have the name they're looking for. Of course, it might not even be malicious: a program that deletes files is malicious if it's called <code>cat</code>, but not if it's called <code>rm</code>. As long as users don't go around running random binaries they find in the cache, they're OK.</p>
+<h1 id="setting-up-sharing">Setting up sharing</h1>
+<h2 id="linux">Linux</h2>
+<p>These instructions require Zero Install version 0.30 or later.</p>
+<p>The actual code for doing sharing this way is currently experimental and not enabled by default. This section shows how the system administrator (someone with root access) can enable it. It is probably best not to do this in security critical environments yet as we're still working on tightening the security. Feedback welcome.</p>
+<p>This diagram shows the four processes involved in adding a new package to the system cache. If you have a different environment, you can use a different 'helper' script to integrate it with Zero Install.</p>
+<p><img alt="Sequence of operations to add to the system cache" src="../../img/uml/secure-add.violet.png" /></p>
+<ol>
+<li><a href="http://0install.net/injector.html">Install 0install version 0.30</a> or later.</li>
+<li>Create a new system user called 'zeroinst' (the Ubuntu package will have done this for you automatically).</li>
+</ol>
+<pre><code class="shell"># useradd -d /var/cache/0install.net --system zeroinst
+</code></pre>
+
+<ol>
+<li>Create the shared directory, owned by this new user (also done automatically by the Ubuntu package):</li>
+</ol>
+<pre><code class="shell"># mkdir -p /var/cache/0install.net/implementations
+# chown zeroinst /var/cache/0install.net/implementations
+</code></pre>
+
+<ol>
+<li>Create <code>/usr/local/bin/0store-secure-add-helper</code> with:</li>
+</ol>
+<pre><code class="shell">#!/bin/sh
+exec sudo -S -u zeroinst /usr/bin/0store-secure-add &quot;$@&quot; &lt; /dev/null
+</code></pre>
+
+<p><strong>Note:</strong> the path will be /usr/<code>local</code>/bin/0store-secure-add if you installed from source</p>
+<ol>
+<li>Make your new script readable and executable by everyone:</li>
+</ol>
+<pre><code class="shell"># chmod a+rx /usr/local/bin/0store-secure-add-helper
+</code></pre>
+
+<ol>
+<li>Use <code>visudo</code> to add these lines to <code>/etc/sudoers</code>:</li>
+</ol>
+<pre><code class="shell">Defaults&gt;zeroinst env_reset,always_set_home
+ALL ALL=(zeroinst) NOPASSWD: /usr/bin/0store-secure-add
+</code></pre>
+
+<p><strong>Note:</strong> the <code>NOPASSWD</code> line MUST go at the end of the file, otherwise it is likely to be overridden by later entries. Again, use <code>/usr/local/bin</code> if you installed from source.</p>
+<p>When <code>launch</code> wants to install a package, it will invoke <code>0store-secure-add-helper</code>. This script uses <code>sudo</code> to run <code>0store-secure-add</code> as the <code>zeroinst</code> user, with a clean environment. No password is required for this.</p>
+<h3 id="apparmor-policy">AppArmor policy</h3>
+<p>The following AppArmor policy can be used to confine the 0store-secure-add process somewhat. However, the process does need read access everywhere (since it could be copying from anywhere) and write access to the entire cache directory, so this doesn't restrict it much more than it already is due to running as a separate user.</p>
+<pre><code>#include &lt;tunables/global&gt;
+/usr/bin/0store-secure-add {
+  #include &lt;abstractions/base&gt;
+  #include &lt;abstractions/python&gt;
+
+  /** r,
+  /usr/bin/0store-secure-add mr,
+  /usr/bin/python* ixr,
+  /var/cache/0install.net/implementations/** rw,
+}
+</code></pre>
+
+<h2 id="windows">Windows</h2>
+<p>On Windows the shared cache is managed by the <em>Zero Install Store Service</em>. It serves roughly the same role as <code>0store-secure-add</code> on Linux. This service ensures that no user can, intentionally or unintentionally, manipulate the contents of the shared cache. Every user can ask the service to add implementations to the shared cache on their behalf after validating the hash. This way other users only get cached implementations if they request the exact same version with the same hash.</p>
+<p>The <em>Zero Install Store Service</em> is installed automatically when Zero Install is <a href="../windows/#bootstrapper">deployed</a> for all users (machine-wide). Zero Install automatically uses the service when it is available (unless in <a href="../windows/#portable-mode">portable mode</a>) and falls back to the user cache if the service is unavailable.</p>
+<p>The service uses <code>C:\ProgramData\0install.net\implementations</code> (see <a href="../file-locations/">File locations</a>) for storing implementations by default.
+A custom location can be specified in the file <code>C:\ProgramData\0install.net\injector\implementation-dirs</code>. When using a custom location make sure it is only writeable by <code>SYSTEM</code> and <code>Administrators</code> and readable by <code>Everyone</code>.</p>
+<h3 id="technical-details">Technical details</h3>
+<p>Zero Install communicates with the service using <a href="https://docs.microsoft.com/en-us/windows/desktop/ipc/named-pipes">named pipes</a>. The user process downloads an archive to a temporary directory and then passes its file path to the service with a request for extraction. The service extracts the archive, verifies the manifest digest and adds the implementation to the cache. During the entire process the service reports the progress back to the user process.</p>
+<p>Named pipes allow the service to <a href="https://docs.microsoft.com/en-us/windows/desktop/SecAuthZ/client-impersonation">impersonate</a> the calling user. The archive is read and extracted using the privileges of the calling user but verified and added to the cache using the privileges of the service.</p>
+<p>The service records write access to the cache as well as any potential problems in the <em>Windows Event Log</em>.</p>
+<p><img alt="Store Service sequence diagram" src="../../img/diagrams/store-service.png" /></p>
+<h2 id="questions">Questions</h2>
+<dl>
+<dt>How do users uninstall?</dt>
+<dd>Currently, they can't. You (the admin) can delete directories from <code>/var/cache/0install.net/implementations</code> to save space (preferably not while they're being used ;-). Ideally, we should track which users have requested which programs and remove them automatically when no-one wants them anymore.</dd>
+<dt>What kind of things need 'tightening'?</dt>
+<dd>Several things spring to mind:</dd>
+<dd>
+<ul>
+<li>What happens if the user changes the directory whilst it's being added? We need to audit <code>0store-secure-add</code>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Denial of service attacks, if one user stores lots of stuff (need quotas).</li>
+</ul>
+</dd>
+<dt>Why do things still get stored in <code>~/.cache</code> after setting this up?</dt>
+<dd>Things you've already installed will remain there. Only new software is added in the system cache. Also, the old <code>sha1</code> algorithm isn't accepted by the helper, so software using that can't go in the shared cache. If you still have problems, try running <code>0launch -vvc URI</code> (to see debug output). Finally, make sure your script is executable!</dd>
+</dl>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../sync/" class="btn btn-neutral float-right" title="Sync">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../servers/" class="btn btn-neutral" title="Servers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../servers/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../sync/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../menu.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

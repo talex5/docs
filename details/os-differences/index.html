@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/logo.png">
+  
+  <title>OS-specific differences - Zero Install</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../style.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "OS-specific differences";
+    var mkdocs_page_input_path = "details/os-differences.md";
+    var mkdocs_page_url = "/details/os-differences/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zero Install</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../comparison/">Comparison</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../faq/">FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../features/">Features</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../perspectives/">Perspectives</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../troubleshooting/">Trouble-shooting</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basics/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/first-launch/">First launch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/making-shortcuts/">Making shortcuts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/using-apps/">Using apps</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basics/windows/">Desktop integration</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Details</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Manual walk-through</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../cache/">Cache and sharing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../cli/">Command-line interface</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../distribution-integration/">Distribution integration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../file-locations/">File locations</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">OS-specific differences</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#version-number">Version number</a></li>
+    
+
+    <li class="toctree-l3"><a href="#command-line-interface">Command-line interface</a></li>
+    
+
+    <li class="toctree-l3"><a href="#configuration-files-and-caches">Configuration files and caches</a></li>
+    
+
+    <li class="toctree-l3"><a href="#other-differences">Other differences</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cross-platform-use">Cross-platform use</a></li>
+    
+
+    <li class="toctree-l3"><a href="#feature-comparison">Feature comparison</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../policy-settings/">Policy settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../security/">Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../servers/">Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sharing/">Sharing downloads between users</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sync/">Sync</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../virtual-machines/">Virtual machines</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../windows/">Zero Install for Windows</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../developers/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/design/">Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/dotnet-api/">.NET API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/json-api/">JSON API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/python-api/">Python API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/solver/">The Solver</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../developers/using-git/">Using Git</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Packaging</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../packaging/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/concepts/">Concepts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-cli/">Packaging guide (command-line)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/guide-gui/">Packaging guide (graphical)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/local-feeds/">Local feeds</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../packaging/templates/">Templates</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/dotnet-lib/">.NET library</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/find/">Find</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/inkscape/">Inkscape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../packaging/examples/rox/">ROX-Filer</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Specifications</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../specifications/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/capabilities/">Capabilities extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/catalog/">Catalog files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/feed/">Feed files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/manifest/">Manifest files</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../specifications/selections/">Selections files</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../tools/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0bootstrap/">0bootstrap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0compile/">0compile</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0export/">0export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0mirror/">0mirror</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0publish-win/">0publish-win</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0publish/">0publish</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0release/">0release</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0repo/">0repo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0share/">0share</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0template/">0template</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0test/">0test</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/0watch/">0watch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/ebox/">ebox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/feedlint/">FeedLint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/make-headers/">Make-headers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/pkg2zero/">pkg2zero</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0compile</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/chroot-build/">Chroot build</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/developers/">Developers</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0compile/example-scons/">Example: SCons</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">0release</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0release/compiled-binaries/">Compiled binaries</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../tools/0release/customisation/">Customisation</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zero Install</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Details &raquo;</li>
+        
+      
+    
+    <li>OS-specific differences</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/0install/docs/edit/master/docs/details/os-differences.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>The Linux version and <a href="../windows/">Windows version</a> of Zero Install share the same <a href="../../specifications/feed/">feed format</a>. For most common use-cases they behave identically on the command-line. There are however some OS-specific differences.</p>
+<div class="toc">
+<ul>
+<li><a href="#version-number">Version number</a></li>
+<li><a href="#command-line-interface">Command-line interface</a></li>
+<li><a href="#configuration-files-and-caches">Configuration files and caches</a></li>
+<li><a href="#other-differences">Other differences</a></li>
+<li><a href="#cross-platform-use">Cross-platform use</a></li>
+<li><a href="#feature-comparison">Feature comparison</a></li>
+</ul>
+</div>
+<h1 id="version-number">Version number</h1>
+<p>The version numbers of the Linux and Windows versions of Zero Install are loosely coupled. If the first two components of the version number are the same (e.g. 2.1 and 2.1.3) they generally support the same features.</p>
+<h1 id="command-line-interface">Command-line interface</h1>
+<p>The <a href="../cli/">command-line interface</a> of the Linux and Windows versions are largely identical, with the following exceptions:</p>
+<dl>
+<dt><code>0install add|destroy|show|whatchanged</code></dt>
+<dd>These <a href="../../basics/using-apps/">app</a> commands are only available in the Linux version so far.</dd>
+<dt><code>0install man</code></dt>
+<dd>This man-page integration command is only available in the Linux version.</dd>
+<dt><code>0install catalog search|refresh|add|remove|reset|list</code></dt>
+<dd>These <a href="../../specifications/catalog/">catalog</a> commands are only available in the Windows version so far.</dd>
+<dt><code>0install add|remove|alias|integrate|update-all|repair-apps|sync</code></dt>
+<dd>These <a href="../../basics/windows/">desktop integration</a> commands are only available in the Windows version so far.</dd>
+<dt><code>0install store list-implementations|purge</code></dt>
+<dd>These <a href="../cache/">cache</a> management commands are only available in the Windows version so far.</dd>
+<dt><code>0install export</code> and <code>0install store export</code></dt>
+<dd>These <a href="../export/">implementation exporting</a> commands are only available in the Windows version so far.</dd>
+<dt><code>0install maintenance|self-update</code></dt>
+<dd>These <a href="../windows/#maintenance">maintenance</a> commands are only available in the Windows version.</dd>
+<dt><code>0install run --no-wait</code></dt>
+<dd>On *nix systems Zero Install replaces itself with the application it launches using <code>exec()</code>. Since there is no direct <code>exec()</code> equivalent on Windows Zero Install launches a child process and waits for it to exit. This Windows-only command-line argument causes Zero Install to return immediately instead without waiting for the child to exit.</dd>
+<dt><code>0install --dry-run</code></dt>
+<dd>Not implemented in the Windows version.</dd>
+<dt><code>0install --console|gui</code></dt>
+<dd>These command-line arguments are not available in the Windows version. Instead it uses separate executables, <code>0install</code> and <code>0install-win</code>, to select console or GUI mode.</dd>
+<dt><code>0install --background|batch</code></dt>
+<dd>These command-line arguments are only available in the Windows version.</dd>
+<dt><code>0install select|download|run --customize</code></dt>
+<dd>This command-line argument is only available in the Windows version.</dd>
+</dl>
+<h1 id="configuration-files-and-caches">Configuration files and caches</h1>
+<p>The Linux and Windows versions mostly use the same formats for configuration files and caches. However, due to some limitations of the Windows filesystem they are not directly interchangeable.</p>
+<p><code>~/.config/0install.net/injector/interfaces</code> on Linux contains file names with colons in them. In the Windows counterpart <code>%appdata%\0install.net\injector\interfaces</code> these are encoded as <code>%3a</code>.</p>
+<p>When extracting implementations Zero Install preserves executable-bits and symlinks and considers them when calculating <a href="../../specifications/manifest/">manifest digests</a>.<br />
+Windows does not have a concept of executable bits. Instead, Zero Install for Windows stores this information in a file called <code>.xbit</code> in the top-level directory of each implementation.<br />
+On Windows Administrator privileges are required to create symlinks. Therefore Zero Install creates <a href="http://cygwin.com/cygwin-ug-net/using.html#pathnames-symlinks">Cygwin-style symlinks</a> instead of "real" NTFS symlinks.</p>
+<p>See also: <a href="../file-locations/">File locations</a></p>
+<h1 id="other-differences">Other differences</h1>
+<p>The Windows version:</p>
+<ul>
+<li>uses NTFS ACLs instead of POSIX octets to make implementation directories read-only.</li>
+<li>provides in-process extraction code for all supported archive formats, since there is usually no <code>tar</code>, <code>unzip</code>, etc. in the <code>PATH</code> on Windows systems</li>
+<li>transparently handles Unix-style <code>$ENVIRONMENT_VARIABLES</code> rather than expecting them in the platform-specific <code>%WINDOWS%</code> style.</li>
+<li>creates binaries instead of shell scripts for command-line aliases and <code>&lt;executable-in-*&gt;</code> bindings.</li>
+</ul>
+<h1 id="cross-platform-use">Cross-platform use</h1>
+<p>The Windows version of Zero Install is written in in C#. It is primarily intended to be be used on Windows NT-based operating systems. However, the <a href="../../developers/dotnet-api/">Zero Install .NET API</a> it is based on is written with cross-platform support in mind and works on Linux using .NET Core.</p>
+<p>The Linux version of Zero Install is writtin in OCaml. It is primarily intended to be be used on Unixoid operating systems such as Linux and OS X. It can also be compiled for Windows, however, it lacks a number of Windows-specific features such as support for NTFS ACLs.</p>
+<p>The Windows version of Zero Install internally uses parts of the Linux version via the <a href="../../developers/json-api/">JSON API</a>.</p>
+<h1 id="feature-comparison">Feature comparison</h1>
+<table>
+    <tr>
+        <td/>
+        <th><strong>Windows Version</strong></th>
+        <th><strong>Linux Version</strong></th>
+    </tr>
+    <tr>
+        <td><strong><a href="/specifications/feed/">Feed format</a></strong></td>
+        <td class="green">Full support</td>
+        <td class="green">Full support</td>
+    </tr>
+    <tr>
+        <td><strong>Shared cache</strong></td>
+        <td class="green">Yes (using <a href="/details/sharing/#windows">Windows service</a>)</td>
+        <td class="green">Yes (using <a href="/details/sharing/#linux">store helper</a>)</td>
+    </tr>
+    <tr>
+        <td><strong>Native package manager integration</strong></td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td><strong><a href="/basics/using-apps/">Apps with cached selection</a></strong></td>
+        <td class="red">No</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td><strong><a href="/specifications/catalog/">Catalog</a> (recommended feeds and short names)</strong></td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+    </tr>
+    <tr>
+        <td><strong><a href="/basics/windows/">Desktop integration</a> (menu entries, file type associations, etc.)</strong></td>
+        <td class="green">Yes</td>
+        <td class="yellow">Limited</td>
+    </tr>
+    <tr>
+        <td><strong>App list <a href="/details/sync/">synchronization</a></strong></td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+    </tr>
+    <tr>
+        <td><strong><a href="/details/windows/#portable-mode">Portable mode</a></strong></td>
+        <td class="green">Yes</td>
+        <td class="red">No</td>
+    </tr>
+    <tr>
+        <td><strong>Runs on Windows</strong></td>
+        <td class="green">Yes</td>
+        <td class="yellow">Limited</td>
+    </tr>
+    <tr>
+        <td><strong>Runs on Linux</strong></td>
+        <td class="yellow">Limited</td>
+        <td class="green">Yes</td>
+    </tr>
+    <tr>
+        <td><strong>Runs on MacOS X</strong></td>
+        <td class="yellow">Limited</td>
+        <td class="green">Yes</td>
+    </tr>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../policy-settings/" class="btn btn-neutral float-right" title="Policy settings">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../file-locations/" class="btn btn-neutral" title="File locations"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/0install/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../file-locations/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../policy-settings/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../menu.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
